@@ -37,14 +37,11 @@ The importer requests the read-only Sheets scope. It checks the expected headers
 
 `.github/workflows/catalog.yml` builds and deploys the committed snapshot on pushes to `main`. It also runs a read-only sheet sync daily at 09:00 UTC or when manually started from **Actions → Sync and deploy CD catalog → Run workflow**. Scheduled and manual runs commit `src/data/albums.json` only when it changed, then build and deploy that snapshot in the same run. Add the service-account key in the GitHub repository settings under **Secrets and variables → Actions** as `GOOGLE_SERVICE_ACCOUNT_JSON`.
 
-For the first deployment:
+The public repository is [justinkahrs/cds](https://github.com/justinkahrs/cds). GitHub Pages is configured to publish through Actions, and `cds.justinkahrs.com` is registered as its custom domain. To finish the external setup:
 
-1. Push this repository to GitHub with `main` as its deployment branch.
-2. In **Settings → Pages**, choose **GitHub Actions** as the publishing source.
-3. Add `cds.justinkahrs.com` under **Settings → Pages → Custom domain**. The repository includes `public/CNAME` for the built artifact; the custom domain must also be set in repository settings.
-4. At the DNS provider, add a `CNAME` record for `cds` pointing to `justinkahrs.github.io`.
-5. Add the `GOOGLE_SERVICE_ACCOUNT_JSON` Actions secret and share the spreadsheet with the service account as a Viewer, then run **Sync and deploy CD catalog** manually once.
-
-After DNS resolves and GitHub issues a TLS certificate, enable **Enforce HTTPS** under **Settings → Pages**.
+1. At the DNS provider, add a `CNAME` record for `cds` pointing to `justinkahrs.github.io`.
+2. Follow the service-account steps above and add the key as the `GOOGLE_SERVICE_ACCOUNT_JSON` Actions secret.
+3. Run **Actions → Sync and deploy CD catalog → Run workflow** to sync the sheet and publish the snapshot.
+4. After DNS resolves and GitHub issues a TLS certificate, enable **Enforce HTTPS** under **Settings → Pages**.
 
 GitHub Actions needs permission to write repository contents so a sync can commit an updated snapshot, and Pages deployment needs `pages: write` and `id-token: write`; the workflow declares these permissions. If repository rules block direct pushes to `main`, allow the workflow bot to push the generated catalog commit or adjust the branch rule.
