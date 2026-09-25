@@ -1,0 +1,23 @@
+{
+  "name": "cd-collection-catalog",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test",
+    "sync:catalog": "node scripts/sync-catalog.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "googleapis": "^182.0.0"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

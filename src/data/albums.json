@@ -1,0 +1,1364 @@
+{
+  "albums": [
+    {
+      "artist": "65daysofstatic",
+      "title": "One Time For All Time",
+      "releaseYear": "2005",
+      "label": "Monotreme Records",
+      "format": "CD, Album",
+      "changerSlot": "1"
+    },
+    {
+      "artist": "Adele",
+      "title": "Adele",
+      "releaseYear": "2008",
+      "label": "XL Recordings, Columbia",
+      "format": "CD, Album, RP, Ter",
+      "changerSlot": "2"
+    },
+    {
+      "artist": "Alanis Morissette",
+      "title": "Jagged Little Pill",
+      "releaseYear": "1995",
+      "label": "Maverick, Reprise Records",
+      "format": "CD, Album",
+      "changerSlot": "140"
+    },
+    {
+      "artist": "Alvvays",
+      "title": "Alvvays",
+      "releaseYear": "2014",
+      "label": "Polyvinyl Record Company",
+      "format": "CD, Album",
+      "changerSlot": "4"
+    },
+    {
+      "artist": "Alvvays",
+      "title": "Antisocialites",
+      "releaseYear": "2017",
+      "label": "Royal Mountain Records",
+      "format": "CD, Album",
+      "changerSlot": "142"
+    },
+    {
+      "artist": "Amanaska",
+      "title": "Panorama",
+      "releaseYear": "2003",
+      "label": "One World Music, New World Music",
+      "format": "CD, Album",
+      "changerSlot": "5"
+    },
+    {
+      "artist": "Angel Olsen",
+      "title": "My Woman",
+      "releaseYear": "2016",
+      "label": "Jagjaguwar",
+      "format": "CD, Album",
+      "changerSlot": "6"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "...I Care Because You Do",
+      "releaseYear": "1995",
+      "label": "Warp Records, Sire",
+      "format": "CD, Album, SRC",
+      "changerSlot": "7"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Blackbox Life Recorder 21f / In A Room7 F760",
+      "releaseYear": "2023",
+      "label": "Warp Records",
+      "format": "CD, EP",
+      "changerSlot": "8"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Cheetah EP",
+      "releaseYear": "2016",
+      "label": "Warp Records",
+      "format": "CD, EP",
+      "changerSlot": "9"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Collapse EP",
+      "releaseYear": "2018",
+      "label": "Warp Records",
+      "format": "CD, EP",
+      "changerSlot": "10"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Richard D. James Album",
+      "releaseYear": "1997",
+      "label": "Sire, Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "13"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Selected Ambient Works 85-92",
+      "releaseYear": "1992",
+      "label": "Apollo, Apollo",
+      "format": "CD, Album",
+      "changerSlot": "14"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Selected Ambient Works Volume II",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "173,174,175"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Syro",
+      "releaseYear": "2014",
+      "label": "Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "15"
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Drukqs",
+      "releaseYear": "2001",
+      "label": "Sire, Warp Records",
+      "format": "2xCD, Album",
+      "changerSlot": "11,12"
+    },
+    {
+      "artist": "Audioslave",
+      "title": "Audioslave",
+      "releaseYear": "2002",
+      "label": "Epic",
+      "format": "CD, Album",
+      "changerSlot": "155"
+    },
+    {
+      "artist": "Autechre",
+      "title": "Amber",
+      "releaseYear": "1994",
+      "label": "Warp Records, MDS",
+      "format": "CD, Album",
+      "changerSlot": "16"
+    },
+    {
+      "artist": "Autechre",
+      "title": "Plus",
+      "releaseYear": "2020",
+      "label": "Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "17"
+    },
+    {
+      "artist": "Autechre",
+      "title": "SIGN",
+      "releaseYear": "2020",
+      "label": "Warp Records, Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "18"
+    },
+    {
+      "artist": "Autechre",
+      "title": "Tri Repetae",
+      "releaseYear": "1995",
+      "label": "Warp Records",
+      "format": "2xCD, Album",
+      "changerSlot": "19,20"
+    },
+    {
+      "artist": "Balmorhea",
+      "title": "Stranger",
+      "releaseYear": "2012",
+      "label": "Western Vinyl",
+      "format": "CD, Album",
+      "changerSlot": "21"
+    },
+    {
+      "artist": "Beach House",
+      "title": "Depression Cherry",
+      "releaseYear": "2015",
+      "label": "Sub Pop",
+      "format": "CD, Album",
+      "changerSlot": "22"
+    },
+    {
+      "artist": "Big Thief",
+      "title": "Capacity",
+      "releaseYear": "2017",
+      "label": "Saddle Creek",
+      "format": "CD, Album",
+      "changerSlot": "23"
+    },
+    {
+      "artist": "Big Thief",
+      "title": "Two Hands",
+      "releaseYear": "2019",
+      "label": "4AD",
+      "format": "CD, Album",
+      "changerSlot": "24"
+    },
+    {
+      "artist": "Black Sabbath",
+      "title": "Paranoid",
+      "releaseYear": null,
+      "label": "Warner Bros. Records",
+      "format": "CD, Album, RE",
+      "changerSlot": "141"
+    },
+    {
+      "artist": "Boards Of Canada",
+      "title": "Geogaddi",
+      "releaseYear": "2002",
+      "label": "Warp Records, Music70",
+      "format": "CD, Album",
+      "changerSlot": "25"
+    },
+    {
+      "artist": "Boards Of Canada",
+      "title": "Music Has The Right To Children",
+      "releaseYear": "2001",
+      "label": "Matador (11)",
+      "format": "CD, Album, MP, Unofficial",
+      "changerSlot": "26"
+    },
+    {
+      "artist": "Boards Of Canada",
+      "title": "The Campfire Headphase",
+      "releaseYear": "2005",
+      "label": "Warp Records, Music70",
+      "format": "CD, Album, Dig",
+      "changerSlot": "27"
+    },
+    {
+      "artist": "Boards Of Canada",
+      "title": "Tomorrow's Harvest",
+      "releaseYear": "2013",
+      "label": "Warp Records, Music70",
+      "format": "CD, Album, Dig",
+      "changerSlot": "28"
+    },
+    {
+      "artist": "Bonobo",
+      "title": "Black Sands",
+      "releaseYear": "2010",
+      "label": "Ninja Tune",
+      "format": "CD, Album",
+      "changerSlot": "29"
+    },
+    {
+      "artist": "Bonobo",
+      "title": "Days To Come",
+      "releaseYear": "2006",
+      "label": "Ninja Tune",
+      "format": "2xCD, Album",
+      "changerSlot": "30,31"
+    },
+    {
+      "artist": "Brad Paisley",
+      "title": "Mud On The Tires",
+      "releaseYear": null,
+      "label": "Arista Nashville",
+      "format": "HDCD, Album, RP",
+      "changerSlot": "32"
+    },
+    {
+      "artist": "Brian Eno - David Byrne",
+      "title": "My Life In The Bush Of Ghosts",
+      "releaseYear": null,
+      "label": "Sire (2), Warner Bros. Records (2)",
+      "format": "CD, Album, RE, Unofficial",
+      "changerSlot": "33"
+    },
+    {
+      "artist": "Carrie Underwood",
+      "title": "Some Hearts",
+      "releaseYear": "2005",
+      "label": "19 Recordings, Arista Nashville, Arista",
+      "format": "CD, Album",
+      "changerSlot": "34"
+    },
+    {
+      "artist": "Cat Power",
+      "title": "You Are Free",
+      "releaseYear": "2003",
+      "label": "Matador",
+      "format": "CD, Album, Jew",
+      "changerSlot": "35"
+    },
+    {
+      "artist": "Céline Dion",
+      "title": "One Heart",
+      "releaseYear": "2003",
+      "label": "Epic, Epic",
+      "format": "CD, Album",
+      "changerSlot": "156"
+    },
+    {
+      "artist": "Christina Aguilera",
+      "title": "Christina Aguilera",
+      "releaseYear": "1999",
+      "label": "RCA",
+      "format": "CD, Album",
+      "changerSlot": "158"
+    },
+    {
+      "artist": "Chvrches",
+      "title": "The Bones Of What You Believe",
+      "releaseYear": "2013",
+      "label": "Goodbye Records (2), Glassnote (2)",
+      "format": "CD, Album",
+      "changerSlot": "162"
+    },
+    {
+      "artist": "Circa Survive",
+      "title": "The Amulet",
+      "releaseYear": "2017",
+      "label": "Hopeless Records",
+      "format": "CD, Album",
+      "changerSlot": "36"
+    },
+    {
+      "artist": "Cocteau Twins",
+      "title": "Heaven Or Las Vegas",
+      "releaseYear": "1990",
+      "label": "Capitol Records, 4AD",
+      "format": "CD, Album",
+      "changerSlot": "37"
+    },
+    {
+      "artist": "Coheed And Cambria",
+      "title": "Good Apollo I'm Burning Star IV | Volume One: From Fear Through The Eyes Of Madness",
+      "releaseYear": "2005",
+      "label": "Columbia, Equal Vision Records",
+      "format": "CD, Album",
+      "changerSlot": "38"
+    },
+    {
+      "artist": "Coheed And Cambria",
+      "title": "The Second Stage Turbine Blade",
+      "releaseYear": "2002",
+      "label": "Equal Vision Records",
+      "format": "CD, Album",
+      "changerSlot": "39"
+    },
+    {
+      "artist": "Coheed And Cambria",
+      "title": "In Keeping Secrets Of Silent Earth: 3",
+      "releaseYear": "2003",
+      "label": "Equal Vision Records, Equal Vision Records",
+      "format": "CD, Album, Sli",
+      "changerSlot": "143"
+    },
+    {
+      "artist": "Coldplay",
+      "title": "A Rush Of Blood To The Head",
+      "releaseYear": null,
+      "label": "Capitol Records",
+      "format": "CD, Album, RE, Cin",
+      "changerSlot": "40"
+    },
+    {
+      "artist": "Coldplay",
+      "title": "X&Y",
+      "releaseYear": "2005",
+      "label": "Capitol Records",
+      "format": "CD, Album, Cin",
+      "changerSlot": "41"
+    },
+    {
+      "artist": "Counting Crows",
+      "title": "August And Everything After",
+      "releaseYear": "1993",
+      "label": "DGC",
+      "format": "CD, Album",
+      "changerSlot": "152"
+    },
+    {
+      "artist": "Creed",
+      "title": "Human Clay",
+      "releaseYear": "1999",
+      "label": "Wind-Up",
+      "format": "CD, Album",
+      "changerSlot": "42"
+    },
+    {
+      "artist": "D-Genre",
+      "title": "Leisure Play",
+      "releaseYear": "2002",
+      "label": "Rasā Music",
+      "format": "CD, Album",
+      "changerSlot": "43"
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Discovery",
+      "releaseYear": "2001",
+      "label": "Virgin",
+      "format": "CD, Album, Club",
+      "changerSlot": "44"
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Random Access Memories",
+      "releaseYear": "2013",
+      "label": "Columbia",
+      "format": "CD, Album",
+      "changerSlot": "45"
+    },
+    {
+      "artist": "Damien Rice",
+      "title": "B-Sides",
+      "releaseYear": "2004",
+      "label": "Vector Recordings, Warner Bros. Records, Damien Rice Music",
+      "format": "CD, Comp",
+      "changerSlot": "46"
+    },
+    {
+      "artist": "Dashboard Confessional",
+      "title": "The Places You Have Come To Fear The Most",
+      "releaseYear": "2001",
+      "label": "Vagrant Records",
+      "format": "CD, Album",
+      "changerSlot": "47"
+    },
+    {
+      "artist": "Dashboard Confessional",
+      "title": "The Swiss Army Romance",
+      "releaseYear": "2000",
+      "label": "Fiddler Records",
+      "format": "CD, Album",
+      "changerSlot": "48"
+    },
+    {
+      "artist": "Dixie Chicks",
+      "title": "Fly",
+      "releaseYear": "1999",
+      "label": "Monument",
+      "format": "HDCD, Album, Club",
+      "changerSlot": "144"
+    },
+    {
+      "artist": "Dixie Chicks",
+      "title": "Taking The Long Way",
+      "releaseYear": "2006",
+      "label": "Open Wide, Columbia",
+      "format": "CD, Album",
+      "changerSlot": "145"
+    },
+    {
+      "artist": "dZihan & Kamien",
+      "title": "Gran Riserva",
+      "releaseYear": "2002",
+      "label": "Six Degrees Records",
+      "format": "CD, Album, Dig",
+      "changerSlot": "160"
+    },
+    {
+      "artist": "Eagles",
+      "title": "Hell Freezes Over",
+      "releaseYear": "1994",
+      "label": "Geffen Records, Virginia Records",
+      "format": "CD, Album",
+      "changerSlot": "50"
+    },
+    {
+      "artist": "Eiffel 65",
+      "title": "Europop",
+      "releaseYear": "1999",
+      "label": "Republic Records, Universal Records",
+      "format": "CD, Album",
+      "changerSlot": "51"
+    },
+    {
+      "artist": "Elliott Smith",
+      "title": "New Moon",
+      "releaseYear": "2007",
+      "label": "Kill Rock Stars",
+      "format": "CD, Album",
+      "changerSlot": "52"
+    },
+    {
+      "artist": "Eminem",
+      "title": "Curtain Call - The Hits",
+      "releaseYear": "2005",
+      "label": "Interscope Records, Aftermath Entertainment",
+      "format": "CD, Comp",
+      "changerSlot": "54"
+    },
+    {
+      "artist": "Etta James",
+      "title": "Blue Gardenia",
+      "releaseYear": "2001",
+      "label": "Private Music",
+      "format": "CD, Album",
+      "changerSlot": "55"
+    },
+    {
+      "artist": "Evanescence",
+      "title": "Fallen",
+      "releaseYear": null,
+      "label": "Wind-Up",
+      "format": "CD, Album, RE, Son",
+      "changerSlot": "56"
+    },
+    {
+      "artist": "Explosions In The Sky",
+      "title": "How Strange, Innocence",
+      "releaseYear": "2005",
+      "label": "Temporary Residence Limited",
+      "format": "CD, Album, RE, RM",
+      "changerSlot": "57"
+    },
+    {
+      "artist": "Explosions In The Sky",
+      "title": "The Wilderness",
+      "releaseYear": "2016",
+      "label": "Bella Union",
+      "format": "CD, Album",
+      "changerSlot": "58"
+    },
+    {
+      "artist": "First Aid Kit",
+      "title": "Stay Gold",
+      "releaseYear": "2014",
+      "label": "Columbia",
+      "format": "CD, Album",
+      "changerSlot": "60"
+    },
+    {
+      "artist": "FKA Twigs",
+      "title": "LP1",
+      "releaseYear": "2016",
+      "label": "Young Turks",
+      "format": "CD, Album, RE",
+      "changerSlot": "59"
+    },
+    {
+      "artist": "Flying Lotus",
+      "title": "Until The Quiet Comes",
+      "releaseYear": "2012",
+      "label": "Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "64"
+    },
+    {
+      "artist": "Frank Sinatra",
+      "title": "The Best Of The Capitol Years",
+      "releaseYear": null,
+      "label": "Capitol Records, EMI Music Canada",
+      "format": "CD, Comp",
+      "changerSlot": "65"
+    },
+    {
+      "artist": "Gavin DeGraw",
+      "title": "Chariot",
+      "releaseYear": "2003",
+      "label": "J Records",
+      "format": "CD, Album",
+      "changerSlot": "66"
+    },
+    {
+      "artist": "Gavin DeGraw",
+      "title": "Gavin DeGraw",
+      "releaseYear": "2008",
+      "label": "J Records",
+      "format": "CD, Album, Enh",
+      "changerSlot": "67"
+    },
+    {
+      "artist": "God Is An Astronaut",
+      "title": "A Moment Of Stillness",
+      "releaseYear": "2006",
+      "label": "Revive Records",
+      "format": "CD, EP",
+      "changerSlot": "68"
+    },
+    {
+      "artist": "Godspeed You Black Emperor!",
+      "title": "F♯ A♯ ∞",
+      "releaseYear": "1998",
+      "label": "Kranky",
+      "format": "CD, Album, RE, RM",
+      "changerSlot": "69"
+    },
+    {
+      "artist": "Gojira (2)",
+      "title": "L'Enfant Sauvage",
+      "releaseYear": null,
+      "label": "Roadrunner Records",
+      "format": "CD, Album",
+      "changerSlot": "70"
+    },
+    {
+      "artist": "Goo Goo Dolls",
+      "title": "Dizzy Up The Girl",
+      "releaseYear": "1998",
+      "label": "Warner Bros. Records",
+      "format": "CD, Album",
+      "changerSlot": "71"
+    },
+    {
+      "artist": "Grease",
+      "title": "(The Original Soundtrack From The Motion Picture)",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "177"
+    },
+    {
+      "artist": "Greg Laswell",
+      "title": "Three Flights From Alto Nido",
+      "releaseYear": "2008",
+      "label": "Vanguard",
+      "format": "CD, Album",
+      "changerSlot": "74"
+    },
+    {
+      "artist": "Howard Shore",
+      "title": "The Lord Of The Rings: The Return Of The King (Original Motion Picture Soundtrack)",
+      "releaseYear": "2003",
+      "label": "Reprise Records, Warner Music Group Soundtracks, New Line Records",
+      "format": "CD, Album, Enh",
+      "changerSlot": "75"
+    },
+    {
+      "artist": "Imogen Heap",
+      "title": "Speak For Yourself",
+      "releaseYear": "2005",
+      "label": "RCA Victor, Megaphonic Records",
+      "format": "CD, Album, RE",
+      "changerSlot": "76"
+    },
+    {
+      "artist": "Inventions",
+      "title": "Inventions",
+      "releaseYear": "2014",
+      "label": "Temporary Residence Limited",
+      "format": "CD, Album",
+      "changerSlot": "77"
+    },
+    {
+      "artist": "Jewel",
+      "title": "Pieces Of You",
+      "releaseYear": "1995",
+      "label": "Atlantic",
+      "format": "CD, Album",
+      "changerSlot": "78"
+    },
+    {
+      "artist": "Joe Hertler & The Rainbow Seekers",
+      "title": "On Being",
+      "releaseYear": "2011",
+      "label": "Lower Peninsula Records",
+      "format": "LP, Album",
+      "changerSlot": "79"
+    },
+    {
+      "artist": "John Mayer",
+      "title": "Continuum",
+      "releaseYear": "2006",
+      "label": "Columbia, Aware Records",
+      "format": "CD, Album",
+      "changerSlot": "80"
+    },
+    {
+      "artist": "John Mayer",
+      "title": "Room for Squares",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "179"
+    },
+    {
+      "artist": "John Williams, The Boston Pops Orchestra",
+      "title": "Joy to the World",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "176"
+    },
+    {
+      "artist": "Jon Hopkins",
+      "title": "Immunity",
+      "releaseYear": "2013",
+      "label": "Domino",
+      "format": "CD, Album",
+      "changerSlot": "81"
+    },
+    {
+      "artist": "Justin Timberlake",
+      "title": "Justified",
+      "releaseYear": "2002",
+      "label": "Jive",
+      "format": "CD, Album",
+      "changerSlot": "82"
+    },
+    {
+      "artist": "Kenny Chesney",
+      "title": "When The Sun Goes Down",
+      "releaseYear": "2003",
+      "label": "BNA Records Label",
+      "format": "HDCD, Album",
+      "changerSlot": "150"
+    },
+    {
+      "artist": "Lipstick",
+      "title": "The Wasteland we Left Behind",
+      "releaseYear": "2023",
+      "label": "LipstickBB",
+      "format": "LP",
+      "changerSlot": "165"
+    },
+    {
+      "artist": "Lynyrd Skynyrd",
+      "title": "The Best Of Lynyrd Skynyrd",
+      "releaseYear": null,
+      "label": "MCA Records",
+      "format": "CD, Comp, RE, RM",
+      "changerSlot": "83"
+    },
+    {
+      "artist": "Missy Elliott",
+      "title": "Under Construction",
+      "releaseYear": "2002",
+      "label": "Elektra, The Goldmind, Inc.",
+      "format": "CD, Album, Enh",
+      "changerSlot": "154"
+    },
+    {
+      "artist": "Modest Mouse",
+      "title": "Good News For People Who Love Bad News",
+      "releaseYear": "2004",
+      "label": "Epic",
+      "format": "CD, Album",
+      "changerSlot": "84"
+    },
+    {
+      "artist": "Mogwai",
+      "title": "Come On Die Young",
+      "releaseYear": null,
+      "label": "Matador, Chemikal Underground",
+      "format": "CD, Album",
+      "changerSlot": "85"
+    },
+    {
+      "artist": "Mogwai",
+      "title": "Young Team",
+      "releaseYear": "1997",
+      "label": "Jetset Records",
+      "format": "CD, Album",
+      "changerSlot": "86"
+    },
+    {
+      "artist": "Mona Shores High School Choir",
+      "title": "2005 Singing Christmas Tree",
+      "releaseYear": "2005",
+      "label": "Not On Label",
+      "format": "CD-ROM, Album",
+      "changerSlot": "166"
+    },
+    {
+      "artist": "Muse",
+      "title": "Absolution",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "178"
+    },
+    {
+      "artist": "Muse",
+      "title": "Origin Of Symmetry",
+      "releaseYear": "2001",
+      "label": "Taste Media, EastWest, Taste Media, EastWest",
+      "format": "CD, Album",
+      "changerSlot": "87"
+    },
+    {
+      "artist": "My Bloody Valentine",
+      "title": "Loveless",
+      "releaseYear": null,
+      "label": "Sire, Warner Bros. Records, Creation Records",
+      "format": "CD, Album, RE, Whi",
+      "changerSlot": "88"
+    },
+    {
+      "artist": "My Bloody Valentine",
+      "title": "mbv",
+      "releaseYear": "2013",
+      "label": "MBV Records (2)",
+      "format": "LP, Album, Unofficial",
+      "changerSlot": "89"
+    },
+    {
+      "artist": "Nappy Roots",
+      "title": "Watermelon, Chicken & Gritz EPK",
+      "releaseYear": "2001",
+      "label": "The Atlantic Group",
+      "format": "VHS, Promo",
+      "changerSlot": "161"
+    },
+    {
+      "artist": "Nick Drake",
+      "title": "Pink Moon",
+      "releaseYear": null,
+      "label": "Island Remasters, Island Records",
+      "format": "CD, Album, RE, RM",
+      "changerSlot": "90"
+    },
+    {
+      "artist": "No Doubt",
+      "title": "Tragic Kingdom",
+      "releaseYear": "1995",
+      "label": "Trauma Records (2), Interscope Records",
+      "format": "CD, Album",
+      "changerSlot": "91"
+    },
+    {
+      "artist": "Norah Jones",
+      "title": "Feels Like Home",
+      "releaseYear": "2004",
+      "label": "Blue Note, EMI",
+      "format": "CD, Album, Enh,  Ci",
+      "changerSlot": "92"
+    },
+    {
+      "artist": "Norah Jones",
+      "title": "Not Too Late",
+      "releaseYear": "2007",
+      "label": "Blue Note, EMI",
+      "format": "CD, Album",
+      "changerSlot": "149"
+    },
+    {
+      "artist": "Oneohtrix Point Never",
+      "title": "Again",
+      "releaseYear": "2023",
+      "label": "Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "94"
+    },
+    {
+      "artist": "Oneohtrix Point Never",
+      "title": "Magic Oneohtrix Point Never",
+      "releaseYear": "2020",
+      "label": "Warp Records",
+      "format": "CD, Album",
+      "changerSlot": "95"
+    },
+    {
+      "artist": "Oneohtrix Point Never",
+      "title": "Rifts",
+      "releaseYear": "2012",
+      "label": "Software (2)",
+      "format": "3xCD, Comp",
+      "changerSlot": "96,97,98"
+    },
+    {
+      "artist": "Panic! At The Disco",
+      "title": "A Fever You Can't Sweat Out",
+      "releaseYear": "2005",
+      "label": "Decaydance, Fueled By Ramen",
+      "format": "CD, Album",
+      "changerSlot": "99"
+    },
+    {
+      "artist": "Phil Collins, Mark Mancina",
+      "title": "Tarzan (An Original Walt Disney Records Soundtrack)",
+      "releaseYear": "1999",
+      "label": "Walt Disney Records",
+      "format": "CD, Album",
+      "changerSlot": "100"
+    },
+    {
+      "artist": "Pink Floyd",
+      "title": "The Dark Side Of The Moon",
+      "releaseYear": "1984",
+      "label": "Harvest",
+      "format": "CD, Album, RE",
+      "changerSlot": "101"
+    },
+    {
+      "artist": "Pink Floyd",
+      "title": "Wish You Were Here",
+      "releaseYear": "1986",
+      "label": "Columbia",
+      "format": "CD, Album, RE",
+      "changerSlot": "102"
+    },
+    {
+      "artist": "R.E.M.",
+      "title": "Out Of Time",
+      "releaseYear": "1991",
+      "label": "Warner Bros. Records",
+      "format": "CD, Album, ARC",
+      "changerSlot": "103"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "A Moon Shaped Pool",
+      "releaseYear": "2016",
+      "label": "XL Recordings",
+      "format": "CD, Album",
+      "changerSlot": "104"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "Amnesiac",
+      "releaseYear": "2001",
+      "label": "Parlophone",
+      "format": "CD, Album",
+      "changerSlot": "105"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "In Rainbows",
+      "releaseYear": "2007",
+      "label": "XL Recordings",
+      "format": "CD, Album, Promo",
+      "changerSlot": "106"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "Kid A",
+      "releaseYear": "2000",
+      "label": "Parlophone, Parlophone",
+      "format": "CD, Album",
+      "changerSlot": "107"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "Kid A",
+      "releaseYear": "2000",
+      "label": "Capitol Records",
+      "format": "CD, Album, Promo",
+      "changerSlot": "108"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "OK Computer",
+      "releaseYear": "2006",
+      "label": "Capitol Records",
+      "format": "CD, Album, RP, Cin",
+      "changerSlot": "109"
+    },
+    {
+      "artist": "Red Hot Chili Peppers",
+      "title": "Blood Sugar Sex Magik",
+      "releaseYear": "1991",
+      "label": "Warner Bros. Records",
+      "format": "CD, Album, Lon",
+      "changerSlot": "110"
+    },
+    {
+      "artist": "Red Hot Chili Peppers",
+      "title": "I'm With You",
+      "releaseYear": "2011",
+      "label": "Warner Bros. Records",
+      "format": "CD, Album, Dig",
+      "changerSlot": "111"
+    },
+    {
+      "artist": "Red Hot Chili Peppers",
+      "title": "The Best Of Red Hot Chili Peppers",
+      "releaseYear": "1997",
+      "label": "EMI-Capitol Special Markets",
+      "format": "CD, Comp",
+      "changerSlot": "112"
+    },
+    {
+      "artist": "Robert Plant",
+      "title": "Now And Zen",
+      "releaseYear": "1988",
+      "label": "Es Paranza Records",
+      "format": "CD, Album, Club, BMG",
+      "changerSlot": "113"
+    },
+    {
+      "artist": "Russian Circles",
+      "title": "Station",
+      "releaseYear": "2008",
+      "label": "Suicide Squeeze",
+      "format": "CD, Album",
+      "changerSlot": "115"
+    },
+    {
+      "artist": "Sarah McLachlan",
+      "title": "Touch",
+      "releaseYear": "1989",
+      "label": "Arista, BMG Direct Marketing, Inc.",
+      "format": "CD, Album, Club",
+      "changerSlot": "147"
+    },
+    {
+      "artist": "Sarah McLachlan",
+      "title": "Surfacing",
+      "releaseYear": "1997",
+      "label": "Arista, Nettwerk",
+      "format": "CD, Album, Enh, Cin",
+      "changerSlot": "148"
+    },
+    {
+      "artist": "Sigur Rós",
+      "title": "( )",
+      "releaseYear": null,
+      "label": "MCA Records, FatCat Records, [PIAS] Recordings",
+      "format": "HDCD, Album, RE",
+      "changerSlot": "116"
+    },
+    {
+      "artist": "Sigur Rós",
+      "title": "Takk...",
+      "releaseYear": "2005",
+      "label": "EMI, EMI",
+      "format": "CD, Album",
+      "changerSlot": "117"
+    },
+    {
+      "artist": "Skee Mask",
+      "title": "Pool",
+      "releaseYear": "2021",
+      "label": "Ilian Tape",
+      "format": "18xFile, FLAC, Album",
+      "changerSlot": "163,164"
+    },
+    {
+      "artist": "Skee Mask",
+      "title": "Resort",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "172"
+    },
+    {
+      "artist": "Something Corporate",
+      "title": "Leaving Through The Window",
+      "releaseYear": "2002",
+      "label": "MCA Records, Drive-Thru Records",
+      "format": "CD, Album, UML",
+      "changerSlot": "118"
+    },
+    {
+      "artist": "Souper Salad",
+      "title": "Re-Mix",
+      "releaseYear": null,
+      "label": "Not On Label",
+      "format": "CDr, CD-ROM",
+      "changerSlot": "167"
+    },
+    {
+      "artist": "Squarepusher",
+      "title": "Ufabulum",
+      "releaseYear": "2012",
+      "label": "Warp Records",
+      "format": "CD, Album, Dig",
+      "changerSlot": "119"
+    },
+    {
+      "artist": "Squarepusher",
+      "title": "Ultravisitor",
+      "releaseYear": null,
+      "label": "Warp Records",
+      "format": "CD, Album, RP",
+      "changerSlot": "120"
+    },
+    {
+      "artist": "Stars Of The Lid",
+      "title": "Stars Of The Lid And Their Refinement Of The Decline",
+      "releaseYear": "2007",
+      "label": "Kranky, Kranky",
+      "format": "2xCD, Album",
+      "changerSlot": "121,122"
+    },
+    {
+      "artist": "Sufjan Stevens",
+      "title": "Greetings From Michigan The Great Lake State",
+      "releaseYear": "2003",
+      "label": "Spunk",
+      "format": "CD, Album",
+      "changerSlot": "123"
+    },
+    {
+      "artist": "The Almost",
+      "title": "Southern Weather",
+      "releaseYear": "2007",
+      "label": "Tooth & Nail Records, Virgin, EMI",
+      "format": "CD, Album",
+      "changerSlot": "3"
+    },
+    {
+      "artist": "The Deputies",
+      "title": "Lonely Man",
+      "releaseYear": "2011",
+      "label": "Pirate Ship Studios",
+      "format": "CD-ROM, Album",
+      "changerSlot": "168"
+    },
+    {
+      "artist": "The Detroit Cobras",
+      "title": "Life, Love And Leaving",
+      "releaseYear": "2001",
+      "label": "Sympathy For The Record Industry",
+      "format": "CD, Album",
+      "changerSlot": "49"
+    },
+    {
+      "artist": "The Flashbulb",
+      "title": "Hardscrabble",
+      "releaseYear": "2012",
+      "label": "Alphabasic",
+      "format": "CD, Album, Dig",
+      "changerSlot": "61"
+    },
+    {
+      "artist": "The Flashbulb",
+      "title": "Love As A Dark Hallway",
+      "releaseYear": "2011",
+      "label": "Alphabasic",
+      "format": "CD, Album, Dig",
+      "changerSlot": "62"
+    },
+    {
+      "artist": "The Flashbulb",
+      "title": "Piety Of Ashes",
+      "releaseYear": "2017",
+      "label": "Alphabasic",
+      "format": "CD, Album, Dig",
+      "changerSlot": "63"
+    },
+    {
+      "artist": "The Flashbulb",
+      "title": "Arboreal",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "53"
+    },
+    {
+      "artist": "The Grateful Dead",
+      "title": "Without A Net",
+      "releaseYear": "1990",
+      "label": "Arista",
+      "format": "2xCD, Album",
+      "changerSlot": "72,73"
+    },
+    {
+      "artist": "The Octopus Project",
+      "title": "Hello, Avalanche",
+      "releaseYear": "2007",
+      "label": "Peek-A-Boo Records (2)",
+      "format": "CD, Album",
+      "changerSlot": "93"
+    },
+    {
+      "artist": "The Rocket Summer",
+      "title": "Do You Feel",
+      "releaseYear": "2007",
+      "label": "Island Records",
+      "format": "CD, Album",
+      "changerSlot": "114"
+    },
+    {
+      "artist": "The Thrills",
+      "title": "So Much For The City",
+      "releaseYear": "2003",
+      "label": "Virgin, Virgin",
+      "format": "CD, Album",
+      "changerSlot": "125"
+    },
+    {
+      "artist": "The Tuss",
+      "title": "Rushup Edge",
+      "releaseYear": "2017",
+      "label": "Rephlex",
+      "format": "13xFile, FLAC, EP",
+      "changerSlot": "169"
+    },
+    {
+      "artist": "Third Eye Blind",
+      "title": "Third Eye Blind",
+      "releaseYear": "1997",
+      "label": "Elektra",
+      "format": "CD, Album",
+      "changerSlot": "124"
+    },
+    {
+      "artist": "Toby Keith",
+      "title": "Greatest Hits 2",
+      "releaseYear": "2004",
+      "label": "DreamWorks Records",
+      "format": "HDCD, Comp",
+      "changerSlot": "153"
+    },
+    {
+      "artist": "Tortoise",
+      "title": "Millions Now Living Will Never Die",
+      "releaseYear": "1996",
+      "label": "Thrill Jockey",
+      "format": "CD, Album, Dig",
+      "changerSlot": "126"
+    },
+    {
+      "artist": "Tortoise",
+      "title": "TNT",
+      "releaseYear": null,
+      "label": "Motor Music (4)",
+      "format": "CD, Album",
+      "changerSlot": "127"
+    },
+    {
+      "artist": "Tracy Chapman",
+      "title": "Tracy Chapman",
+      "releaseYear": "1988",
+      "label": "Elektra",
+      "format": "CD, Album, SRC",
+      "changerSlot": "128"
+    },
+    {
+      "artist": "Various",
+      "title": "Beethoven At Bedtime • A Gentle Prelude To Sleep",
+      "releaseYear": "1995",
+      "label": "Philips",
+      "format": "CD, Comp, PMD",
+      "changerSlot": "129"
+    },
+    {
+      "artist": "Various",
+      "title": "O Brother, Where Art Thou?",
+      "releaseYear": "2000",
+      "label": "Mercury",
+      "format": "CD, Comp, Enh",
+      "changerSlot": "134"
+    },
+    {
+      "artist": "Various",
+      "title": "Recline: A Six Degrees Collection Of Chilled Grooves",
+      "releaseYear": "2002",
+      "label": "Six Degrees Records",
+      "format": "CD, Comp",
+      "changerSlot": "135"
+    },
+    {
+      "artist": "Various",
+      "title": "The Rough Guide To The Asian Underground",
+      "releaseYear": "2003",
+      "label": "World Music Network, Music Rough Guides",
+      "format": "CD, Comp",
+      "changerSlot": "136"
+    },
+    {
+      "artist": "Various",
+      "title": "Verve // Remixed²",
+      "releaseYear": "2003",
+      "label": "Verve Records",
+      "format": "CD, Comp, Jew",
+      "changerSlot": "137"
+    },
+    {
+      "artist": "Various",
+      "title": "Charlie's Angels (Music From The Motion Picture)",
+      "releaseYear": "2000",
+      "label": "Columbia, Sony Music Soundtrax",
+      "format": "CD, Comp, Son",
+      "changerSlot": "151"
+    },
+    {
+      "artist": "Various",
+      "title": "Putumayo Presents - Paris Café",
+      "releaseYear": "2019",
+      "label": "Putumayo World Music",
+      "format": "CD, Album",
+      "changerSlot": "157"
+    },
+    {
+      "artist": "Various",
+      "title": "American Idol Greatest Moments",
+      "releaseYear": "2002",
+      "label": "RCA, RCA, RCA",
+      "format": "CD, Album",
+      "changerSlot": "159"
+    },
+    {
+      "artist": "Various",
+      "title": "Crimebusters + Crossed Wires: Stories From \"This American Life\"",
+      "releaseYear": "2003",
+      "label": "Shout! Factory",
+      "format": "2xCD, Comp",
+      "changerSlot": "130,131"
+    },
+    {
+      "artist": "Various",
+      "title": "I Love Paris - The Fashion Chillout Lounge Collection",
+      "releaseYear": "2002",
+      "label": "Water Music Records",
+      "format": "2xCD, Comp",
+      "changerSlot": "132,133"
+    },
+    {
+      "artist": "Venetian Snares",
+      "title": "Traditional Synthesizer Music",
+      "releaseYear": "2016",
+      "label": "Timesig, Timesig",
+      "format": "CD, Album + CDr, Album, Ltd",
+      "changerSlot": "138"
+    },
+    {
+      "artist": "Venetian Snares",
+      "title": "Traditional Synthesizer Music (Bonus Disc/Alternate takes)",
+      "releaseYear": "2016",
+      "label": "Timesig, Timesig",
+      "format": "CD, Album + CDr, Album, Ltd",
+      "changerSlot": "146"
+    },
+    {
+      "artist": "Weezer",
+      "title": "Weezer (Blue Album)",
+      "releaseYear": null,
+      "label": "DGC",
+      "format": "CD, Album, RE, Son",
+      "changerSlot": "139"
+    },
+    {
+      "artist": "Wireless Green",
+      "title": "Wireless Green",
+      "releaseYear": "1998",
+      "label": "Wireless Green Music",
+      "format": "CD-ROM, Album",
+      "changerSlot": "171"
+    },
+    {
+      "artist": "Wisp",
+      "title": "NRTHNDR",
+      "releaseYear": "2005",
+      "label": "Sublight Records",
+      "format": "CD, Album",
+      "changerSlot": "170"
+    },
+    {
+      "artist": "Tim Hecker",
+      "title": "Harmony in Ultraviolet",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "180"
+    },
+    {
+      "artist": "Flying Lotus",
+      "title": "Los Angeles",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "181"
+    },
+    {
+      "artist": "Boards of Canada",
+      "title": "Inferno",
+      "releaseYear": null,
+      "label": null,
+      "format": null,
+      "changerSlot": "182"
+    }
+  ]
+}
