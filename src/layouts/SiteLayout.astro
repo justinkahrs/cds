@@ -54,9 +54,19 @@ const {
 
 <script>
 	for (const image of document.querySelectorAll<HTMLImageElement>('[data-cover]')) {
-		image.addEventListener('error', () => {
+		const frame = image.closest('.cover-frame');
+		const showFallback = () => {
 			image.hidden = true;
-			image.closest('.cover-frame')?.classList.add('cover-frame--missing');
-		});
+			frame?.classList.remove('cover-frame--ready');
+			frame?.classList.add('cover-frame--missing');
+		};
+
+		image.addEventListener('load', () => frame?.classList.add('cover-frame--ready'), { once: true });
+		image.addEventListener('error', showFallback, { once: true });
+
+		if (image.complete) {
+			if (image.naturalWidth > 0) frame?.classList.add('cover-frame--ready');
+			else showFallback();
+		}
 	}
 </script>
