@@ -6,7 +6,10 @@
       "releaseYear": "2005",
       "label": "Monotreme Records",
       "format": "CD, Album",
-      "changerSlot": "1"
+      "changerSlot": "1",
+      "discogsReleaseId": "535294",
+      "discogsArtistUrl": "https://www.discogs.com/artist/177545",
+      "musicBrainzReleaseGroupId": "bb2fb79a-5235-37a7-81e1-9af3b3d05b22"
     },
     {
       "artist": "Adele",
@@ -14,7 +17,9 @@
       "releaseYear": "2008",
       "label": "XL Recordings, Columbia",
       "format": "CD, Album, RP, Ter",
-      "changerSlot": "2"
+      "changerSlot": "2",
+      "discogsReleaseId": "2616296",
+      "discogsArtistUrl": "https://www.discogs.com/artist/819015"
     },
     {
       "artist": "Alanis Morissette",
@@ -22,7 +27,10 @@
       "releaseYear": "1995",
       "label": "Maverick, Reprise Records",
       "format": "CD, Album",
-      "changerSlot": "140"
+      "changerSlot": "140",
+      "discogsReleaseId": "443973",
+      "discogsArtistUrl": "https://www.discogs.com/artist/102789",
+      "musicBrainzReleaseGroupId": "ee3d18ed-d6a8-37c7-a964-41bbdb6d59f1"
     },
     {
       "artist": "Alvvays",
@@ -30,7 +38,10 @@
       "releaseYear": "2014",
       "label": "Polyvinyl Record Company",
       "format": "CD, Album",
-      "changerSlot": "4"
+      "changerSlot": "4",
+      "discogsReleaseId": "15744444",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3543546",
+      "musicBrainzReleaseGroupId": "6e53a449-47b8-46e9-be4d-d818d3d64d70"
     },
     {
       "artist": "Alvvays",
@@ -38,7 +49,10 @@
       "releaseYear": "2017",
       "label": "Royal Mountain Records",
       "format": "CD, Album",
-      "changerSlot": "142"
+      "changerSlot": "142",
+      "discogsReleaseId": "10881843",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3543546",
+      "musicBrainzReleaseGroupId": "1f0a3090-ae8c-4fbd-9b70-b4371961ef11"
     },
     {
       "artist": "Amanaska",
@@ -46,7 +60,10 @@
       "releaseYear": "2003",
       "label": "One World Music, New World Music",
       "format": "CD, Album",
-      "changerSlot": "5"
+      "changerSlot": "5",
+      "discogsReleaseId": "9847316",
+      "discogsArtistUrl": "https://www.discogs.com/artist/240854",
+      "musicBrainzReleaseGroupId": "5ee42bbf-9dc2-4dc7-a30a-60f21988eb1b"
     },
     {
       "artist": "Angel Olsen",
@@ -54,7 +71,10 @@
       "releaseYear": "2016",
       "label": "Jagjaguwar",
       "format": "CD, Album",
-      "changerSlot": "6"
+      "changerSlot": "6",
+      "discogsReleaseId": "8976373",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1759402",
+      "musicBrainzReleaseGroupId": "c9db1003-a83a-49b7-b04c-237e05260969"
     },
     {
       "artist": "Aphex Twin",
@@ -62,7 +82,9 @@
       "releaseYear": "1995",
       "label": "Warp Records, Sire",
       "format": "CD, Album, SRC",
-      "changerSlot": "7"
+      "changerSlot": "7",
+      "discogsReleaseId": "5103268",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45"
     },
     {
       "artist": "Aphex Twin",
@@ -70,7 +92,10 @@
       "releaseYear": "2023",
       "label": "Warp Records",
       "format": "CD, EP",
-      "changerSlot": "8"
+      "changerSlot": "8",
+      "discogsReleaseId": "27808689",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "ae8ff3af-5064-4389-b67e-6b418853d2a5"
     },
     {
       "artist": "Aphex Twin",
@@ -78,7 +103,10 @@
       "releaseYear": "2016",
       "label": "Warp Records",
       "format": "CD, EP",
-      "changerSlot": "9"
+      "changerSlot": "9",
+      "discogsReleaseId": "8743886",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "cb1471c0-80b3-4087-9a8b-7b0d94157168"
     },
     {
       "artist": "Aphex Twin",
@@ -86,7 +114,10 @@
       "releaseYear": "2018",
       "label": "Warp Records",
       "format": "CD, EP",
-      "changerSlot": "10"
+      "changerSlot": "10",
+      "discogsReleaseId": "12510263",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "8b54ee8d-2ac9-48b2-a06a-0282d86c8d96"
     },
     {
       "artist": "Aphex Twin",
@@ -94,7 +125,9 @@
       "releaseYear": "1997",
       "label": "Sire, Warp Records",
       "format": "CD, Album",
-      "changerSlot": "13"
+      "changerSlot": "13",
+      "discogsReleaseId": "27813900",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45"
     },
     {
       "artist": "Aphex Twin",
@@ -102,7 +135,10 @@
       "releaseYear": "1992",
       "label": "Apollo, Apollo",
       "format": "CD, Album",
-      "changerSlot": "14"
+      "changerSlot": "14",
+      "discogsReleaseId": "1545313",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "6842c81d-ea77-3dfd-abf7-4323add3f4d4"
     },
     {
       "artist": "Aphex Twin",
@@ -110,7 +146,8 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "173,174,175"
+      "changerSlot": "173,174,175",
+      "musicBrainzReleaseGroupId": "0e7a233f-81f8-3e63-ad07-6cdfe2faecc3"
     },
     {
       "artist": "Aphex Twin",
@@ -118,7 +155,10 @@
       "releaseYear": "2014",
       "label": "Warp Records",
       "format": "CD, Album",
-      "changerSlot": "15"
+      "changerSlot": "15",
+      "discogsReleaseId": "6112678",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb"
     },
     {
       "artist": "Aphex Twin",
@@ -126,7 +166,10 @@
       "releaseYear": "2001",
       "label": "Sire, Warp Records",
       "format": "2xCD, Album",
-      "changerSlot": "11,12"
+      "changerSlot": "11,12",
+      "discogsReleaseId": "41386",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45",
+      "musicBrainzReleaseGroupId": "87f1a316-510f-36c3-9f2c-38230b0e56e0"
     },
     {
       "artist": "Audioslave",
@@ -134,7 +177,9 @@
       "releaseYear": "2002",
       "label": "Epic",
       "format": "CD, Album",
-      "changerSlot": "155"
+      "changerSlot": "155",
+      "discogsReleaseId": "26380739",
+      "discogsArtistUrl": "https://www.discogs.com/artist/252455"
     },
     {
       "artist": "Autechre",
@@ -142,7 +187,10 @@
       "releaseYear": "1994",
       "label": "Warp Records, MDS",
       "format": "CD, Album",
-      "changerSlot": "16"
+      "changerSlot": "16",
+      "discogsReleaseId": "25649635",
+      "discogsArtistUrl": "https://www.discogs.com/artist/41",
+      "musicBrainzReleaseGroupId": "44818c20-67ee-37d2-a8bf-d157fd99ae0b"
     },
     {
       "artist": "Autechre",
@@ -150,7 +198,9 @@
       "releaseYear": "2020",
       "label": "Warp Records",
       "format": "CD, Album",
-      "changerSlot": "17"
+      "changerSlot": "17",
+      "discogsReleaseId": "16245296",
+      "discogsArtistUrl": "https://www.discogs.com/artist/41"
     },
     {
       "artist": "Autechre",
@@ -158,7 +208,10 @@
       "releaseYear": "2020",
       "label": "Warp Records, Warp Records",
       "format": "CD, Album",
-      "changerSlot": "18"
+      "changerSlot": "18",
+      "discogsReleaseId": "16063776",
+      "discogsArtistUrl": "https://www.discogs.com/artist/41",
+      "musicBrainzReleaseGroupId": "e436019a-a22d-45af-a396-66cc9c38460c"
     },
     {
       "artist": "Autechre",
@@ -166,7 +219,10 @@
       "releaseYear": "1995",
       "label": "Warp Records",
       "format": "2xCD, Album",
-      "changerSlot": "19,20"
+      "changerSlot": "19,20",
+      "discogsReleaseId": "9597182",
+      "discogsArtistUrl": "https://www.discogs.com/artist/41",
+      "musicBrainzReleaseGroupId": "8b3d1836-e3cd-35eb-a8cd-d03d56bcc6f8"
     },
     {
       "artist": "Balmorhea",
@@ -174,7 +230,10 @@
       "releaseYear": "2012",
       "label": "Western Vinyl",
       "format": "CD, Album",
-      "changerSlot": "21"
+      "changerSlot": "21",
+      "discogsReleaseId": "3903258",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1126704",
+      "musicBrainzReleaseGroupId": "ef4c0c7b-2026-4a67-891e-33b2cba593ad"
     },
     {
       "artist": "Beach House",
@@ -182,7 +241,10 @@
       "releaseYear": "2015",
       "label": "Sub Pop",
       "format": "CD, Album",
-      "changerSlot": "22"
+      "changerSlot": "22",
+      "discogsReleaseId": "7374298",
+      "discogsArtistUrl": "https://www.discogs.com/artist/592308",
+      "musicBrainzReleaseGroupId": "da216e7b-9ce3-4347-8f59-bc758dca2da1"
     },
     {
       "artist": "Big Thief",
@@ -190,7 +252,10 @@
       "releaseYear": "2017",
       "label": "Saddle Creek",
       "format": "CD, Album",
-      "changerSlot": "23"
+      "changerSlot": "23",
+      "discogsReleaseId": "10448133",
+      "discogsArtistUrl": "https://www.discogs.com/artist/5009441",
+      "musicBrainzReleaseGroupId": "3fd9b616-15ec-4a3d-81df-866bd9942202"
     },
     {
       "artist": "Big Thief",
@@ -198,7 +263,9 @@
       "releaseYear": "2019",
       "label": "4AD",
       "format": "CD, Album",
-      "changerSlot": "24"
+      "changerSlot": "24",
+      "discogsReleaseId": "14250924",
+      "discogsArtistUrl": "https://www.discogs.com/artist/5009441"
     },
     {
       "artist": "Black Sabbath",
@@ -206,7 +273,9 @@
       "releaseYear": null,
       "label": "Warner Bros. Records",
       "format": "CD, Album, RE",
-      "changerSlot": "141"
+      "changerSlot": "141",
+      "discogsReleaseId": "8482439",
+      "discogsArtistUrl": "https://www.discogs.com/artist/144998"
     },
     {
       "artist": "Boards Of Canada",
@@ -214,7 +283,10 @@
       "releaseYear": "2002",
       "label": "Warp Records, Music70",
       "format": "CD, Album",
-      "changerSlot": "25"
+      "changerSlot": "25",
+      "discogsReleaseId": "24432",
+      "discogsArtistUrl": "https://www.discogs.com/artist/307",
+      "musicBrainzReleaseGroupId": "8183834a-6c8a-39ef-a7bc-a82f79b929e9"
     },
     {
       "artist": "Boards Of Canada",
@@ -222,7 +294,10 @@
       "releaseYear": "2001",
       "label": "Matador (11)",
       "format": "CD, Album, MP, Unofficial",
-      "changerSlot": "26"
+      "changerSlot": "26",
+      "discogsReleaseId": "4228594",
+      "discogsArtistUrl": "https://www.discogs.com/artist/307",
+      "musicBrainzReleaseGroupId": "17d74d52-c92b-3b8d-9f87-218ab2d1c4a0"
     },
     {
       "artist": "Boards Of Canada",
@@ -230,7 +305,9 @@
       "releaseYear": "2005",
       "label": "Warp Records, Music70",
       "format": "CD, Album, Dig",
-      "changerSlot": "27"
+      "changerSlot": "27",
+      "discogsReleaseId": "541843",
+      "discogsArtistUrl": "https://www.discogs.com/artist/307"
     },
     {
       "artist": "Boards Of Canada",
@@ -238,7 +315,10 @@
       "releaseYear": "2013",
       "label": "Warp Records, Music70",
       "format": "CD, Album, Dig",
-      "changerSlot": "28"
+      "changerSlot": "28",
+      "discogsReleaseId": "4647244",
+      "discogsArtistUrl": "https://www.discogs.com/artist/307",
+      "musicBrainzReleaseGroupId": "77d7c506-8d47-4d68-9615-f25db638bbea"
     },
     {
       "artist": "Bonobo",
@@ -246,7 +326,10 @@
       "releaseYear": "2010",
       "label": "Ninja Tune",
       "format": "CD, Album",
-      "changerSlot": "29"
+      "changerSlot": "29",
+      "discogsReleaseId": "9496852",
+      "discogsArtistUrl": "https://www.discogs.com/artist/8708",
+      "musicBrainzReleaseGroupId": "f382cd44-9195-46ce-9362-dadbe16cefe9"
     },
     {
       "artist": "Bonobo",
@@ -254,7 +337,10 @@
       "releaseYear": "2006",
       "label": "Ninja Tune",
       "format": "2xCD, Album",
-      "changerSlot": "30,31"
+      "changerSlot": "30,31",
+      "discogsReleaseId": "790541",
+      "discogsArtistUrl": "https://www.discogs.com/artist/8708",
+      "musicBrainzReleaseGroupId": "32f2a529-448a-3868-963d-7b42b003b9cd"
     },
     {
       "artist": "Brad Paisley",
@@ -262,7 +348,10 @@
       "releaseYear": null,
       "label": "Arista Nashville",
       "format": "HDCD, Album, RP",
-      "changerSlot": "32"
+      "changerSlot": "32",
+      "discogsReleaseId": "19613989",
+      "discogsArtistUrl": "https://www.discogs.com/artist/313755",
+      "musicBrainzReleaseGroupId": "126f55a1-4c6c-3af3-9caa-a331664e34d8"
     },
     {
       "artist": "Brian Eno - David Byrne",
@@ -270,7 +359,9 @@
       "releaseYear": null,
       "label": "Sire (2), Warner Bros. Records (2)",
       "format": "CD, Album, RE, Unofficial",
-      "changerSlot": "33"
+      "changerSlot": "33",
+      "discogsReleaseId": "9975150",
+      "discogsArtistUrl": "https://www.discogs.com/artist/634"
     },
     {
       "artist": "Carrie Underwood",
@@ -278,7 +369,9 @@
       "releaseYear": "2005",
       "label": "19 Recordings, Arista Nashville, Arista",
       "format": "CD, Album",
-      "changerSlot": "34"
+      "changerSlot": "34",
+      "discogsReleaseId": "12203654",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1011680"
     },
     {
       "artist": "Cat Power",
@@ -286,7 +379,10 @@
       "releaseYear": "2003",
       "label": "Matador",
       "format": "CD, Album, Jew",
-      "changerSlot": "35"
+      "changerSlot": "35",
+      "discogsReleaseId": "25665343",
+      "discogsArtistUrl": "https://www.discogs.com/artist/103195",
+      "musicBrainzReleaseGroupId": "b24234fc-1afd-34df-9c42-92cb51cc0a36"
     },
     {
       "artist": "Céline Dion",
@@ -294,7 +390,9 @@
       "releaseYear": "2003",
       "label": "Epic, Epic",
       "format": "CD, Album",
-      "changerSlot": "156"
+      "changerSlot": "156",
+      "discogsReleaseId": "3566267",
+      "discogsArtistUrl": "https://www.discogs.com/artist/19298"
     },
     {
       "artist": "Christina Aguilera",
@@ -302,7 +400,10 @@
       "releaseYear": "1999",
       "label": "RCA",
       "format": "CD, Album",
-      "changerSlot": "158"
+      "changerSlot": "158",
+      "discogsReleaseId": "501495",
+      "discogsArtistUrl": "https://www.discogs.com/artist/77855",
+      "musicBrainzReleaseGroupId": "6f47450a-6f77-3af2-80bb-4e7012c07180"
     },
     {
       "artist": "Chvrches",
@@ -310,7 +411,10 @@
       "releaseYear": "2013",
       "label": "Goodbye Records (2), Glassnote (2)",
       "format": "CD, Album",
-      "changerSlot": "162"
+      "changerSlot": "162",
+      "discogsReleaseId": "4941223",
+      "discogsArtistUrl": "https://www.discogs.com/artist/2953514",
+      "musicBrainzReleaseGroupId": "b2cbaa83-cb77-4961-8ca3-816b24e5204f"
     },
     {
       "artist": "Circa Survive",
@@ -318,7 +422,10 @@
       "releaseYear": "2017",
       "label": "Hopeless Records",
       "format": "CD, Album",
-      "changerSlot": "36"
+      "changerSlot": "36",
+      "discogsReleaseId": "10879909",
+      "discogsArtistUrl": "https://www.discogs.com/artist/866508",
+      "musicBrainzReleaseGroupId": "a539e666-de56-45d7-94bc-ad88b1a8393a"
     },
     {
       "artist": "Cocteau Twins",
@@ -326,7 +433,9 @@
       "releaseYear": "1990",
       "label": "Capitol Records, 4AD",
       "format": "CD, Album",
-      "changerSlot": "37"
+      "changerSlot": "37",
+      "discogsReleaseId": "12112983",
+      "discogsArtistUrl": "https://www.discogs.com/artist/12373"
     },
     {
       "artist": "Coheed And Cambria",
@@ -334,7 +443,9 @@
       "releaseYear": "2005",
       "label": "Columbia, Equal Vision Records",
       "format": "CD, Album",
-      "changerSlot": "38"
+      "changerSlot": "38",
+      "discogsReleaseId": "14920995",
+      "discogsArtistUrl": "https://www.discogs.com/artist/256629"
     },
     {
       "artist": "Coheed And Cambria",
@@ -342,7 +453,10 @@
       "releaseYear": "2002",
       "label": "Equal Vision Records",
       "format": "CD, Album",
-      "changerSlot": "39"
+      "changerSlot": "39",
+      "discogsReleaseId": "597126",
+      "discogsArtistUrl": "https://www.discogs.com/artist/256629",
+      "musicBrainzReleaseGroupId": "3298d33e-7d78-3cfe-b1f0-5122aab8b0a1"
     },
     {
       "artist": "Coheed And Cambria",
@@ -350,7 +464,9 @@
       "releaseYear": "2003",
       "label": "Equal Vision Records, Equal Vision Records",
       "format": "CD, Album, Sli",
-      "changerSlot": "143"
+      "changerSlot": "143",
+      "discogsReleaseId": "373609",
+      "discogsArtistUrl": "https://www.discogs.com/artist/256629"
     },
     {
       "artist": "Coldplay",
@@ -358,7 +474,10 @@
       "releaseYear": null,
       "label": "Capitol Records",
       "format": "CD, Album, RE, Cin",
-      "changerSlot": "40"
+      "changerSlot": "40",
+      "discogsReleaseId": "9832344",
+      "discogsArtistUrl": "https://www.discogs.com/artist/29735",
+      "musicBrainzReleaseGroupId": "120c786d-a3b2-3c19-b4ff-2b7b3b4435bf"
     },
     {
       "artist": "Coldplay",
@@ -366,7 +485,10 @@
       "releaseYear": "2005",
       "label": "Capitol Records",
       "format": "CD, Album, Cin",
-      "changerSlot": "41"
+      "changerSlot": "41",
+      "discogsReleaseId": "479908",
+      "discogsArtistUrl": "https://www.discogs.com/artist/29735",
+      "musicBrainzReleaseGroupId": "c50b180a-12c9-3153-8ba5-eac6a6537d6f"
     },
     {
       "artist": "Counting Crows",
@@ -374,7 +496,10 @@
       "releaseYear": "1993",
       "label": "DGC",
       "format": "CD, Album",
-      "changerSlot": "152"
+      "changerSlot": "152",
+      "discogsReleaseId": "382872",
+      "discogsArtistUrl": "https://www.discogs.com/artist/262643",
+      "musicBrainzReleaseGroupId": "7c2e8889-0050-3b1f-862f-60d1a8f2cf74"
     },
     {
       "artist": "Creed",
@@ -382,7 +507,10 @@
       "releaseYear": "1999",
       "label": "Wind-Up",
       "format": "CD, Album",
-      "changerSlot": "42"
+      "changerSlot": "42",
+      "discogsReleaseId": "1060967",
+      "discogsArtistUrl": "https://www.discogs.com/artist/261665",
+      "musicBrainzReleaseGroupId": "1e3d8943-22c1-39b1-9b7c-32f594e30db8"
     },
     {
       "artist": "D-Genre",
@@ -390,7 +518,9 @@
       "releaseYear": "2002",
       "label": "Rasā Music",
       "format": "CD, Album",
-      "changerSlot": "43"
+      "changerSlot": "43",
+      "discogsReleaseId": "1930932",
+      "discogsArtistUrl": "https://www.discogs.com/artist/227069"
     },
     {
       "artist": "Daft Punk",
@@ -398,7 +528,10 @@
       "releaseYear": "2001",
       "label": "Virgin",
       "format": "CD, Album, Club",
-      "changerSlot": "44"
+      "changerSlot": "44",
+      "discogsReleaseId": "2981342",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1289",
+      "musicBrainzReleaseGroupId": "48117b90-a16e-34ca-a514-19c702df1158"
     },
     {
       "artist": "Daft Punk",
@@ -406,7 +539,10 @@
       "releaseYear": "2013",
       "label": "Columbia",
       "format": "CD, Album",
-      "changerSlot": "45"
+      "changerSlot": "45",
+      "discogsReleaseId": "6279391",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1289",
+      "musicBrainzReleaseGroupId": "aa997ea0-2936-40bd-884d-3af8a0e064dc"
     },
     {
       "artist": "Damien Rice",
@@ -414,7 +550,10 @@
       "releaseYear": "2004",
       "label": "Vector Recordings, Warner Bros. Records, Damien Rice Music",
       "format": "CD, Comp",
-      "changerSlot": "46"
+      "changerSlot": "46",
+      "discogsReleaseId": "430429",
+      "discogsArtistUrl": "https://www.discogs.com/artist/257684",
+      "musicBrainzReleaseGroupId": "66210c3c-99b8-3fde-9d2c-e1b567e9959a"
     },
     {
       "artist": "Dashboard Confessional",
@@ -422,7 +561,10 @@
       "releaseYear": "2001",
       "label": "Vagrant Records",
       "format": "CD, Album",
-      "changerSlot": "47"
+      "changerSlot": "47",
+      "discogsReleaseId": "450691",
+      "discogsArtistUrl": "https://www.discogs.com/artist/83188",
+      "musicBrainzReleaseGroupId": "b797584c-8be6-3810-b5bc-2856d5a13cf1"
     },
     {
       "artist": "Dashboard Confessional",
@@ -430,7 +572,10 @@
       "releaseYear": "2000",
       "label": "Fiddler Records",
       "format": "CD, Album",
-      "changerSlot": "48"
+      "changerSlot": "48",
+      "discogsReleaseId": "11592135",
+      "discogsArtistUrl": "https://www.discogs.com/artist/83188",
+      "musicBrainzReleaseGroupId": "d8149856-3fc3-38ff-88b9-9aa83486cc0b"
     },
     {
       "artist": "Dixie Chicks",
@@ -438,7 +583,9 @@
       "releaseYear": "1999",
       "label": "Monument",
       "format": "HDCD, Album, Club",
-      "changerSlot": "144"
+      "changerSlot": "144",
+      "discogsReleaseId": "8487436",
+      "discogsArtistUrl": "https://www.discogs.com/artist/299586"
     },
     {
       "artist": "Dixie Chicks",
@@ -446,7 +593,10 @@
       "releaseYear": "2006",
       "label": "Open Wide, Columbia",
       "format": "CD, Album",
-      "changerSlot": "145"
+      "changerSlot": "145",
+      "discogsReleaseId": "15680004",
+      "discogsArtistUrl": "https://www.discogs.com/artist/299586",
+      "musicBrainzReleaseGroupId": "49359749-f558-3566-b72b-00c1b5a2e328"
     },
     {
       "artist": "dZihan & Kamien",
@@ -454,7 +604,10 @@
       "releaseYear": "2002",
       "label": "Six Degrees Records",
       "format": "CD, Album, Dig",
-      "changerSlot": "160"
+      "changerSlot": "160",
+      "discogsReleaseId": "58068",
+      "discogsArtistUrl": "https://www.discogs.com/artist/34185",
+      "musicBrainzReleaseGroupId": "b099a256-fd28-3b7a-96fd-3e9bc4258ca6"
     },
     {
       "artist": "Eagles",
@@ -462,7 +615,10 @@
       "releaseYear": "1994",
       "label": "Geffen Records, Virginia Records",
       "format": "CD, Album",
-      "changerSlot": "50"
+      "changerSlot": "50",
+      "discogsReleaseId": "4960917",
+      "discogsArtistUrl": "https://www.discogs.com/artist/255680",
+      "musicBrainzReleaseGroupId": "690132da-dcf0-3805-b4ed-b4ec4392ae01"
     },
     {
       "artist": "Eiffel 65",
@@ -470,7 +626,10 @@
       "releaseYear": "1999",
       "label": "Republic Records, Universal Records",
       "format": "CD, Album",
-      "changerSlot": "51"
+      "changerSlot": "51",
+      "discogsReleaseId": "322407",
+      "discogsArtistUrl": "https://www.discogs.com/artist/11149",
+      "musicBrainzReleaseGroupId": "6a119a29-599a-3982-a354-55474dd20d27"
     },
     {
       "artist": "Elliott Smith",
@@ -478,7 +637,10 @@
       "releaseYear": "2007",
       "label": "Kill Rock Stars",
       "format": "CD, Album",
-      "changerSlot": "52"
+      "changerSlot": "52",
+      "discogsReleaseId": "1165124",
+      "discogsArtistUrl": "https://www.discogs.com/artist/243300",
+      "musicBrainzReleaseGroupId": "313a9a34-e1f2-39d7-a17d-8fa69fac4fa6"
     },
     {
       "artist": "Eminem",
@@ -486,7 +648,9 @@
       "releaseYear": "2005",
       "label": "Interscope Records, Aftermath Entertainment",
       "format": "CD, Comp",
-      "changerSlot": "54"
+      "changerSlot": "54",
+      "discogsReleaseId": "8046125",
+      "discogsArtistUrl": "https://www.discogs.com/artist/38661"
     },
     {
       "artist": "Etta James",
@@ -494,7 +658,9 @@
       "releaseYear": "2001",
       "label": "Private Music",
       "format": "CD, Album",
-      "changerSlot": "55"
+      "changerSlot": "55",
+      "discogsReleaseId": "5930580",
+      "discogsArtistUrl": "https://www.discogs.com/artist/89660"
     },
     {
       "artist": "Evanescence",
@@ -502,7 +668,10 @@
       "releaseYear": null,
       "label": "Wind-Up",
       "format": "CD, Album, RE, Son",
-      "changerSlot": "56"
+      "changerSlot": "56",
+      "discogsReleaseId": "26686034",
+      "discogsArtistUrl": "https://www.discogs.com/artist/163505",
+      "musicBrainzReleaseGroupId": "2187d248-1a3b-35d0-a4ec-bead586ff547"
     },
     {
       "artist": "Explosions In The Sky",
@@ -510,7 +679,10 @@
       "releaseYear": "2005",
       "label": "Temporary Residence Limited",
       "format": "CD, Album, RE, RM",
-      "changerSlot": "57"
+      "changerSlot": "57",
+      "discogsReleaseId": "529445",
+      "discogsArtistUrl": "https://www.discogs.com/artist/190408",
+      "musicBrainzReleaseGroupId": "f8c03ad5-004b-373e-a64b-0aab8ae97b3c"
     },
     {
       "artist": "Explosions In The Sky",
@@ -518,7 +690,10 @@
       "releaseYear": "2016",
       "label": "Bella Union",
       "format": "CD, Album",
-      "changerSlot": "58"
+      "changerSlot": "58",
+      "discogsReleaseId": "8334176",
+      "discogsArtistUrl": "https://www.discogs.com/artist/190408",
+      "musicBrainzReleaseGroupId": "a43b86a6-9175-446c-bb33-8201eaff104c"
     },
     {
       "artist": "First Aid Kit",
@@ -526,7 +701,9 @@
       "releaseYear": "2014",
       "label": "Columbia",
       "format": "CD, Album",
-      "changerSlot": "60"
+      "changerSlot": "60",
+      "discogsReleaseId": "8034085",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1097350"
     },
     {
       "artist": "FKA Twigs",
@@ -534,7 +711,10 @@
       "releaseYear": "2016",
       "label": "Young Turks",
       "format": "CD, Album, RE",
-      "changerSlot": "59"
+      "changerSlot": "59",
+      "discogsReleaseId": "14392914",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3452157",
+      "musicBrainzReleaseGroupId": "c390b47b-71c0-461d-b563-e5344b4f84e5"
     },
     {
       "artist": "Flying Lotus",
@@ -542,7 +722,10 @@
       "releaseYear": "2012",
       "label": "Warp Records",
       "format": "CD, Album",
-      "changerSlot": "64"
+      "changerSlot": "64",
+      "discogsReleaseId": "3908225",
+      "discogsArtistUrl": "https://www.discogs.com/artist/365248",
+      "musicBrainzReleaseGroupId": "eb9e0983-2478-4494-a8e2-e4117c2ba40f"
     },
     {
       "artist": "Frank Sinatra",
@@ -550,7 +733,9 @@
       "releaseYear": null,
       "label": "Capitol Records, EMI Music Canada",
       "format": "CD, Comp",
-      "changerSlot": "65"
+      "changerSlot": "65",
+      "discogsReleaseId": "6599385",
+      "discogsArtistUrl": "https://www.discogs.com/artist/52833"
     },
     {
       "artist": "Gavin DeGraw",
@@ -558,7 +743,9 @@
       "releaseYear": "2003",
       "label": "J Records",
       "format": "CD, Album",
-      "changerSlot": "66"
+      "changerSlot": "66",
+      "discogsReleaseId": "620031",
+      "discogsArtistUrl": "https://www.discogs.com/artist/365558"
     },
     {
       "artist": "Gavin DeGraw",
@@ -566,7 +753,10 @@
       "releaseYear": "2008",
       "label": "J Records",
       "format": "CD, Album, Enh",
-      "changerSlot": "67"
+      "changerSlot": "67",
+      "discogsReleaseId": "1344325",
+      "discogsArtistUrl": "https://www.discogs.com/artist/365558",
+      "musicBrainzReleaseGroupId": "0875c3fe-f94e-3161-8c92-cf683c167931"
     },
     {
       "artist": "God Is An Astronaut",
@@ -574,7 +764,10 @@
       "releaseYear": "2006",
       "label": "Revive Records",
       "format": "CD, EP",
-      "changerSlot": "68"
+      "changerSlot": "68",
+      "discogsReleaseId": "624388",
+      "discogsArtistUrl": "https://www.discogs.com/artist/257289",
+      "musicBrainzReleaseGroupId": "eb127fed-f88b-3afe-b547-4e4103c88b02"
     },
     {
       "artist": "Godspeed You Black Emperor!",
@@ -582,7 +775,10 @@
       "releaseYear": "1998",
       "label": "Kranky",
       "format": "CD, Album, RE, RM",
-      "changerSlot": "69"
+      "changerSlot": "69",
+      "discogsReleaseId": "7063224",
+      "discogsArtistUrl": "https://www.discogs.com/artist/280442",
+      "musicBrainzReleaseGroupId": "01d06c6e-a4e6-3d8b-8a45-42a598fe87d7"
     },
     {
       "artist": "Gojira (2)",
@@ -590,7 +786,9 @@
       "releaseYear": null,
       "label": "Roadrunner Records",
       "format": "CD, Album",
-      "changerSlot": "70"
+      "changerSlot": "70",
+      "discogsReleaseId": "18714625",
+      "discogsArtistUrl": "https://www.discogs.com/artist/395130"
     },
     {
       "artist": "Goo Goo Dolls",
@@ -598,7 +796,9 @@
       "releaseYear": "1998",
       "label": "Warner Bros. Records",
       "format": "CD, Album",
-      "changerSlot": "71"
+      "changerSlot": "71",
+      "discogsReleaseId": "16282865",
+      "discogsArtistUrl": "https://www.discogs.com/artist/252661"
     },
     {
       "artist": "Grease",
@@ -614,7 +814,10 @@
       "releaseYear": "2008",
       "label": "Vanguard",
       "format": "CD, Album",
-      "changerSlot": "74"
+      "changerSlot": "74",
+      "discogsReleaseId": "2755548",
+      "discogsArtistUrl": "https://www.discogs.com/artist/732368",
+      "musicBrainzReleaseGroupId": "8f9ea13f-3415-35fe-bd28-61f195aeb1ae"
     },
     {
       "artist": "Howard Shore",
@@ -622,7 +825,10 @@
       "releaseYear": "2003",
       "label": "Reprise Records, Warner Music Group Soundtracks, New Line Records",
       "format": "CD, Album, Enh",
-      "changerSlot": "75"
+      "changerSlot": "75",
+      "discogsReleaseId": "728620",
+      "discogsArtistUrl": "https://www.discogs.com/artist/102211",
+      "musicBrainzReleaseGroupId": "f5fd971c-a1a2-33da-95b0-473e0176df83"
     },
     {
       "artist": "Imogen Heap",
@@ -630,7 +836,10 @@
       "releaseYear": "2005",
       "label": "RCA Victor, Megaphonic Records",
       "format": "CD, Album, RE",
-      "changerSlot": "76"
+      "changerSlot": "76",
+      "discogsReleaseId": "634625",
+      "discogsArtistUrl": "https://www.discogs.com/artist/82224",
+      "musicBrainzReleaseGroupId": "a100260d-0576-372f-a07b-4b22db1a77e2"
     },
     {
       "artist": "Inventions",
@@ -638,7 +847,9 @@
       "releaseYear": "2014",
       "label": "Temporary Residence Limited",
       "format": "CD, Album",
-      "changerSlot": "77"
+      "changerSlot": "77",
+      "discogsReleaseId": "5621176",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3764336"
     },
     {
       "artist": "Jewel",
@@ -646,7 +857,10 @@
       "releaseYear": "1995",
       "label": "Atlantic",
       "format": "CD, Album",
-      "changerSlot": "78"
+      "changerSlot": "78",
+      "discogsReleaseId": "370508",
+      "discogsArtistUrl": "https://www.discogs.com/artist/106201",
+      "musicBrainzReleaseGroupId": "6429018a-ead6-3071-969e-ebc575ac1765"
     },
     {
       "artist": "Joe Hertler & The Rainbow Seekers",
@@ -654,7 +868,10 @@
       "releaseYear": "2011",
       "label": "Lower Peninsula Records",
       "format": "LP, Album",
-      "changerSlot": "79"
+      "changerSlot": "79",
+      "discogsReleaseId": "4131193",
+      "discogsArtistUrl": "https://www.discogs.com/artist/6367683",
+      "musicBrainzReleaseGroupId": "cbd6e1af-9cb7-4bfb-9bae-b7611a3efdf9"
     },
     {
       "artist": "John Mayer",
@@ -662,7 +879,10 @@
       "releaseYear": "2006",
       "label": "Columbia, Aware Records",
       "format": "CD, Album",
-      "changerSlot": "80"
+      "changerSlot": "80",
+      "discogsReleaseId": "803634",
+      "discogsArtistUrl": "https://www.discogs.com/artist/254479",
+      "musicBrainzReleaseGroupId": "21e886f7-db66-3103-beb4-da9323adddc7"
     },
     {
       "artist": "John Mayer",
@@ -670,7 +890,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "179"
+      "changerSlot": "179",
+      "discogsArtistUrl": "https://www.discogs.com/artist/254479",
+      "musicBrainzReleaseGroupId": "0e2e1f1d-57d7-377e-820c-f846bff80b24"
     },
     {
       "artist": "John Williams, The Boston Pops Orchestra",
@@ -686,7 +908,10 @@
       "releaseYear": "2013",
       "label": "Domino",
       "format": "CD, Album",
-      "changerSlot": "81"
+      "changerSlot": "81",
+      "discogsReleaseId": "4625843",
+      "discogsArtistUrl": "https://www.discogs.com/artist/24056",
+      "musicBrainzReleaseGroupId": "1c58a37a-24dc-493d-a40e-227ba1523d35"
     },
     {
       "artist": "Justin Timberlake",
@@ -694,7 +919,10 @@
       "releaseYear": "2002",
       "label": "Jive",
       "format": "CD, Album",
-      "changerSlot": "82"
+      "changerSlot": "82",
+      "discogsReleaseId": "235513",
+      "discogsArtistUrl": "https://www.discogs.com/artist/66824",
+      "musicBrainzReleaseGroupId": "424620c6-e416-3ce8-bfcc-d5c59952456d"
     },
     {
       "artist": "Kenny Chesney",
@@ -702,7 +930,10 @@
       "releaseYear": "2003",
       "label": "BNA Records Label",
       "format": "HDCD, Album",
-      "changerSlot": "150"
+      "changerSlot": "150",
+      "discogsReleaseId": "2594088",
+      "discogsArtistUrl": "https://www.discogs.com/artist/268072",
+      "musicBrainzReleaseGroupId": "ff789a0e-1582-32b4-9397-4808fb9d4160"
     },
     {
       "artist": "Lipstick",
@@ -710,7 +941,9 @@
       "releaseYear": "2023",
       "label": "LipstickBB",
       "format": "LP",
-      "changerSlot": "165"
+      "changerSlot": "165",
+      "discogsReleaseId": "28352734",
+      "discogsArtistUrl": "https://www.discogs.com/artist/13546879"
     },
     {
       "artist": "Lynyrd Skynyrd",
@@ -718,7 +951,10 @@
       "releaseYear": null,
       "label": "MCA Records",
       "format": "CD, Comp, RE, RM",
-      "changerSlot": "83"
+      "changerSlot": "83",
+      "discogsReleaseId": "13496506",
+      "discogsArtistUrl": "https://www.discogs.com/artist/261760",
+      "musicBrainzReleaseGroupId": "1020fca4-f7af-31e0-8809-75a19883efa9"
     },
     {
       "artist": "Missy Elliott",
@@ -726,7 +962,10 @@
       "releaseYear": "2002",
       "label": "Elektra, The Goldmind, Inc.",
       "format": "CD, Album, Enh",
-      "changerSlot": "154"
+      "changerSlot": "154",
+      "discogsReleaseId": "251500",
+      "discogsArtistUrl": "https://www.discogs.com/artist/26918",
+      "musicBrainzReleaseGroupId": "596090bc-cdfa-347e-96a5-d253848d3b37"
     },
     {
       "artist": "Modest Mouse",
@@ -734,7 +973,10 @@
       "releaseYear": "2004",
       "label": "Epic",
       "format": "CD, Album",
-      "changerSlot": "84"
+      "changerSlot": "84",
+      "discogsReleaseId": "2938247",
+      "discogsArtistUrl": "https://www.discogs.com/artist/187919",
+      "musicBrainzReleaseGroupId": "65b47520-2e58-3bc2-a755-34ff35f23ad5"
     },
     {
       "artist": "Mogwai",
@@ -742,7 +984,10 @@
       "releaseYear": null,
       "label": "Matador, Chemikal Underground",
       "format": "CD, Album",
-      "changerSlot": "85"
+      "changerSlot": "85",
+      "discogsReleaseId": "8773330",
+      "discogsArtistUrl": "https://www.discogs.com/artist/2813",
+      "musicBrainzReleaseGroupId": "68b9f75b-34b5-3228-9972-82efea767eca"
     },
     {
       "artist": "Mogwai",
@@ -750,7 +995,10 @@
       "releaseYear": "1997",
       "label": "Jetset Records",
       "format": "CD, Album",
-      "changerSlot": "86"
+      "changerSlot": "86",
+      "discogsReleaseId": "19445674",
+      "discogsArtistUrl": "https://www.discogs.com/artist/2813",
+      "musicBrainzReleaseGroupId": "8cc9da13-a1b3-3865-9587-a46f7599982f"
     },
     {
       "artist": "Mona Shores High School Choir",
@@ -758,7 +1006,9 @@
       "releaseYear": "2005",
       "label": "Not On Label",
       "format": "CD-ROM, Album",
-      "changerSlot": "166"
+      "changerSlot": "166",
+      "discogsReleaseId": "29146396",
+      "discogsArtistUrl": "https://www.discogs.com/artist/13876264"
     },
     {
       "artist": "Muse",
@@ -766,7 +1016,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "178"
+      "changerSlot": "178",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1003",
+      "musicBrainzReleaseGroupId": "6f151223-f3a3-3e57-810f-598f7897006c"
     },
     {
       "artist": "Muse",
@@ -774,7 +1026,10 @@
       "releaseYear": "2001",
       "label": "Taste Media, EastWest, Taste Media, EastWest",
       "format": "CD, Album",
-      "changerSlot": "87"
+      "changerSlot": "87",
+      "discogsReleaseId": "995174",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1003",
+      "musicBrainzReleaseGroupId": "ef03fe86-b54c-3667-8768-029833e7e1cd"
     },
     {
       "artist": "My Bloody Valentine",
@@ -782,7 +1037,10 @@
       "releaseYear": null,
       "label": "Sire, Warner Bros. Records, Creation Records",
       "format": "CD, Album, RE, Whi",
-      "changerSlot": "88"
+      "changerSlot": "88",
+      "discogsReleaseId": "6208809",
+      "discogsArtistUrl": "https://www.discogs.com/artist/6516",
+      "musicBrainzReleaseGroupId": "cb76227e-3ac0-3002-9a10-615a5b73cc59"
     },
     {
       "artist": "My Bloody Valentine",
@@ -790,7 +1048,9 @@
       "releaseYear": "2013",
       "label": "MBV Records (2)",
       "format": "LP, Album, Unofficial",
-      "changerSlot": "89"
+      "changerSlot": "89",
+      "discogsReleaseId": "4885998",
+      "discogsArtistUrl": "https://www.discogs.com/artist/6516"
     },
     {
       "artist": "Nappy Roots",
@@ -798,7 +1058,9 @@
       "releaseYear": "2001",
       "label": "The Atlantic Group",
       "format": "VHS, Promo",
-      "changerSlot": "161"
+      "changerSlot": "161",
+      "discogsReleaseId": "19683043",
+      "discogsArtistUrl": "https://www.discogs.com/artist/63978"
     },
     {
       "artist": "Nick Drake",
@@ -806,7 +1068,9 @@
       "releaseYear": null,
       "label": "Island Remasters, Island Records",
       "format": "CD, Album, RE, RM",
-      "changerSlot": "90"
+      "changerSlot": "90",
+      "discogsReleaseId": "6634089",
+      "discogsArtistUrl": "https://www.discogs.com/artist/28085"
     },
     {
       "artist": "No Doubt",
@@ -814,7 +1078,10 @@
       "releaseYear": "1995",
       "label": "Trauma Records (2), Interscope Records",
       "format": "CD, Album",
-      "changerSlot": "91"
+      "changerSlot": "91",
+      "discogsReleaseId": "3335140",
+      "discogsArtistUrl": "https://www.discogs.com/artist/83614",
+      "musicBrainzReleaseGroupId": "04b0b075-bed7-388b-b44b-cf34077ad96c"
     },
     {
       "artist": "Norah Jones",
@@ -822,7 +1089,10 @@
       "releaseYear": "2004",
       "label": "Blue Note, EMI",
       "format": "CD, Album, Enh,  Ci",
-      "changerSlot": "92"
+      "changerSlot": "92",
+      "discogsReleaseId": "13129856",
+      "discogsArtistUrl": "https://www.discogs.com/artist/147031",
+      "musicBrainzReleaseGroupId": "689db471-1647-3d0f-a6b8-2e776cf913e8"
     },
     {
       "artist": "Norah Jones",
@@ -830,7 +1100,10 @@
       "releaseYear": "2007",
       "label": "Blue Note, EMI",
       "format": "CD, Album",
-      "changerSlot": "149"
+      "changerSlot": "149",
+      "discogsReleaseId": "899935",
+      "discogsArtistUrl": "https://www.discogs.com/artist/147031",
+      "musicBrainzReleaseGroupId": "1155e2ce-f1b2-394a-b23a-22406c8782a3"
     },
     {
       "artist": "Oneohtrix Point Never",
@@ -838,7 +1111,10 @@
       "releaseYear": "2023",
       "label": "Warp Records",
       "format": "CD, Album",
-      "changerSlot": "94"
+      "changerSlot": "94",
+      "discogsReleaseId": "28439641",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1191704",
+      "musicBrainzReleaseGroupId": "f64a47eb-2ebe-4a2f-a9fc-10722449b477"
     },
     {
       "artist": "Oneohtrix Point Never",
@@ -846,7 +1122,10 @@
       "releaseYear": "2020",
       "label": "Warp Records",
       "format": "CD, Album",
-      "changerSlot": "95"
+      "changerSlot": "95",
+      "discogsReleaseId": "16149842",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1191704",
+      "musicBrainzReleaseGroupId": "1f87512e-c89f-46c8-9333-2451a7158e4c"
     },
     {
       "artist": "Oneohtrix Point Never",
@@ -854,7 +1133,10 @@
       "releaseYear": "2012",
       "label": "Software (2)",
       "format": "3xCD, Comp",
-      "changerSlot": "96,97,98"
+      "changerSlot": "96,97,98",
+      "discogsReleaseId": "9833310",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1191704",
+      "musicBrainzReleaseGroupId": "ab2ad003-4d77-4a71-a26e-b9f26bfc1f65"
     },
     {
       "artist": "Panic! At The Disco",
@@ -862,7 +1144,10 @@
       "releaseYear": "2005",
       "label": "Decaydance, Fueled By Ramen",
       "format": "CD, Album",
-      "changerSlot": "99"
+      "changerSlot": "99",
+      "discogsReleaseId": "9006215",
+      "discogsArtistUrl": "https://www.discogs.com/artist/553643",
+      "musicBrainzReleaseGroupId": "4c2e4e78-6b0f-3ca1-8131-06906e5b56e9"
     },
     {
       "artist": "Phil Collins, Mark Mancina",
@@ -870,7 +1155,9 @@
       "releaseYear": "1999",
       "label": "Walt Disney Records",
       "format": "CD, Album",
-      "changerSlot": "100"
+      "changerSlot": "100",
+      "discogsReleaseId": "8089409",
+      "discogsArtistUrl": "https://www.discogs.com/artist/101028"
     },
     {
       "artist": "Pink Floyd",
@@ -878,7 +1165,10 @@
       "releaseYear": "1984",
       "label": "Harvest",
       "format": "CD, Album, RE",
-      "changerSlot": "101"
+      "changerSlot": "101",
+      "discogsReleaseId": "11565067",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45467",
+      "musicBrainzReleaseGroupId": "f5093c06-23e3-404f-aeaa-40f72885ee3a"
     },
     {
       "artist": "Pink Floyd",
@@ -886,7 +1176,9 @@
       "releaseYear": "1986",
       "label": "Columbia",
       "format": "CD, Album, RE",
-      "changerSlot": "102"
+      "changerSlot": "102",
+      "discogsReleaseId": "6460525",
+      "discogsArtistUrl": "https://www.discogs.com/artist/45467"
     },
     {
       "artist": "R.E.M.",
@@ -894,7 +1186,10 @@
       "releaseYear": "1991",
       "label": "Warner Bros. Records",
       "format": "CD, Album, ARC",
-      "changerSlot": "103"
+      "changerSlot": "103",
+      "discogsReleaseId": "6671650",
+      "discogsArtistUrl": "https://www.discogs.com/artist/74500",
+      "musicBrainzReleaseGroupId": "400a5fdd-e616-3598-a9bf-cd8275cb53d0"
     },
     {
       "artist": "Radiohead",
@@ -902,7 +1197,10 @@
       "releaseYear": "2016",
       "label": "XL Recordings",
       "format": "CD, Album",
-      "changerSlot": "104"
+      "changerSlot": "104",
+      "discogsReleaseId": "8678010",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840",
+      "musicBrainzReleaseGroupId": "bbce0087-d386-4246-a51d-dbcdfdbe8fb2"
     },
     {
       "artist": "Radiohead",
@@ -910,7 +1208,9 @@
       "releaseYear": "2001",
       "label": "Parlophone",
       "format": "CD, Album",
-      "changerSlot": "105"
+      "changerSlot": "105",
+      "discogsReleaseId": "13315951",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840"
     },
     {
       "artist": "Radiohead",
@@ -918,7 +1218,9 @@
       "releaseYear": "2007",
       "label": "XL Recordings",
       "format": "CD, Album, Promo",
-      "changerSlot": "106"
+      "changerSlot": "106",
+      "discogsReleaseId": "12922321",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840"
     },
     {
       "artist": "Radiohead",
@@ -926,7 +1228,10 @@
       "releaseYear": "2000",
       "label": "Parlophone, Parlophone",
       "format": "CD, Album",
-      "changerSlot": "107"
+      "changerSlot": "107",
+      "discogsReleaseId": "12913524",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840",
+      "musicBrainzReleaseGroupId": "e75c0549-ad55-39e3-8025-c72c5d4a3c5d"
     },
     {
       "artist": "Radiohead",
@@ -934,7 +1239,10 @@
       "releaseYear": "2000",
       "label": "Capitol Records",
       "format": "CD, Album, Promo",
-      "changerSlot": "108"
+      "changerSlot": "108",
+      "discogsReleaseId": "4498098",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840",
+      "musicBrainzReleaseGroupId": "e75c0549-ad55-39e3-8025-c72c5d4a3c5d"
     },
     {
       "artist": "Radiohead",
@@ -942,7 +1250,10 @@
       "releaseYear": "2006",
       "label": "Capitol Records",
       "format": "CD, Album, RP, Cin",
-      "changerSlot": "109"
+      "changerSlot": "109",
+      "discogsReleaseId": "26012221",
+      "discogsArtistUrl": "https://www.discogs.com/artist/3840",
+      "musicBrainzReleaseGroupId": "b1392450-e666-3926-a536-22c65f834433"
     },
     {
       "artist": "Red Hot Chili Peppers",
@@ -950,7 +1261,10 @@
       "releaseYear": "1991",
       "label": "Warner Bros. Records",
       "format": "CD, Album, Lon",
-      "changerSlot": "110"
+      "changerSlot": "110",
+      "discogsReleaseId": "9254556",
+      "discogsArtistUrl": "https://www.discogs.com/artist/92476",
+      "musicBrainzReleaseGroupId": "68bee70d-b425-3813-aca7-dd7b912c3d11"
     },
     {
       "artist": "Red Hot Chili Peppers",
@@ -958,7 +1272,10 @@
       "releaseYear": "2011",
       "label": "Warner Bros. Records",
       "format": "CD, Album, Dig",
-      "changerSlot": "111"
+      "changerSlot": "111",
+      "discogsReleaseId": "15944571",
+      "discogsArtistUrl": "https://www.discogs.com/artist/92476",
+      "musicBrainzReleaseGroupId": "c9ffebc3-0e00-4ba7-bef6-980c98d623b6"
     },
     {
       "artist": "Red Hot Chili Peppers",
@@ -966,7 +1283,9 @@
       "releaseYear": "1997",
       "label": "EMI-Capitol Special Markets",
       "format": "CD, Comp",
-      "changerSlot": "112"
+      "changerSlot": "112",
+      "discogsReleaseId": "2613288",
+      "discogsArtistUrl": "https://www.discogs.com/artist/92476"
     },
     {
       "artist": "Robert Plant",
@@ -974,7 +1293,10 @@
       "releaseYear": "1988",
       "label": "Es Paranza Records",
       "format": "CD, Album, Club, BMG",
-      "changerSlot": "113"
+      "changerSlot": "113",
+      "discogsReleaseId": "5941081",
+      "discogsArtistUrl": "https://www.discogs.com/artist/180586",
+      "musicBrainzReleaseGroupId": "a0b83e9f-0e63-365c-999f-2050516c0e4a"
     },
     {
       "artist": "Russian Circles",
@@ -982,7 +1304,10 @@
       "releaseYear": "2008",
       "label": "Suicide Squeeze",
       "format": "CD, Album",
-      "changerSlot": "115"
+      "changerSlot": "115",
+      "discogsReleaseId": "1358916",
+      "discogsArtistUrl": "https://www.discogs.com/artist/632561",
+      "musicBrainzReleaseGroupId": "e07fd13f-a3fb-304e-8758-3f4b6925ee2a"
     },
     {
       "artist": "Sarah McLachlan",
@@ -990,7 +1315,10 @@
       "releaseYear": "1989",
       "label": "Arista, BMG Direct Marketing, Inc.",
       "format": "CD, Album, Club",
-      "changerSlot": "147"
+      "changerSlot": "147",
+      "discogsReleaseId": "6007791",
+      "discogsArtistUrl": "https://www.discogs.com/artist/12387",
+      "musicBrainzReleaseGroupId": "7eab53c3-8d6e-3649-84f1-e6fe64d4e71f"
     },
     {
       "artist": "Sarah McLachlan",
@@ -998,7 +1326,10 @@
       "releaseYear": "1997",
       "label": "Arista, Nettwerk",
       "format": "CD, Album, Enh, Cin",
-      "changerSlot": "148"
+      "changerSlot": "148",
+      "discogsReleaseId": "8789702",
+      "discogsArtistUrl": "https://www.discogs.com/artist/12387",
+      "musicBrainzReleaseGroupId": "3d453820-9c19-3f21-a310-26657ac55e73"
     },
     {
       "artist": "Sigur Rós",
@@ -1006,7 +1337,9 @@
       "releaseYear": null,
       "label": "MCA Records, FatCat Records, [PIAS] Recordings",
       "format": "HDCD, Album, RE",
-      "changerSlot": "116"
+      "changerSlot": "116",
+      "discogsReleaseId": "11525756",
+      "discogsArtistUrl": "https://www.discogs.com/artist/8299"
     },
     {
       "artist": "Sigur Rós",
@@ -1014,7 +1347,9 @@
       "releaseYear": "2005",
       "label": "EMI, EMI",
       "format": "CD, Album",
-      "changerSlot": "117"
+      "changerSlot": "117",
+      "discogsReleaseId": "520116",
+      "discogsArtistUrl": "https://www.discogs.com/artist/8299"
     },
     {
       "artist": "Skee Mask",
@@ -1022,7 +1357,10 @@
       "releaseYear": "2021",
       "label": "Ilian Tape",
       "format": "18xFile, FLAC, Album",
-      "changerSlot": "163,164"
+      "changerSlot": "163,164",
+      "discogsReleaseId": "18962164",
+      "discogsArtistUrl": "https://www.discogs.com/artist/4039564",
+      "musicBrainzReleaseGroupId": "9f0e43f9-dd8d-494b-9c37-7f3629e3be6c"
     },
     {
       "artist": "Skee Mask",
@@ -1030,7 +1368,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "172"
+      "changerSlot": "172",
+      "discogsArtistUrl": "https://www.discogs.com/artist/4039564",
+      "musicBrainzReleaseGroupId": "4e1e72ae-9c2b-4a3a-a770-cfef3b257314"
     },
     {
       "artist": "Something Corporate",
@@ -1038,7 +1378,10 @@
       "releaseYear": "2002",
       "label": "MCA Records, Drive-Thru Records",
       "format": "CD, Album, UML",
-      "changerSlot": "118"
+      "changerSlot": "118",
+      "discogsReleaseId": "671711",
+      "discogsArtistUrl": "https://www.discogs.com/artist/355468",
+      "musicBrainzReleaseGroupId": "1249c14b-05ac-3f5d-82e2-13448f15748c"
     },
     {
       "artist": "Souper Salad",
@@ -1046,7 +1389,9 @@
       "releaseYear": null,
       "label": "Not On Label",
       "format": "CDr, CD-ROM",
-      "changerSlot": "167"
+      "changerSlot": "167",
+      "discogsReleaseId": "29146618",
+      "discogsArtistUrl": "https://www.discogs.com/artist/13876327"
     },
     {
       "artist": "Squarepusher",
@@ -1054,7 +1399,10 @@
       "releaseYear": "2012",
       "label": "Warp Records",
       "format": "CD, Album, Dig",
-      "changerSlot": "119"
+      "changerSlot": "119",
+      "discogsReleaseId": "3661136",
+      "discogsArtistUrl": "https://www.discogs.com/artist/269",
+      "musicBrainzReleaseGroupId": "cb1c8127-448c-4632-99f4-25fe69082ecd"
     },
     {
       "artist": "Squarepusher",
@@ -1062,7 +1410,9 @@
       "releaseYear": null,
       "label": "Warp Records",
       "format": "CD, Album, RP",
-      "changerSlot": "120"
+      "changerSlot": "120",
+      "discogsReleaseId": "235638",
+      "discogsArtistUrl": "https://www.discogs.com/artist/269"
     },
     {
       "artist": "Stars Of The Lid",
@@ -1070,7 +1420,9 @@
       "releaseYear": "2007",
       "label": "Kranky, Kranky",
       "format": "2xCD, Album",
-      "changerSlot": "121,122"
+      "changerSlot": "121,122",
+      "discogsReleaseId": "940176",
+      "discogsArtistUrl": "https://www.discogs.com/artist/33863"
     },
     {
       "artist": "Sufjan Stevens",
@@ -1078,7 +1430,9 @@
       "releaseYear": "2003",
       "label": "Spunk",
       "format": "CD, Album",
-      "changerSlot": "123"
+      "changerSlot": "123",
+      "discogsReleaseId": "23879426",
+      "discogsArtistUrl": "https://www.discogs.com/artist/202598"
     },
     {
       "artist": "The Almost",
@@ -1086,7 +1440,10 @@
       "releaseYear": "2007",
       "label": "Tooth & Nail Records, Virgin, EMI",
       "format": "CD, Album",
-      "changerSlot": "3"
+      "changerSlot": "3",
+      "discogsReleaseId": "1280546",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1083780",
+      "musicBrainzReleaseGroupId": "fc6386c7-b9ee-31c3-a3ae-2537122266fb"
     },
     {
       "artist": "The Deputies",
@@ -1094,7 +1451,9 @@
       "releaseYear": "2011",
       "label": "Pirate Ship Studios",
       "format": "CD-ROM, Album",
-      "changerSlot": "168"
+      "changerSlot": "168",
+      "discogsReleaseId": "29146006",
+      "discogsArtistUrl": "https://www.discogs.com/artist/1904055"
     },
     {
       "artist": "The Detroit Cobras",
@@ -1102,7 +1461,10 @@
       "releaseYear": "2001",
       "label": "Sympathy For The Record Industry",
       "format": "CD, Album",
-      "changerSlot": "49"
+      "changerSlot": "49",
+      "discogsReleaseId": "392003",
+      "discogsArtistUrl": "https://www.discogs.com/artist/109905",
+      "musicBrainzReleaseGroupId": "25c00fdf-ddad-3cdd-bd76-11a04813dc9f"
     },
     {
       "artist": "The Flashbulb",
@@ -1110,7 +1472,10 @@
       "releaseYear": "2012",
       "label": "Alphabasic",
       "format": "CD, Album, Dig",
-      "changerSlot": "61"
+      "changerSlot": "61",
+      "discogsReleaseId": "3983783",
+      "discogsArtistUrl": "https://www.discogs.com/artist/67855",
+      "musicBrainzReleaseGroupId": "a6f40fd7-2869-4e1a-8f95-f22418c4574d"
     },
     {
       "artist": "The Flashbulb",
@@ -1118,7 +1483,10 @@
       "releaseYear": "2011",
       "label": "Alphabasic",
       "format": "CD, Album, Dig",
-      "changerSlot": "62"
+      "changerSlot": "62",
+      "discogsReleaseId": "2768434",
+      "discogsArtistUrl": "https://www.discogs.com/artist/67855",
+      "musicBrainzReleaseGroupId": "284e7ac3-baaf-4189-af43-7f434caec366"
     },
     {
       "artist": "The Flashbulb",
@@ -1126,7 +1494,10 @@
       "releaseYear": "2017",
       "label": "Alphabasic",
       "format": "CD, Album, Dig",
-      "changerSlot": "63"
+      "changerSlot": "63",
+      "discogsReleaseId": "10787301",
+      "discogsArtistUrl": "https://www.discogs.com/artist/67855",
+      "musicBrainzReleaseGroupId": "f2a0c7b6-85d2-4ab8-8b06-344f6ff54b12"
     },
     {
       "artist": "The Flashbulb",
@@ -1134,7 +1505,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "53"
+      "changerSlot": "53",
+      "discogsArtistUrl": "https://www.discogs.com/artist/67855",
+      "musicBrainzReleaseGroupId": "ab207210-6cf5-4e3f-820c-9b462a3ecbba"
     },
     {
       "artist": "The Grateful Dead",
@@ -1142,7 +1515,9 @@
       "releaseYear": "1990",
       "label": "Arista",
       "format": "2xCD, Album",
-      "changerSlot": "72,73"
+      "changerSlot": "72,73",
+      "discogsReleaseId": "14552916",
+      "discogsArtistUrl": "https://www.discogs.com/artist/246650"
     },
     {
       "artist": "The Octopus Project",
@@ -1150,7 +1525,9 @@
       "releaseYear": "2007",
       "label": "Peek-A-Boo Records (2)",
       "format": "CD, Album",
-      "changerSlot": "93"
+      "changerSlot": "93",
+      "discogsReleaseId": "1059944",
+      "discogsArtistUrl": "https://www.discogs.com/artist/283054"
     },
     {
       "artist": "The Rocket Summer",
@@ -1158,7 +1535,10 @@
       "releaseYear": "2007",
       "label": "Island Records",
       "format": "CD, Album",
-      "changerSlot": "114"
+      "changerSlot": "114",
+      "discogsReleaseId": "2595599",
+      "discogsArtistUrl": "https://www.discogs.com/artist/632338",
+      "musicBrainzReleaseGroupId": "edfa15d0-fb49-34ca-94b1-de5f1c078936"
     },
     {
       "artist": "The Thrills",
@@ -1166,7 +1546,10 @@
       "releaseYear": "2003",
       "label": "Virgin, Virgin",
       "format": "CD, Album",
-      "changerSlot": "125"
+      "changerSlot": "125",
+      "discogsReleaseId": "384797",
+      "discogsArtistUrl": "https://www.discogs.com/artist/265507",
+      "musicBrainzReleaseGroupId": "03937e2a-9143-3bce-87d3-08bd392f2800"
     },
     {
       "artist": "The Tuss",
@@ -1174,7 +1557,10 @@
       "releaseYear": "2017",
       "label": "Rephlex",
       "format": "13xFile, FLAC, EP",
-      "changerSlot": "169"
+      "changerSlot": "169",
+      "discogsReleaseId": "10594161",
+      "discogsArtistUrl": "https://www.discogs.com/artist/798219",
+      "musicBrainzReleaseGroupId": "8af1251f-ce01-3baf-b960-93c00e7baf45"
     },
     {
       "artist": "Third Eye Blind",
@@ -1182,7 +1568,10 @@
       "releaseYear": "1997",
       "label": "Elektra",
       "format": "CD, Album",
-      "changerSlot": "124"
+      "changerSlot": "124",
+      "discogsReleaseId": "14505105",
+      "discogsArtistUrl": "https://www.discogs.com/artist/252693",
+      "musicBrainzReleaseGroupId": "2ccf437c-9b4e-35f5-98d6-812b08c8ac43"
     },
     {
       "artist": "Toby Keith",
@@ -1190,7 +1579,10 @@
       "releaseYear": "2004",
       "label": "DreamWorks Records",
       "format": "HDCD, Comp",
-      "changerSlot": "153"
+      "changerSlot": "153",
+      "discogsReleaseId": "2051865",
+      "discogsArtistUrl": "https://www.discogs.com/artist/969727",
+      "musicBrainzReleaseGroupId": "245b3cb8-1f89-3aee-84c3-1acc6bdb168d"
     },
     {
       "artist": "Tortoise",
@@ -1198,7 +1590,10 @@
       "releaseYear": "1996",
       "label": "Thrill Jockey",
       "format": "CD, Album, Dig",
-      "changerSlot": "126"
+      "changerSlot": "126",
+      "discogsReleaseId": "71788",
+      "discogsArtistUrl": "https://www.discogs.com/artist/4727",
+      "musicBrainzReleaseGroupId": "7bb7debb-bdcf-3991-aa19-2937a1ad4fa9"
     },
     {
       "artist": "Tortoise",
@@ -1206,7 +1601,9 @@
       "releaseYear": null,
       "label": "Motor Music (4)",
       "format": "CD, Album",
-      "changerSlot": "127"
+      "changerSlot": "127",
+      "discogsReleaseId": "16078146",
+      "discogsArtistUrl": "https://www.discogs.com/artist/4727"
     },
     {
       "artist": "Tracy Chapman",
@@ -1214,7 +1611,10 @@
       "releaseYear": "1988",
       "label": "Elektra",
       "format": "CD, Album, SRC",
-      "changerSlot": "128"
+      "changerSlot": "128",
+      "discogsReleaseId": "14840199",
+      "discogsArtistUrl": "https://www.discogs.com/artist/161091",
+      "musicBrainzReleaseGroupId": "a738bdf1-f610-30aa-9ae7-9a4f90d6f2d7"
     },
     {
       "artist": "Various",
@@ -1222,7 +1622,9 @@
       "releaseYear": "1995",
       "label": "Philips",
       "format": "CD, Comp, PMD",
-      "changerSlot": "129"
+      "changerSlot": "129",
+      "discogsReleaseId": "28059933",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1230,7 +1632,9 @@
       "releaseYear": "2000",
       "label": "Mercury",
       "format": "CD, Comp, Enh",
-      "changerSlot": "134"
+      "changerSlot": "134",
+      "discogsReleaseId": "1371354",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1238,7 +1642,9 @@
       "releaseYear": "2002",
       "label": "Six Degrees Records",
       "format": "CD, Comp",
-      "changerSlot": "135"
+      "changerSlot": "135",
+      "discogsReleaseId": "221392",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1246,7 +1652,9 @@
       "releaseYear": "2003",
       "label": "World Music Network, Music Rough Guides",
       "format": "CD, Comp",
-      "changerSlot": "136"
+      "changerSlot": "136",
+      "discogsReleaseId": "658914",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1254,7 +1662,9 @@
       "releaseYear": "2003",
       "label": "Verve Records",
       "format": "CD, Comp, Jew",
-      "changerSlot": "137"
+      "changerSlot": "137",
+      "discogsReleaseId": "182048",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1262,7 +1672,9 @@
       "releaseYear": "2000",
       "label": "Columbia, Sony Music Soundtrax",
       "format": "CD, Comp, Son",
-      "changerSlot": "151"
+      "changerSlot": "151",
+      "discogsReleaseId": "28136947",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1270,7 +1682,9 @@
       "releaseYear": "2019",
       "label": "Putumayo World Music",
       "format": "CD, Album",
-      "changerSlot": "157"
+      "changerSlot": "157",
+      "discogsReleaseId": "14725674",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1278,7 +1692,9 @@
       "releaseYear": "2002",
       "label": "RCA, RCA, RCA",
       "format": "CD, Album",
-      "changerSlot": "159"
+      "changerSlot": "159",
+      "discogsReleaseId": "7757215",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1286,7 +1702,9 @@
       "releaseYear": "2003",
       "label": "Shout! Factory",
       "format": "2xCD, Comp",
-      "changerSlot": "130,131"
+      "changerSlot": "130,131",
+      "discogsReleaseId": "1902312",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Various",
@@ -1294,7 +1712,9 @@
       "releaseYear": "2002",
       "label": "Water Music Records",
       "format": "2xCD, Comp",
-      "changerSlot": "132,133"
+      "changerSlot": "132,133",
+      "discogsReleaseId": "267887",
+      "discogsArtistUrl": "https://www.discogs.com/artist/194"
     },
     {
       "artist": "Venetian Snares",
@@ -1302,7 +1722,9 @@
       "releaseYear": "2016",
       "label": "Timesig, Timesig",
       "format": "CD, Album + CDr, Album, Ltd",
-      "changerSlot": "138"
+      "changerSlot": "138",
+      "discogsReleaseId": "8198393",
+      "discogsArtistUrl": "https://www.discogs.com/artist/12832"
     },
     {
       "artist": "Venetian Snares",
@@ -1310,7 +1732,9 @@
       "releaseYear": "2016",
       "label": "Timesig, Timesig",
       "format": "CD, Album + CDr, Album, Ltd",
-      "changerSlot": "146"
+      "changerSlot": "146",
+      "discogsReleaseId": "8198393",
+      "discogsArtistUrl": "https://www.discogs.com/artist/12832"
     },
     {
       "artist": "Weezer",
@@ -1318,7 +1742,9 @@
       "releaseYear": null,
       "label": "DGC",
       "format": "CD, Album, RE, Son",
-      "changerSlot": "139"
+      "changerSlot": "139",
+      "discogsReleaseId": "6152824",
+      "discogsArtistUrl": "https://www.discogs.com/artist/105730"
     },
     {
       "artist": "Wireless Green",
@@ -1326,7 +1752,9 @@
       "releaseYear": "1998",
       "label": "Wireless Green Music",
       "format": "CD-ROM, Album",
-      "changerSlot": "171"
+      "changerSlot": "171",
+      "discogsReleaseId": "29146336",
+      "discogsArtistUrl": "https://www.discogs.com/artist/5634254"
     },
     {
       "artist": "Wisp",
@@ -1334,7 +1762,10 @@
       "releaseYear": "2005",
       "label": "Sublight Records",
       "format": "CD, Album",
-      "changerSlot": "170"
+      "changerSlot": "170",
+      "discogsReleaseId": "558707",
+      "discogsArtistUrl": "https://www.discogs.com/artist/181922",
+      "musicBrainzReleaseGroupId": "8bb27e37-c28e-338a-8384-5b7b222ca182"
     },
     {
       "artist": "Tim Hecker",
@@ -1342,7 +1773,8 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "180"
+      "changerSlot": "180",
+      "musicBrainzReleaseGroupId": "c7d3f746-73a7-3159-b3cd-5df644e46072"
     },
     {
       "artist": "Flying Lotus",
@@ -1350,7 +1782,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "181"
+      "changerSlot": "181",
+      "discogsArtistUrl": "https://www.discogs.com/artist/365248",
+      "musicBrainzReleaseGroupId": "83b3e9f2-0080-3d98-b75f-afc09e834118"
     },
     {
       "artist": "Boards of Canada",
@@ -1358,7 +1792,9 @@
       "releaseYear": null,
       "label": null,
       "format": null,
-      "changerSlot": "182"
+      "changerSlot": "182",
+      "discogsArtistUrl": "https://www.discogs.com/artist/307",
+      "musicBrainzReleaseGroupId": "aca9719d-c640-41fc-a3a2-f3c52101e0ff"
     }
   ]
 }

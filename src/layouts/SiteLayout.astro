@@ -1,0 +1,62 @@
+---
+import '../styles/site.css';
+
+interface Props {
+	title: string;
+	description?: string;
+	active?: 'catalog' | 'artists';
+}
+
+const {
+	title,
+	description = 'A personal CD collection, filed by artist and album with changer locations.',
+	active,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#f4f0e6" />
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="brand" href="/" aria-label="CD Collection home">
+				<span class="brand__mark" aria-hidden="true">
+					<span></span><span></span><span></span>
+				</span>
+				<span class="brand__name">CD <em>collection</em></span>
+			</a>
+			<nav class="primary-nav" aria-label="Main navigation">
+				<a href="/" aria-current={active === 'catalog' ? 'page' : undefined}>Albums</a>
+				<a href="/artists/" aria-current={active === 'artists' ? 'page' : undefined}>Artists</a>
+			</nav>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<p>Filed for the next time you reach for a disc.</p>
+			<p>
+				Cover images via
+				<a href="https://musicbrainz.org/doc/Cover_Art_Archive" target="_blank" rel="noreferrer">MusicBrainz Cover Art Archive</a>
+			</p>
+		</footer>
+	</body>
+</html>
+
+<script>
+	for (const image of document.querySelectorAll<HTMLImageElement>('[data-cover]')) {
+		image.addEventListener('error', () => {
+			image.hidden = true;
+			image.closest('.cover-frame')?.classList.add('cover-frame--missing');
+		});
+	}
+</script>

@@ -1,0 +1,68 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import catalog from '../../data/albums.json';
+import { buildCatalog, getCoverArtUrl, getDiscogsReleaseUrl, getMusicBrainzReleaseGroupUrl, isDiscogsArtistUrl } from '../../lib/catalog';
+
+export function getStaticPaths() {
+	const albums = buildCatalog(catalog.albums).albums;
+	return albums.map((album) => ({ params: { slug: album.slug }, props: { album } }));
+}
+
+const { album } = Astro.props;
+const artworkUrl = getCoverArtUrl(album, 500);
+const releaseUrl = getDiscogsReleaseUrl(album);
+const artistUrl = isDiscogsArtistUrl(album.discogsArtistUrl) ? album.discogsArtistUrl : null;
+const musicBrainzUrl = getMusicBrainzReleaseGroupUrl(album);
+---
+
+<SiteLayout title={`${album.title || 'Album'} — CD Collection`} description={`${album.title || 'Album'} by ${album.artist || 'unknown artist'}, with its changer location and release details.`}>
+	<div class="page-wrap">
+		<div class="detail-topline">
+			<nav class="breadcrumbs" aria-label="Breadcrumb">
+				<a href="/">Albums</a><span aria-hidden="true">/</span>
+				{album.artistPath && <><a href={album.artistPath}>{album.artist}</a><span aria-hidden="true">/</span></>}
+				<span>{album.title || 'Untitled album'}</span>
+			</nav>
+			<a class="back-link" href={album.artistPath || '/'}>← {album.artistPath ? 'Artist albums' : 'Album index'}</a>
+		</div>
+
+		<article class="album-detail">
+			<div class="detail-artwork">
+				<div class="cover-frame cover-frame--large">
+					{artworkUrl && <img data-cover src={artworkUrl} alt={`Cover artwork for ${album.title}`} fetchpriority="high" />}
+					<div class="cover-placeholder" aria-hidden="true">
+						<span class="cover-placeholder__stamp">CD COLLECTION / {album.releaseYear || 'FILED'}</span>
+						<strong>{album.title || 'Untitled album'}</strong>
+						<span>{album.artist || 'Artist not listed'}</span>
+					</div>
+				</div>
+				{musicBrainzUrl && (
+					<p class="detail-artwork__credit">
+						Artwork via <a href="https://musicbrainz.org/doc/Cover_Art_Archive" target="_blank" rel="noreferrer">MusicBrainz Cover Art Archive</a> ·
+						<a href={musicBrainzUrl} target="_blank" rel="noreferrer">source record</a>
+					</p>
+				)}
+			</div>
+
+			<div class="detail-copy">
+				<p class="eyebrow">Album / Collection detail</p>
+				<h1>{album.title || 'Untitled album'}</h1>
+				<p class="detail-copy__artist">
+					{album.artistPath ? <a href={album.artistPath}>{album.artist || 'Artist not listed'}</a> : album.artist || 'Artist not listed'}
+				</p>
+				<dl class="release-facts">
+					{album.releaseYear && <div><dt>Released</dt><dd>{album.releaseYear}</dd></div>}
+					{album.label && <div><dt>Label</dt><dd>{album.label}</dd></div>}
+					{album.format && <div><dt>Format</dt><dd>{album.format}</dd></div>}
+				</dl>
+				<p class="changer-location"><span>Changer slot</span><strong>{album.changerSlot || 'Not listed'}</strong></p>
+				<div class="external-links" aria-label="External album links">
+					{releaseUrl && <a href={releaseUrl} target="_blank" rel="noreferrer">Discogs release</a>}
+					{artistUrl && <a href={artistUrl} target="_blank" rel="noreferrer">Discogs artist</a>}
+					{musicBrainzUrl && <a href={musicBrainzUrl} target="_blank" rel="noreferrer">MusicBrainz record</a>}
+				</div>
+				<p class="detail-note">Changer location is copied from the collection index as displayed.</p>
+			</div>
+		</article>
+	</div>
+</SiteLayout>

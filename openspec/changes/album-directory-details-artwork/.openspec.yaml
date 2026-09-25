@@ -1,0 +1,4 @@
+schema: spec-driven
+created: 2026-09-25
+goal: Make the static collection easier to browse and enrich album detail pages
+  without changing changer-slot values.

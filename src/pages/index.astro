@@ -1,574 +1,71 @@
 ---
+import AlbumCard from '../components/AlbumCard.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
 import catalog from '../data/albums.json';
+import { buildCatalog } from '../lib/catalog';
 
-const albums = catalog.albums;
+const collection = buildCatalog(catalog.albums);
+const albums = collection.albums;
 const albumCount = albums.length;
-const searchValue = (album: (typeof albums)[number]) =>
-	[
-		album.artist,
-		album.title,
-		album.releaseYear,
-		album.label,
-		album.format,
-		album.changerSlot,
-	]
-		.filter(Boolean)
-		.join(' ')
-		.toLocaleLowerCase();
+const artistCount = collection.artists.length;
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#252522" />
-		<meta
-			name="description"
-			content="A searchable index of the CD collection, with each album's Sony changer slot."
-		/>
-		<meta property="og:title" content="CD Collection — Album Index" />
-		<meta
-			property="og:description"
-			content="Find an album by artist, title, or changer slot."
-		/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>CD Collection — Album Index</title>
-	</head>
-	<body>
-		<header class="masthead">
-			<div class="masthead__inner">
-				<div class="masthead__copy">
-					<p class="eyebrow"><span></span> A personal listening archive</p>
-					<h1>CD <em>collection</em></h1>
-					<p class="masthead__intro">
-						An index of the albums on the shelf and the changer slot where each one lives.
-					</p>
-					<div class="collection-count">
-						<strong>{albumCount}</strong>
-						<span>albums in the collection</span>
-					</div>
-				</div>
-
-				<div class="disc-art" aria-hidden="true">
-					<svg viewBox="0 0 360 360" role="presentation">
-						<defs>
-							<radialGradient id="disc-surface" cx="34%" cy="29%" r="78%">
-								<stop offset="0" stop-color="#77776d" />
-								<stop offset="0.44" stop-color="#44443f" />
-								<stop offset="1" stop-color="#282925" />
-							</radialGradient>
-							<linearGradient id="disc-glint" x1="0" y1="0" x2="1" y2="1">
-								<stop offset="0" stop-color="#d79a70" stop-opacity="0.78" />
-								<stop offset="0.5" stop-color="#d79a70" stop-opacity="0.03" />
-								<stop offset="1" stop-color="#d79a70" stop-opacity="0.38" />
-							</linearGradient>
-						</defs>
-						<circle cx="180" cy="180" r="167" fill="url(#disc-surface)" />
-						<circle cx="180" cy="180" r="153" fill="none" stroke="#a6a69a" stroke-opacity="0.18" />
-						<circle cx="180" cy="180" r="139" fill="none" stroke="#a6a69a" stroke-opacity="0.14" />
-						<circle cx="180" cy="180" r="124" fill="none" stroke="#a6a69a" stroke-opacity="0.12" />
-						<circle cx="180" cy="180" r="109" fill="none" stroke="#a6a69a" stroke-opacity="0.1" />
-						<circle cx="180" cy="180" r="80" fill="url(#disc-glint)" />
-						<circle cx="180" cy="180" r="18" fill="#252522" />
-						<circle cx="180" cy="180" r="5" fill="#d3cec3" />
-					</svg>
-					<div class="disc-art__label">SIDE A <span>·</span> INDEXED</div>
-				</div>
+<SiteLayout
+	title="CD Collection — Album Index"
+	description="Browse the CD collection by album or artist and find each disc's changer location."
+	active="catalog"
+>
+	<div class="page-wrap">
+		<section class="page-intro" aria-labelledby="page-title">
+			<div>
+				<p class="eyebrow">A personal listening archive</p>
+				<h1 id="page-title">On the shelf.<br /><em>In the changer.</em></h1>
+				<p class="page-intro__copy">
+					A small index for finding the album, its artist, and the slot where the disc lives.
+				</p>
 			</div>
-		</header>
+			<div class="collection-count" aria-label={`${albumCount} albums by ${artistCount} artists`}>
+				<strong>{albumCount}</strong>
+				<span>albums · {artistCount} artists</span>
+			</div>
+		</section>
 
-		<main class="catalog-shell">
-			<section class="catalog-tools" aria-labelledby="catalog-heading">
-				<div class="catalog-tools__heading">
-					<p class="eyebrow eyebrow--ink">THE LIBRARY</p>
-					<h2 id="catalog-heading">Find a disc</h2>
+		<section class="catalog-controls" aria-label="Catalog controls">
+			<p class="section-kicker">01 / Album index · alphabetical by artist</p>
+			<div>
+				<label class="search-label" for="catalog-search">Search by artist, title, or changer slot</label>
+				<div class="search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.4 15.4 4.1 4.1" /></svg>
+					<input id="catalog-search" type="search" placeholder="Try an artist, album, or slot" autocomplete="off" spellcheck="false" aria-controls="album-grid" />
 				</div>
-				<div class="search-block">
-					<label for="catalog-search">Search by artist, title, or slot</label>
-					<div class="search-field">
-						<svg viewBox="0 0 24 24" aria-hidden="true">
-							<circle cx="10.8" cy="10.8" r="6.3" />
-							<path d="m15.4 15.4 4.1 4.1" />
-						</svg>
-						<input
-							id="catalog-search"
-							type="search"
-							name="q"
-							placeholder="Try an artist, album, or slot number"
-							autocomplete="off"
-							spellcheck="false"
-							aria-controls="album-grid"
-						/>
-					</div>
-					<p class="search-status" aria-live="polite">
-						<span id="result-count">{albumCount} albums</span>
-						<span>·</span>
-						<span>Changer locations included</span>
-					</p>
-				</div>
-			</section>
+				<p class="search-status" aria-live="polite"><strong id="result-count">{albumCount} albums</strong> · changer locations included</p>
+			</div>
+		</section>
 
-			<p class="empty-state" id="empty-state" hidden>
-				No albums match that search. Try another artist, title, or slot.
-			</p>
-
-			<section class="album-grid" id="album-grid" aria-label="Albums in the collection">
-				{albums.map((album, index) => (
-					<article
-						class="album-entry"
-						data-search={searchValue(album)}
-						style={`--entry-index: ${index}`}
-					>
-						<div class="album-entry__main">
-							<p class="album-entry__artist">{album.artist ?? 'Artist not listed'}</p>
-							<h3>{album.title ?? 'Title not listed'}</h3>
-							{
-								(album.releaseYear || album.label || album.format) && (
-									<p class="album-entry__details">
-										{album.releaseYear && <span>{album.releaseYear}</span>}
-										{album.label && <span>{album.label}</span>}
-										{album.format && <span>{album.format}</span>}
-									</p>
-								)
-							}
-						</div>
-						<div class="slot-marker" aria-label={`Changer slot ${album.changerSlot ?? 'not listed'}`}>
-							<span class="slot-marker__label">SLOT</span>
-							<strong>{album.changerSlot ?? '—'}</strong>
-						</div>
-					</article>
-				))}
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<p>Built for finding the next disc.</p>
-			<span>CD COLLECTION <span aria-hidden="true">/</span> {albumCount} RECORDS</span>
-		</footer>
-	</body>
-</html>
+		<section class="album-grid" id="album-grid" aria-label="Albums in the collection">
+			{albums.map((album, index) => <div style={`--entry-index: ${index}`}><AlbumCard album={album} /></div>)}
+			<p class="empty-state" id="empty-state" hidden>No albums match that search. Try another artist, title, or slot.</p>
+		</section>
+	</div>
+</SiteLayout>
 
 <script>
 	const searchInput = document.querySelector<HTMLInputElement>('#catalog-search');
-	const albumEntries = Array.from(document.querySelectorAll<HTMLElement>('.album-entry'));
+	const albumCards = Array.from(document.querySelectorAll<HTMLElement>('.album-card'));
 	const resultCount = document.querySelector<HTMLElement>('#result-count');
 	const emptyState = document.querySelector<HTMLElement>('#empty-state');
-	const albumGrid = document.querySelector<HTMLElement>('#album-grid');
 
 	const updateCatalog = () => {
 		const query = searchInput?.value.trim().toLocaleLowerCase() ?? '';
 		let visibleCount = 0;
-
-		for (const entry of albumEntries) {
-			const matches = !query || (entry.dataset.search ?? '').includes(query);
-			entry.hidden = !matches;
+		for (const card of albumCards) {
+			const matches = !query || (card.dataset.search ?? '').includes(query);
+			card.parentElement!.hidden = !matches;
 			if (matches) visibleCount += 1;
 		}
-
-		if (resultCount) {
-			resultCount.textContent = query
-				? `${visibleCount} ${visibleCount === 1 ? 'album' : 'albums'} found`
-				: `${visibleCount} albums`;
-		}
+		if (resultCount) resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'album' : 'albums'}${query ? ' found' : ''}`;
 		if (emptyState) emptyState.hidden = visibleCount > 0;
-		if (albumGrid) albumGrid.hidden = visibleCount === 0;
 	};
 
 	searchInput?.addEventListener('input', updateCatalog);
 </script>
-
-<style>
-	:root {
-		color-scheme: light;
-		--ink: #252522;
-		--ink-soft: #67665e;
-		--paper: #f3f0e8;
-		--paper-bright: #fbf9f3;
-		--line: #d9d4c9;
-		--accent: #a95d3b;
-		--mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
-		font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif;
-		font-synthesis: none;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	* { box-sizing: border-box; }
-
-	body {
-		margin: 0;
-		background: var(--paper);
-		color: var(--ink);
-	}
-
-	.masthead {
-		position: relative;
-		overflow: hidden;
-		background: var(--ink);
-		color: var(--paper-bright);
-	}
-
-	.masthead::after {
-		position: absolute;
-		inset: auto 0 0;
-		height: 1px;
-		background: #a95d3b;
-		content: '';
-		opacity: 0.8;
-	}
-
-	.masthead__inner {
-		display: grid;
-		grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
-		align-items: center;
-		gap: clamp(2rem, 8vw, 8rem);
-		width: min(100% - 64px, 1320px);
-		min-height: 425px;
-		margin: 0 auto;
-		padding: 64px 0 72px;
-	}
-
-	.masthead__copy { max-width: 700px; }
-
-	.eyebrow {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		margin: 0 0 22px;
-		color: #c4beb3;
-		font-family: var(--mono);
-		font-size: 0.68rem;
-		letter-spacing: 0.12em;
-		text-transform: uppercase;
-	}
-
-	.eyebrow > span {
-		width: 7px;
-		height: 7px;
-		border-radius: 50%;
-		background: #c07853;
-	}
-
-	h1 {
-		margin: 0;
-		font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-		font-size: clamp(3.5rem, 8vw, 7rem);
-		font-weight: 400;
-		letter-spacing: -0.075em;
-		line-height: 0.9;
-	}
-
-	h1 em {
-		color: #d6a17f;
-		font-weight: 400;
-	}
-
-	.masthead__intro {
-		max-width: 480px;
-		margin: 26px 0 28px;
-		color: #c7c3ba;
-		font-size: 1.05rem;
-		line-height: 1.65;
-	}
-
-	.collection-count {
-		display: flex;
-		align-items: baseline;
-		gap: 11px;
-		color: #c7c3ba;
-		font-size: 0.88rem;
-	}
-
-	.collection-count strong {
-		color: var(--paper-bright);
-		font-family: var(--mono);
-		font-size: 1.3rem;
-		font-weight: 500;
-	}
-
-	.disc-art {
-		position: relative;
-		justify-self: end;
-		width: min(100%, 350px);
-		aspect-ratio: 1;
-		margin-right: 5%;
-		filter: drop-shadow(22px 28px 22px rgb(0 0 0 / 25%));
-		animation: enter-disc 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
-	}
-
-	.disc-art svg { display: block; width: 100%; height: 100%; }
-
-	.disc-art__label {
-		position: absolute;
-		right: -10px;
-		bottom: 32px;
-		padding: 10px 13px;
-		border: 1px solid rgb(243 240 232 / 27%);
-		background: #34342f;
-		color: #ded8cd;
-		font-family: var(--mono);
-		font-size: 0.59rem;
-		letter-spacing: 0.14em;
-		transform: rotate(-4deg);
-	}
-
-	.disc-art__label span { color: #d0926e; }
-
-	.catalog-shell {
-		width: min(100% - 64px, 1320px);
-		margin: 0 auto;
-		padding: 64px 0 78px;
-	}
-
-	.catalog-tools {
-		display: grid;
-		grid-template-columns: 0.75fr 1.25fr;
-		align-items: end;
-		gap: clamp(2rem, 8vw, 7rem);
-		padding: 0 0 28px;
-		border-bottom: 1px solid var(--line);
-	}
-
-	.eyebrow--ink {
-		margin-bottom: 10px;
-		color: var(--accent);
-	}
-
-	.catalog-tools h2 {
-		margin: 0;
-		font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-		font-size: clamp(2rem, 4vw, 3.15rem);
-		font-weight: 400;
-		letter-spacing: -0.055em;
-	}
-
-	.search-block label {
-		display: block;
-		margin-bottom: 9px;
-		font-size: 0.8rem;
-		font-weight: 600;
-	}
-
-	.search-field {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		min-height: 54px;
-		padding: 0 16px;
-		border: 1px solid #cac4b8;
-		background: var(--paper-bright);
-		transition: border-color 180ms ease, box-shadow 180ms ease;
-	}
-
-	.search-field:focus-within {
-		border-color: var(--accent);
-		box-shadow: 0 0 0 3px rgb(169 93 59 / 12%);
-	}
-
-	.search-field svg {
-		flex: 0 0 20px;
-		width: 20px;
-		fill: none;
-		stroke: #77736b;
-		stroke-linecap: round;
-		stroke-width: 1.6;
-	}
-
-	.search-field input {
-		width: 100%;
-		min-width: 0;
-		border: 0;
-		outline: 0;
-		background: transparent;
-		color: var(--ink);
-		font: inherit;
-		font-size: 0.92rem;
-	}
-
-	.search-field input::placeholder { color: #8c887f; }
-
-	.search-status {
-		display: flex;
-		gap: 8px;
-		margin: 10px 0 0;
-		color: var(--ink-soft);
-		font-family: var(--mono);
-		font-size: 0.65rem;
-		letter-spacing: 0.025em;
-	}
-
-	#result-count { color: var(--ink); }
-
-	.album-grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		column-gap: 24px;
-		padding-top: 8px;
-	}
-
-	.album-entry {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr) auto;
-		align-items: center;
-		gap: 20px;
-		min-height: 148px;
-		padding: 23px 4px 21px 2px;
-		border-bottom: 1px solid var(--line);
-		animation: reveal-entry 460ms cubic-bezier(0.16, 1, 0.3, 1) both;
-		animation-delay: calc(min(var(--entry-index), 10) * 18ms);
-		transition: background-color 180ms ease, transform 180ms ease;
-	}
-
-	.album-entry:hover {
-		background: rgb(251 249 243 / 65%);
-		transform: translateY(-2px);
-	}
-
-	.album-entry[hidden] { display: none; }
-	.album-entry__main { min-width: 0; }
-
-	.album-entry__artist {
-		margin: 0 0 6px;
-		color: var(--accent);
-		font-family: var(--mono);
-		font-size: 0.66rem;
-		letter-spacing: 0.035em;
-		text-transform: uppercase;
-	}
-
-	.album-entry h3 {
-		margin: 0;
-		font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-		font-size: clamp(1.25rem, 2vw, 1.65rem);
-		font-weight: 400;
-		letter-spacing: -0.035em;
-		line-height: 1.18;
-		text-wrap: pretty;
-	}
-
-	.album-entry__details {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 5px 10px;
-		margin: 10px 0 0;
-		color: var(--ink-soft);
-		font-size: 0.72rem;
-		line-height: 1.5;
-	}
-
-	.album-entry__details span + span::before {
-		margin-right: 10px;
-		color: #aaa398;
-		content: '·';
-	}
-
-	.slot-marker {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		gap: 3px;
-		min-width: 68px;
-		padding-left: 14px;
-		border-left: 1px solid var(--line);
-	}
-
-	.slot-marker__label {
-		color: #807b70;
-		font-family: var(--mono);
-		font-size: 0.55rem;
-		letter-spacing: 0.11em;
-	}
-
-	.slot-marker strong {
-		color: var(--ink);
-		font-family: var(--mono);
-		font-size: 1.02rem;
-		font-weight: 500;
-		text-align: right;
-	}
-
-	.empty-state {
-		margin: 0;
-		padding: 50px 8px;
-		border-bottom: 1px solid var(--line);
-		color: var(--ink-soft);
-		font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-		font-size: 1.35rem;
-	}
-
-	.empty-state[hidden], .album-grid[hidden] { display: none; }
-
-	.site-footer {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 24px;
-		padding: 22px max(32px, calc((100vw - 1320px) / 2));
-		border-top: 1px solid var(--line);
-		color: var(--ink-soft);
-	}
-
-	.site-footer p {
-		margin: 0;
-		font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-		font-size: 1.08rem;
-		font-style: italic;
-	}
-
-	.site-footer > span {
-		font-family: var(--mono);
-		font-size: 0.58rem;
-		letter-spacing: 0.1em;
-	}
-
-	.site-footer > span span { color: var(--accent); }
-
-	@keyframes enter-disc {
-		from { opacity: 0; transform: translate3d(18px, 0, 0) rotate(7deg); }
-		to { opacity: 1; transform: translate3d(0, 0, 0) rotate(0); }
-	}
-
-	@keyframes reveal-entry {
-		from { opacity: 0; transform: translate3d(0, 8px, 0); }
-		to { opacity: 1; transform: translate3d(0, 0, 0); }
-	}
-
-	@media (max-width: 760px) {
-		.masthead__inner, .catalog-shell { width: min(100% - 40px, 1320px); }
-		.masthead__inner {
-			grid-template-columns: 1fr;
-			gap: 26px;
-			min-height: 0;
-			padding: 56px 0 45px;
-		}
-		.masthead__copy { max-width: 600px; }
-		.masthead__intro { max-width: 400px; }
-		.disc-art { position: absolute; right: -30px; bottom: -50px; width: 190px; margin: 0; opacity: 0.55; }
-		.disc-art__label { display: none; }
-		.catalog-shell { padding: 48px 0 56px; }
-		.catalog-tools { grid-template-columns: 1fr; gap: 23px; }
-		.album-grid { grid-template-columns: 1fr; }
-		.album-entry { min-height: 126px; }
-		.site-footer { padding-inline: 20px; }
-	}
-
-	@media (max-width: 420px) {
-		.masthead__inner, .catalog-shell { width: calc(100% - 32px); }
-		h1 { font-size: clamp(3.3rem, 17vw, 4.8rem); }
-		.album-entry { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
-		.slot-marker { min-width: 60px; padding-left: 10px; }
-		.slot-marker strong { font-size: 0.9rem; }
-		.site-footer { align-items: flex-start; flex-direction: column; gap: 10px; }
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		*, *::before, *::after {
-			animation-duration: 0.01ms !important;
-			animation-iteration-count: 1 !important;
-			scroll-behavior: auto !important;
-			transition-duration: 0.01ms !important;
-		}
-	}
-</style>

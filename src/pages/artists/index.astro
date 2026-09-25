@@ -1,0 +1,78 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import catalog from '../../data/albums.json';
+import { buildCatalog } from '../../lib/catalog';
+
+const artists = buildCatalog(catalog.albums).artists;
+const byInitial = new Map<string, typeof artists>();
+for (const artist of artists) {
+	const initial = artist.name.trim().charAt(0).toLocaleUpperCase() || '#';
+	const letter = /^[A-Z]$/.test(initial) ? initial : '#';
+	byInitial.set(letter, [...(byInitial.get(letter) ?? []), artist]);
+}
+const letters = [...byInitial.keys()].sort((a, b) => a === '#' ? 1 : b === '#' ? -1 : a.localeCompare(b));
+---
+
+<SiteLayout
+	title="Artists — CD Collection"
+	description={`Browse ${artists.length} artists in the CD collection and open their album lists.`}
+	active="artists"
+>
+	<div class="page-wrap">
+		<section class="page-intro directory-intro" aria-labelledby="page-title">
+			<div>
+				<p class="eyebrow">02 / Artist index</p>
+				<h1 id="page-title">Filed by <em>artist.</em></h1>
+				<p class="page-intro__copy">One directory, every artist, with each album a short step away.</p>
+			</div>
+			<div class="collection-count"><strong>{artists.length}</strong><span>artists in the collection</span></div>
+		</section>
+
+		<div class="directory-tools">
+			<p class="section-kicker">A–Z / {artists.length} names</p>
+			<label class="search-field" for="artist-search">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.4 15.4 4.1 4.1" /></svg>
+				<input id="artist-search" type="search" placeholder="Find an artist" autocomplete="off" spellcheck="false" />
+			</label>
+		</div>
+
+		<nav class="alphabet-nav" aria-label="Jump to a letter">
+			{letters.map((letter) => <a href={`#letter-${letter === '#' ? 'other' : letter}`}>{letter}</a>)}
+		</nav>
+
+		<div class="artist-index" id="artist-index">
+			{letters.map((letter) => (
+				<section aria-labelledby={`letter-${letter === '#' ? 'other' : letter}`}>
+					<h2 class="letter-heading" id={`letter-${letter === '#' ? 'other' : letter}`}>{letter}</h2>
+					{(byInitial.get(letter) ?? []).map((artist) => (
+						<div class="artist-row" data-artist={artist.name.toLocaleLowerCase()}>
+							<a href={artist.path}>{artist.name}</a>
+							<span>{artist.albums.length} {artist.albums.length === 1 ? 'album' : 'albums'}</span>
+						</div>
+					))}
+				</section>
+			))}
+			<p class="empty-state" id="artist-empty" hidden>No artists match that search.</p>
+		</div>
+	</div>
+</SiteLayout>
+
+<script>
+	const artistSearch = document.querySelector<HTMLInputElement>('#artist-search');
+	const artistRows = Array.from(document.querySelectorAll<HTMLElement>('[data-artist]'));
+	const emptyState = document.querySelector<HTMLElement>('#artist-empty');
+	artistSearch?.addEventListener('input', () => {
+		const query = artistSearch.value.trim().toLocaleLowerCase();
+		let visible = 0;
+		for (const row of artistRows) {
+			const matches = !query || (row.dataset.artist ?? '').includes(query);
+			row.hidden = !matches;
+			if (matches) visible += 1;
+		}
+		for (const section of document.querySelectorAll<HTMLElement>('.artist-index section')) {
+			const hasVisibleArtist = Boolean(section.querySelector('.artist-row:not([hidden])'));
+			section.hidden = !hasVisibleArtist;
+		}
+		if (emptyState) emptyState.hidden = visible > 0;
+	});
+</script>

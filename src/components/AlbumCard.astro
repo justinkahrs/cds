@@ -1,0 +1,37 @@
+---
+import type { AlbumView } from '../lib/catalog';
+import { getCoverArtUrl } from '../lib/catalog';
+
+interface Props {
+	album: AlbumView;
+}
+
+const { album } = Astro.props;
+const artworkUrl = getCoverArtUrl(album, 250);
+---
+
+<article class="album-card" data-search={`${album.artist ?? ''} ${album.title ?? ''} ${album.changerSlot ?? ''} ${album.label ?? ''} ${album.format ?? ''}`.toLocaleLowerCase()}>
+	<a class="cover-frame" href={album.path} aria-label={`Album details for ${album.title || 'untitled album'}`}>
+		{artworkUrl && <img data-cover src={artworkUrl} alt={`Cover artwork for ${album.title}`} loading="lazy" />}
+		<div class="cover-placeholder" aria-hidden="true">
+			<span class="cover-placeholder__stamp">CD COLLECTION</span>
+			<strong>{album.title || 'Untitled album'}</strong>
+			<span>{album.artist || 'Artist not listed'}</span>
+		</div>
+	</a>
+	<div class="album-card__body">
+		{album.artistPath ? (
+			<p class="album-card__artist"><a href={album.artistPath}>{album.artist}</a></p>
+		) : (
+			<p class="album-card__artist">{album.artist || 'Artist not listed'}</p>
+		)}
+		<h2><a href={album.path}>{album.title || 'Title not listed'}</a></h2>
+		<div class="album-card__bottom">
+			<p class="album-card__details">
+				{album.releaseYear && <span>{album.releaseYear}</span>}
+				{album.format && <span>{album.format}</span>}
+			</p>
+			<p class="slot-chip"><span>CHANGER</span><strong>{album.changerSlot || '—'}</strong></p>
+		</div>
+	</div>
+</article>

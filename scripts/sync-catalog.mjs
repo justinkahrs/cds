@@ -18,6 +18,12 @@ const COLUMNS = {
 	changerSlot: 'Collection Disc Slot',
 };
 
+const OPTIONAL_COLUMNS = {
+	discogsReleaseId: 'release_id',
+	discogsArtistUrl: 'Discogs Artist URL',
+	musicBrainzReleaseGroupId: 'MusicBrainz Release Group ID',
+};
+
 class SyncError extends Error {}
 
 function readServiceAccount() {
@@ -78,13 +84,24 @@ export function mapAlbums(rows) {
 		}
 		positions[field] = matches[0];
 	}
+	for (const [field, columnName] of Object.entries(OPTIONAL_COLUMNS)) {
+		const matches = headers
+			.map((header, index) => (header === columnName ? index : -1))
+			.filter((index) => index !== -1);
+		if (matches.length > 1) {
+			throw new SyncError(
+				`Expected at most one "${columnName}" header; found ${matches.length}. The existing snapshot was not changed.`,
+			);
+		}
+		if (matches.length === 1) positions[field] = matches[0];
+	}
 
 	const albums = rows.slice(1).flatMap((row) => {
 		const artist = cleanCell(row[positions.artist]);
 		const title = cleanCell(row[positions.title]);
 		if (!artist && !title) return [];
 
-		return [{
+		const album = {
 			artist,
 			title,
 			releaseYear: normalizeReleaseYear(row[positions.releaseYear]),
@@ -92,7 +109,14 @@ export function mapAlbums(rows) {
 			format: cleanCell(row[positions.format]),
 			// FORMATTED_VALUE retains the human-readable comma-separated changer slots.
 			changerSlot: cleanCell(row[positions.changerSlot]),
-		}];
+		};
+		for (const field of Object.keys(OPTIONAL_COLUMNS)) {
+			if (positions[field] !== undefined) {
+				const value = cleanCell(row[positions[field]]);
+				if (value) album[field] = value;
+			}
+		}
+		return [album];
 	});
 
 	if (!albums.length) {

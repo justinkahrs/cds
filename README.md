@@ -1,6 +1,6 @@
 # CD Collection Catalog
 
-A static, searchable catalog of the CD collection and its changer locations. The built site reads its data from `src/data/albums.json`; it does not call Google at runtime.
+A static catalog of the CD collection and its changer locations. Browse the album index, artist directory, and individual album details. The built site reads its data from `src/data/albums.json`; it does not call Google at runtime.
 
 ## Local development
 
@@ -22,7 +22,9 @@ The static build is written to `dist/`. Search works locally from the checked-in
 
 ## Catalog sync
 
-The source is the Google spreadsheet `10ihW9krbESgxEMtXUQ38dDGDnrZTnePpvEDUGdVIQgo`, tab ID `1336284669` (`final_sorted_updated_cd_collection`). The importer reads formatted values so multi-disc changer locations such as `173,174,175` remain readable strings. Only artist, title, release year, label, format, and changer slot are written to the public catalog. Blank optional values stay `null`; the source's `0` release-year placeholder becomes `null`.
+The source is the Google spreadsheet `10ihW9krbESgxEMtXUQ38dDGDnrZTnePpvEDUGdVIQgo`, tab ID `1336284669` (`final_sorted_updated_cd_collection`). The importer reads formatted values so multi-disc changer locations such as `173,174,175` remain readable strings. It also retains the optional `release_id`, `Discogs Artist URL`, and `MusicBrainz Release Group ID` fields when present. The public pages use these for direct Discogs release/profile links and optional Cover Art Archive artwork; missing external metadata stays blank. Blank presentation fields stay `null`, and the source's `0` release-year placeholder becomes `null`.
+
+The additional metadata headers are stored in columns M:N. They are matched by header name, so the importer does not depend on column order. The existing changer-slot values in column K are read-only catalog locations; the website sync never writes to the Google Sheet. MusicBrainz release-group matches should be checked against the album and artist before adding them. Cover images load from the [MusicBrainz Cover Art Archive](https://musicbrainz.org/doc/Cover_Art_Archive), with a designed fallback when no image is available.
 
 To run a sync locally:
 

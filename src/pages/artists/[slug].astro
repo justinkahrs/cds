@@ -1,0 +1,35 @@
+---
+import AlbumCard from '../../components/AlbumCard.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import catalog from '../../data/albums.json';
+import { buildCatalog } from '../../lib/catalog';
+
+export function getStaticPaths() {
+	const artists = buildCatalog(catalog.albums).artists;
+	return artists.map((artist) => ({ params: { slug: artist.slug }, props: { artist } }));
+}
+
+const { artist } = Astro.props;
+---
+
+<SiteLayout title={`${artist.name} — CD Collection`} description={`Albums by ${artist.name} in the CD collection.`} active="artists">
+	<div class="page-wrap">
+		<a class="back-link" href="/artists/">← All artists</a>
+		<section class="artist-heading" aria-labelledby="page-title">
+			<div>
+				<p class="eyebrow">Artist / Collection file</p>
+				<h1 id="page-title">{artist.name}</h1>
+			</div>
+			<div class="artist-heading__side">
+				<strong>{artist.albums.length}</strong><span>{artist.albums.length === 1 ? 'album in the collection' : 'albums in the collection'}</span>
+				{artist.discogsArtistUrl && <a href={artist.discogsArtistUrl} target="_blank" rel="noreferrer">Discogs artist profile ↗</a>}
+			</div>
+		</section>
+		<section class="artist-albums" aria-labelledby="album-list-heading">
+			<h2 id="album-list-heading">Albums · {artist.albums.length}</h2>
+			<div class="album-grid">
+				{artist.albums.map((album, index) => <div style={`--entry-index: ${index}`}><AlbumCard album={album} /></div>)}
+			</div>
+		</section>
+	</div>
+</SiteLayout>
