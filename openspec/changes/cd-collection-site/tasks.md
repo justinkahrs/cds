@@ -17,4 +17,5 @@
 
 - [x] 3.1 Configure the GitHub Actions flow to build and publish after site pushes and successful sync runs, with Pages permissions and the `cds.justinkahrs.com` custom-domain file; verify the static build contains the custom-domain file and the workflow declares the required Pages permissions.
 - [x] 3.2 Document the service-account sharing, `GOOGLE_SERVICE_ACCOUNT_JSON` secret, Pages setting, DNS record, and manual sync procedure; verify the README setup steps match the workflow inputs and custom domain.
-- [ ] 3.3 Connect the repository to GitHub, configure the service-account secret and Pages custom domain/DNS, run the first workflow, and confirm the published site at `https://cds.justinkahrs.com`.
+- [x] 3.3 Create a new public GitHub repository, configure Pages with the custom domain, push the catalog, and confirm that the Pages deployment workflow succeeds.
+- [ ] 3.4 Add the `cds` DNS CNAME, wait for GitHub's TLS certificate, enforce HTTPS, and confirm `https://cds.justinkahrs.com` resolves to the published site.

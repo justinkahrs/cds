@@ -45,4 +45,6 @@ For the first deployment:
 4. At the DNS provider, add a `CNAME` record for `cds` pointing to `justinkahrs.github.io`.
 5. Add the `GOOGLE_SERVICE_ACCOUNT_JSON` Actions secret and share the spreadsheet with the service account as a Viewer, then run **Sync and deploy CD catalog** manually once.
 
+After DNS resolves and GitHub issues a TLS certificate, enable **Enforce HTTPS** under **Settings → Pages**.
+
 GitHub Actions needs permission to write repository contents so a sync can commit an updated snapshot, and Pages deployment needs `pages: write` and `id-token: write`; the workflow declares these permissions. If repository rules block direct pushes to `main`, allow the workflow bot to push the generated catalog commit or adjust the branch rule.
