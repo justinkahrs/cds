@@ -15,4 +15,4 @@
 
 - [x] 3.1 Replace the record-led hero and flat styling with a responsive CD-library design; verify the production build succeeds and the pages use the new navigation and artwork layout.
 - [x] 3.2 Document the source metadata columns, artwork attribution, and local build/sync behavior; verify README instructions match the importer and output fields.
-- [ ] 3.3 Publish the change through GitHub Pages, confirm the workflow succeeds, and enforce HTTPS once GitHub has provisioned the custom-domain certificate; verify the production URL serves the new catalog securely.
+- [x] 3.3 Publish the change through GitHub Pages, confirm the workflow succeeds, and enforce HTTPS once GitHub has provisioned the custom-domain certificate; verify the production URL serves the new catalog securely.
