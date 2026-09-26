@@ -1750,7 +1750,8 @@
       "format": "2xCD, Comp",
       "changerSlot": "130,131",
       "discogsReleaseId": "1902312",
-      "discogsArtistUrl": "https://www.discogs.com/artist/194"
+      "discogsArtistUrl": "https://www.discogs.com/artist/194",
+      "musicBrainzReleaseGroupId": "1b998d3b-ccbc-380c-9a0b-7309c2e7ae7a"
     },
     {
       "artist": "Various",
