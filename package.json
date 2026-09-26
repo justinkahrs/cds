@@ -7,10 +7,13 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "predev": "npm run cache:cover-art",
     "build": "astro build",
+    "prebuild": "npm run cache:cover-art",
     "preview": "astro preview",
     "test": "node --test",
     "sync:catalog": "node scripts/sync-catalog.mjs",
+    "cache:cover-art": "node scripts/cache-cover-art.mjs",
     "astro": "astro"
   },
   "dependencies": {

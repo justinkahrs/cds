@@ -1,3 +1,6 @@
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
 export interface CatalogAlbum {
 	artist: string | null;
 	title: string | null;
@@ -85,10 +88,12 @@ export function getMusicBrainzReleaseGroupUrl(album: CatalogAlbum) {
 		: null;
 }
 
-export function getCoverArtUrl(album: CatalogAlbum, size: 250 | 500 = 500) {
-	const sourceUrl = getMusicBrainzReleaseGroupUrl(album);
-	if (!sourceUrl || !album.musicBrainzReleaseGroupId) return null;
-	return `https://coverartarchive.org/release-group/${album.musicBrainzReleaseGroupId}/front-${size}`;
+export function getCoverArtUrl(album: CatalogAlbum) {
+	const releaseGroupId = album.musicBrainzReleaseGroupId;
+	if (!getMusicBrainzReleaseGroupUrl(album) || !releaseGroupId) return null;
+	const normalizedId = releaseGroupId.toLowerCase();
+	const localPath = resolve(process.cwd(), 'public', 'covers', `${normalizedId}.jpg`);
+	return existsSync(localPath) ? `/covers/${normalizedId}.jpg` : null;
 }
 
 export function buildCatalog(albums: CatalogAlbum[]) {

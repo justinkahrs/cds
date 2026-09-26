@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { album } = Astro.props;
-const artworkUrl = getCoverArtUrl(album, 250);
+const artworkUrl = getCoverArtUrl(album);
 ---
 
 <article class="album-card" data-search={`${album.artist ?? ''} ${album.title ?? ''} ${album.changerSlot ?? ''} ${album.label ?? ''} ${album.format ?? ''}`.toLocaleLowerCase()}>

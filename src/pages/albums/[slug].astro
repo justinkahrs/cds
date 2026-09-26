@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 const { album } = Astro.props;
-const artworkUrl = getCoverArtUrl(album, 500);
+const artworkUrl = getCoverArtUrl(album);
 const releaseUrl = getDiscogsReleaseUrl(album);
 const artistUrl = isDiscogsArtistUrl(album.discogsArtistUrl) ? album.discogsArtistUrl : null;
 const musicBrainzUrl = getMusicBrainzReleaseGroupUrl(album);
@@ -36,7 +36,7 @@ const musicBrainzUrl = getMusicBrainzReleaseGroupUrl(album);
 						<span>{album.artist || 'Artist not listed'}</span>
 					</div>
 				</div>
-				{musicBrainzUrl && (
+				{artworkUrl && musicBrainzUrl && (
 					<p class="detail-artwork__credit">
 						Artwork via <a href="https://musicbrainz.org/doc/Cover_Art_Archive" target="_blank" rel="noreferrer">MusicBrainz Cover Art Archive</a> ·
 						<a href={musicBrainzUrl} target="_blank" rel="noreferrer">source record</a>

@@ -1,5 +1,7 @@
 # build output
 dist/
+.cache/
+/public/covers/
 # generated types
 .astro/
 

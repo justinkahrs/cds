@@ -10,9 +10,12 @@
 - [x] 2.1 Add deterministic static routes for the artist directory, artist pages, and album detail pages; verify representative route files exist in `dist/` after a production build.
 - [x] 2.2 Add navigation between catalog, artist, and album pages, including full changer-slot values and available Discogs release/profile links; verify the built HTML contains expected links and slot text.
 - [x] 2.3 Add Cover Art Archive thumbnails, attribution, and an on-error placeholder; verify a matched album uses its image URL and an unmatched album renders its placeholder in the built output.
+- [ ] 2.4 Fetch unique release-group artwork into a persistent cache, publish available covers as same-origin files, and confirm albums without art render the placeholder without a remote image URL.
 
 ## 3. Visual design and delivery
 
 - [x] 3.1 Replace the record-led hero and flat styling with a responsive CD-library design; verify the production build succeeds and the pages use the new navigation and artwork layout.
 - [x] 3.2 Document the source metadata columns, artwork attribution, and local build/sync behavior; verify README instructions match the importer and output fields.
 - [x] 3.3 Publish the change through GitHub Pages, confirm the workflow succeeds, and enforce HTTPS once GitHub has provisioned the custom-domain certificate; verify the production URL serves the new catalog securely.
+- [ ] 3.4 Restore and save the artwork cache in GitHub Actions, document cache behavior and local build setup, and confirm repeat builds skip cached successful and no-art lookups.
+- [ ] 3.5 Deploy the updated site and verify album images load from the site origin without runtime Cover Art Archive requests.

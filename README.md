@@ -1,6 +1,6 @@
 # CD Collection Catalog
 
-A static catalog of the CD collection and its changer locations. Browse the album index, artist directory, and individual album details. The built site reads its data from `src/data/albums.json`; it does not call Google at runtime.
+A static catalog of the CD collection and its changer locations. Browse the album index, artist directory, and individual album details. The built site reads its data from `src/data/albums.json`; it does not call Google or Cover Art Archive at runtime.
 
 ## Local development
 
@@ -11,6 +11,8 @@ npm ci
 npm run dev
 ```
 
+Starting development or building the static site checks for missing album artwork. Available covers are cached in `.cache/cover-art/` and copied to ignored `public/covers/` files for same-origin serving; successful images are reused, and unavailable artwork is checked again after 30 days. The first run needs network access to Cover Art Archive. Afterward, local builds use the cached copies.
+
 Build and preview the static site with:
 
 ```sh
@@ -18,13 +20,13 @@ npm run build
 npm run preview
 ```
 
-The static build is written to `dist/`. Search works locally from the checked-in snapshot without Google credentials or a network request.
+The static build is written to `dist/`. Search uses the checked-in snapshot without Google credentials; the first development start or build also needs network access to fetch artwork not already in the local cache.
 
 ## Catalog sync
 
 The source is the Google spreadsheet `10ihW9krbESgxEMtXUQ38dDGDnrZTnePpvEDUGdVIQgo`, tab ID `1336284669` (`final_sorted_updated_cd_collection`). The importer reads formatted values so multi-disc changer locations such as `173,174,175` remain readable strings. It also retains the optional `release_id`, `Discogs Artist URL`, and `MusicBrainz Release Group ID` fields when present. The public pages use these for direct Discogs release/profile links and optional Cover Art Archive artwork; missing external metadata stays blank. Blank presentation fields stay `null`, and the source's `0` release-year placeholder becomes `null`.
 
-The additional metadata headers are stored in columns M:N. They are matched by header name, so the importer does not depend on column order. The existing changer-slot values in column K are read-only catalog locations; the website sync never writes to the Google Sheet. MusicBrainz release-group matches should be checked against the album and artist before adding them. Cover images load from the [MusicBrainz Cover Art Archive](https://musicbrainz.org/doc/Cover_Art_Archive), with a designed fallback when no image is available.
+The additional metadata headers are stored in columns M:N. They are matched by header name, so the importer does not depend on column order. The existing changer-slot values in column K are read-only catalog locations; the website sync never writes to the Google Sheet. MusicBrainz release-group matches should be checked against the album and artist before adding them. Cover images come from the [MusicBrainz Cover Art Archive](https://musicbrainz.org/doc/Cover_Art_Archive), are cached during builds, and are served locally with a designed fallback when no image is available.
 
 To run a sync locally:
 
@@ -37,7 +39,7 @@ The importer requests the read-only Sheets scope. It checks the expected headers
 
 ## GitHub Actions sync and deployment
 
-`.github/workflows/catalog.yml` builds and deploys the committed snapshot on pushes to `main`. It also runs a read-only sheet sync daily at 09:00 UTC or when manually started from **Actions → Sync and deploy CD catalog → Run workflow**. Scheduled and manual runs commit `src/data/albums.json` only when it changed, then build and deploy that snapshot in the same run. Add the service-account key in the GitHub repository settings under **Secrets and variables → Actions** as `GOOGLE_SERVICE_ACCOUNT_JSON`.
+`.github/workflows/catalog.yml` builds and deploys the committed snapshot on pushes to `main`. It also runs a read-only sheet sync daily at 09:00 UTC or when manually started from **Actions → Sync and deploy CD catalog → Run workflow**. Scheduled and manual runs commit `src/data/albums.json` only when it changed, restore the artwork cache, then build and deploy that snapshot in the same run. New or refreshed artwork entries are saved back to GitHub Actions cache; if GitHub evicts the cache, a later build fetches available artwork again. Add the service-account key in the GitHub repository settings under **Secrets and variables → Actions** as `GOOGLE_SERVICE_ACCOUNT_JSON`.
 
 The public repository is [justinkahrs/cds](https://github.com/justinkahrs/cds). GitHub Pages is configured to publish through Actions, and `cds.justinkahrs.com` is registered as its custom domain. To finish the external setup:
 

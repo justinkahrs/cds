@@ -59,6 +59,25 @@ jobs:
             git push
           fi
 
+      - name: Restore artwork cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/cover-art
+          key: cover-art-v1-${{ hashFiles('src/data/albums.json') }}
+          restore-keys: |
+            cover-art-v1-
+
+      - name: Prepare artwork files
+        id: cover-art
+        run: npm run cache:cover-art
+
+      - name: Save updated artwork cache
+        if: steps.cover-art.outputs.cache-changed == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/cover-art
+          key: cover-art-v1-${{ hashFiles('src/data/albums.json') }}-${{ github.run_id }}
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 

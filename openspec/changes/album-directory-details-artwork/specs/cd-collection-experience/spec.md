@@ -66,6 +66,22 @@ Album pages and catalog entries MUST display front-cover artwork from the MusicB
 - **WHEN** no verified release-group match or front image exists
 - **THEN** the page displays the album title in a designed placeholder without a broken-image state
 
+### Requirement: Visitor pages use locally deployed artwork
+
+Catalog, artist, and album pages MUST load available Cover Art Archive images from same-origin static assets prepared during the site build. Visitor page views MUST NOT request album images from Cover Art Archive. Builds MUST reuse cached successful downloads, avoid repeatedly querying albums with no artwork, and leave transient fetch failures retryable.
+
+#### Scenario: Artwork is present in the build cache
+- **WHEN** a visitor opens a catalog or album page with cached artwork
+- **THEN** the image is served from the deployed site and no Cover Art Archive request is made
+
+#### Scenario: Artwork is new or absent from the cache
+- **WHEN** the build encounters a release-group ID without a cached image or current no-art marker
+- **THEN** it checks Cover Art Archive, caches an available image or a time-limited no-art marker, and publishes available art as a same-origin asset
+
+#### Scenario: Artwork fetch fails temporarily
+- **WHEN** a build receives a transient network or server error while fetching artwork
+- **THEN** it retries with backoff and fails the build if the error persists without caching it as a no-art result
+
 ### Requirement: The catalog uses a CD-focused visual design
 
 The public catalog MUST use a responsive visual design appropriate to a CD collection and MUST NOT use a vinyl-record graphic as its primary collection motif.

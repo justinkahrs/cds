@@ -10,12 +10,13 @@ The site is a static Astro app built from `src/data/albums.json`. The sync reads
 
 - Generate artist directory, artist, and album detail pages at build time.
 - Keep external metadata in the source sheet and checked-in snapshot so the published site remains static.
-- Use Cover Art Archive front covers for verified MusicBrainz release-group matches and show a graceful placeholder when no cover is available.
+- Use Cover Art Archive front covers for verified MusicBrainz release-group matches, cache them across GitHub Actions builds, and show a graceful placeholder when no cover is available.
+- Serve artwork from the published site so visitor page views make no Cover Art Archive requests.
 - Replace the vinyl-led hero with a CD-library identity and clear navigation.
 
 **Non-Goals:**
 
-- Make Discogs, Google Sheets, or MusicBrainz API requests from visitor pages.
+- Make Discogs, Google Sheets, MusicBrainz, or Cover Art Archive requests from visitor pages.
 - Display Discogs-sourced images.
 - Change, reformat, or rewrite changer-slot cells.
 
@@ -31,7 +32,9 @@ Astro will pre-render the artist directory, one page per distinct artist, and on
 
 ### Use MusicBrainz Cover Art Archive for optional cover images
 
-For reviewed release-group IDs, the page will request the Cover Art Archive's front thumbnail URL and link the credit to the corresponding MusicBrainz record. Discogs API image URLs are excluded because API image data has restrictive freshness and caching terms for static hosting. The artwork field remains optional; image load errors switch to a local placeholder.
+For reviewed release-group IDs, a build script will fetch the Cover Art Archive's 500-pixel front image into a GitHub Actions cache and copy available images into `public/covers/` for publication. The workflow restores the cache before fetching and stores successful images plus time-limited no-art markers, so only new, expired, or missing cache entries are requested. GitHub cache entries are immutable, so the workflow saves a new keyed entry only when the cached files change. Transient request failures will fail the build instead of being recorded as missing art. The pages use same-origin paths for locally available files and link the credit to the corresponding MusicBrainz record. Discogs API image URLs are excluded because API image data has restrictive freshness and caching terms for static hosting. The artwork field remains optional; absent images use the designed placeholder.
+
+The persistent image cache is not committed to Git. The deployed Pages artifact contains its own copy of the images, so cache eviction can cause a later build to re-fetch artwork but does not make visitor page views call Cover Art Archive.
 
 ### Use a CD-library editorial design
 
@@ -41,6 +44,8 @@ Replace the record illustration and oversized dark hero with a compact typograph
 
 - **A MusicBrainz search can find the wrong edition or similarly named album** → only write release-group IDs after checking the title and credited artist; leave uncertain matches blank.
 - **Cover Art Archive has no image or an external image request fails** → use a local placeholder and never depend on the image for the album title, links, or location.
+- **GitHub evicts an unused Actions cache** → the next build may fetch the covers again; deployed images remain available until that build completes.
+- **Cover Art Archive temporarily fails or rate-limits requests** → retry transient failures with backoff and fail the build rather than recording a false no-art result.
 - **New collection rows may lack enrichment metadata** → keep external columns optional and let those albums use placeholders and omit unavailable links until enriched.
 - **The sheet's existing note occupies column L** → write only M:N and verify the note and all K slot values are unchanged after the update.
 
