@@ -60,7 +60,7 @@ jobs:
           fi
 
       - name: Restore artwork cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .cache/cover-art
           key: cover-art-v1-${{ hashFiles('src/data/albums.json') }}
@@ -73,7 +73,7 @@ jobs:
 
       - name: Save updated artwork cache
         if: steps.cover-art.outputs.cache-changed == 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .cache/cover-art
           key: cover-art-v1-${{ hashFiles('src/data/albums.json') }}-${{ github.run_id }}
