@@ -1,6 +1,8 @@
 # build output
 dist/
 .cache/
+.playwright-cli/
+output/playwright/
 /public/covers/
 # generated types
 .astro/

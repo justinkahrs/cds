@@ -1,0 +1,52 @@
+---
+import type { AlbumView } from '../lib/catalog';
+import { getCoverArtUrl } from '../lib/catalog';
+import { slotOrder } from '../lib/carousel.mjs';
+interface Props { albums: AlbumView[] }
+const albums = [...Astro.props.albums].sort((left, right) => slotOrder(left.changerSlot) - slotOrder(right.changerSlot));
+const initialIndex = Math.max(0, albums.findIndex((album) => album.title === 'In Rainbows'));
+const initial = albums[initialIndex];
+---
+
+<section class="changer" id="disc-changer" aria-label="Interactive CD changer" hidden data-initial-index={initialIndex}>
+  <div class="changer-topline">
+    <div class="machine-brand">SONY <span>COMPACT DISC CHANGER</span></div>
+    <div class="machine-model"><span class="status-light"></span> SYSTEM READY <span>CDP-CX355</span></div>
+  </div>
+  <div class="machine-window">
+    <div class="carousel-bay">
+      <div class="bay-topline"><span><i></i> DISC EXPLORER</span><span>300-DISC CAROUSEL</span></div>
+      <div class="carousel-stage" id="carousel-stage" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Album carousel. Use left and right arrow keys to browse." aria-describedby="carousel-help">
+        <div class="stage-halo" aria-hidden="true"></div>
+        <div class="drum" aria-hidden="true"><div class="drum-side"></div><div class="drum-top"><div class="drum-grooves" id="drum-grooves"></div><div class="drum-hub"><span>MEGA<br/><b>STORAGE</b></span><strong>300</strong><small>COMPACT DISCS</small></div></div></div>
+        <div class="carousel-cases" id="carousel-cases">
+          {albums.map((album, index) => {
+            const cover = getCoverArtUrl(album);
+            return <button class="jewel-case" type="button" data-index={index} data-search={`${album.artist ?? ''} ${album.title ?? ''} ${album.changerSlot ?? ''} ${album.label ?? ''} ${album.format ?? ''}`} data-title={album.title || 'Untitled album'} data-artist={album.artist || 'Artist not listed'} data-year={album.releaseYear || '—'} data-label={album.label || 'Label not listed'} data-slot={album.changerSlot || 'Not listed'} data-path={album.path} data-artist-path={album.artistPath || ''} aria-label={`Select ${album.title} by ${album.artist}`} tabindex="-1">
+              <span class="jewel-spine" aria-hidden="true"></span>
+              <span class="jewel-art"><span class="jewel-fallback"><small>COMPACT DISC</small><strong>{album.title || 'Untitled album'}</strong><span>{album.artist}</span></span>{cover && <img src={cover} alt={`Cover artwork for ${album.title}`} loading="lazy" draggable="false" />}</span>
+              <span class="jewel-glass" aria-hidden="true"></span>
+              <span class="jewel-number">{album.changerSlot || '—'}</span>
+            </button>;
+          })}
+        </div>
+        <div class="selection-marker" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="bay-bottomline"><span id="carousel-position">{String(initialIndex + 1).padStart(3, '0')} / {albums.length}</span><p id="carousel-help">Drag to explore <span>·</span> <kbd>←</kbd> <kbd>→</kbd> to browse</p><span class="bay-disc-icon" aria-hidden="true">◎</span></div>
+    </div>
+    <aside class="selected-album" aria-label="Selected album">
+      <div class="display-heading"><span class="status-light"></span> IN THE SPOTLIGHT <span>01 DISC</span></div>
+      <div class="vfd-display"><div class="vfd-label"><span>DISC / SLOT</span><span>ALL DISCS</span></div><strong id="selected-slot">{initial.changerSlot}</strong><div class="vfd-bottom"><span id="display-artist">{initial.artist}</span><span class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <div class="selection-copy" tabindex="0" role="group" aria-label="Selected album information" aria-live="polite" aria-atomic="true"><p id="selected-artist">{initial.artist}</p><h2 id="selected-title">{initial.title}</h2><p class="selected-meta"><span id="selected-year">{initial.releaseYear}</span><span>·</span><span>COMPACT DISC</span></p><p class="selected-label" id="selected-label">{initial.label}</p></div>
+      <a class="album-open" id="selected-link" href={initial.path}>Explore album <span aria-hidden="true">↗</span></a>
+      <a class="selected-artist-link" id="selected-artist-link" href={initial.artistPath || '/artists/'}>More from this artist <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+  <div class="control-deck">
+    <div class="storage-brand"><span>MegaStorage</span><strong>300<span>CD</span></strong><small>A COLLECTION WORTH COMING BACK TO.</small></div>
+    <div class="transport"><p>DISC SELECT</p><div><button type="button" class="hardware-button transport-key" id="previous-disc" aria-label="Previous album"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M18 5 8 12l10 7z"/></svg></button><button type="button" class="hardware-button transport-key" id="next-disc" aria-label="Next album"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M6 5l10 7-10 7z"/></svg></button></div></div>
+    <div class="shuffle-control"><p>LET THE COLLECTION DECIDE</p><button class="hardware-button" type="button" id="random-disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h3c5 0 6 12 11 12h4m-4-4 4 4-4 4M3 18h3c2 0 3-2 4-4m4-4c1-2 2-4 4-4h3m-4-4 4 4-4 4"/></svg><span id="random-label">Surprise me</span></button></div>
+    <div class="jog-control"><div><span>DISC / CHARACTER</span><small>TURN TO EXPLORE</small></div><button type="button" class="jog-dial" id="jog-dial" aria-label="Jog dial: drag to turn, or click for next album"><span class="dial-face"><i></i></span></button><span class="jog-plus" aria-hidden="true">+</span></div>
+  </div>
+  <div class="machine-bottom"><span><i></i> POWER ON</span><span>HIGH DENSITY LINEAR CONVERTER SYSTEM</span><span class="compact-disc">COMPACT <b>disc</b> DIGITAL AUDIO</span></div>
+</section>

@@ -1,6 +1,16 @@
 # CD Collection Catalog
 
-A static catalog of the CD collection and its changer locations. Browse the album index, artist directory, and individual album details. The built site reads its data from `src/data/albums.json`; it does not call Google or Cover Art Archive at runtime.
+A static catalog of the CD collection and its changer locations, presented as a Sony CDP-CX355-inspired carousel. The built site reads its data from `src/data/albums.json`; it does not call Google or Cover Art Archive at runtime.
+
+## Browsing the collection
+
+The changer opens with a dimensional album carousel in physical slot order, a fluorescent slot display, and a jog dial. Drag horizontally, swipe, use the previous/next buttons, turn the dial, or use the left/right arrow keys while focused inside the changer. Clicking the dial advances one album. **Surprise me** chooses a different album, spins the carousel, then slows into its slot; searching or browsing manually interrupts the spin. Reduced-motion preferences skip the animation. A horizontal trackpad gesture also turns the carousel, while vertical scrolling remains available. Multi-disc releases use their first listed slot for ordering; unassigned albums appear last.
+
+The player keeps a fixed height at each responsive breakpoint. Long album titles and metadata scroll inside the details panel, keeping the album links and hardware controls in place. Jewel cases share one circular motion path with clearance between them throughout movement.
+
+Search by artist, title, or changer slot (press `/` to focus search), or switch to **All albums** for the full grid. **Explore album** opens the existing release page, and **Artists** opens the artist directory. Multi-disc locations retain their exact source strings. The current album is remembered within the browser session when returning from a detail page. These controls browse the catalog; they do not play audio or operate the physical changer.
+
+The interface supports narrow screens, keyboard focus, reduced-motion preferences, and artwork fallbacks. Without JavaScript, the static album grid and all album/artist links remain accessible.
 
 ## Local development
 

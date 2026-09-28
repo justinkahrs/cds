@@ -1,71 +1,32 @@
 ---
 import AlbumCard from '../components/AlbumCard.astro';
+import DiscChanger from '../components/DiscChanger.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import catalog from '../data/albums.json';
 import { buildCatalog } from '../lib/catalog';
-
 const collection = buildCatalog(catalog.albums);
 const albums = collection.albums;
-const albumCount = albums.length;
-const artistCount = collection.artists.length;
 ---
-
-<SiteLayout
-	title="CD Collection — Album Index"
-	description="Browse the CD collection by album or artist and find each disc's changer location."
-	active="catalog"
->
-	<div class="page-wrap">
-		<section class="page-intro" aria-labelledby="page-title">
-			<div>
-				<p class="eyebrow">A personal listening archive</p>
-				<h1 id="page-title">On the shelf.<br /><em>In the changer.</em></h1>
-				<p class="page-intro__copy">
-					A small index for finding the album, its artist, and the slot where the disc lives.
-				</p>
-			</div>
-			<div class="collection-count" aria-label={`${albumCount} albums by ${artistCount} artists`}>
-				<strong>{albumCount}</strong>
-				<span>albums · {artistCount} artists</span>
-			</div>
-		</section>
-
-		<section class="catalog-controls" aria-label="Catalog controls">
-			<p class="section-kicker">01 / Album index · alphabetical by artist</p>
-			<div>
-				<label class="search-label" for="catalog-search">Search by artist, title, or changer slot</label>
-				<div class="search-field">
-					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.4 15.4 4.1 4.1" /></svg>
-					<input id="catalog-search" type="search" placeholder="Try an artist, album, or slot" autocomplete="off" spellcheck="false" aria-controls="album-grid" />
-				</div>
-				<p class="search-status" aria-live="polite"><strong id="result-count">{albumCount} albums</strong> · changer locations included</p>
-			</div>
-		</section>
-
-		<section class="album-grid" id="album-grid" aria-label="Albums in the collection">
-			{albums.map((album, index) => <div style={`--entry-index: ${index}`}><AlbumCard album={album} /></div>)}
-			<p class="empty-state" id="empty-state" hidden>No albums match that search. Try another artist, title, or slot.</p>
-		</section>
-	</div>
+<SiteLayout title="In rotation — CD Collection" description="Turn the carousel, find a favorite, and rediscover a good record in this personal CD collection." active="catalog">
+  <div class="page-wrap collection-page" data-collection>
+    <section class="rotation-intro" aria-labelledby="page-title">
+      <div><p class="eyebrow"><span class="status-light"></span> A personal listening archive</p><h1 id="page-title">Good things <em>come around.</em></h1><p>A shelf full of memories. A whole lot left to rediscover.</p></div>
+      <div class="archive-count"><strong>{albums.length}<span> albums</span></strong><p>{collection.artists.length} artists. A lifetime of discoveries.</p></div>
+    </section>
+    <section class="browse-bar" aria-label="Collection controls">
+      <div class="view-switch" hidden data-enhanced>
+        <button type="button" data-view="changer" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="10" rx="7" ry="5"/><ellipse cx="10" cy="10" rx="2" ry="1.5"/></svg> The changer</button>
+        <button type="button" data-view="grid" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3h5v5H3zM12 3h5v5h-5zM3 12h5v5H3zM12 12h5v5h-5z"/></svg> All albums</button>
+      </div>
+      <p class="section-kicker static-index-label">The album collection</p>
+      <label class="search-field" for="catalog-search" hidden data-enhanced><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.4 15.4 4.1 4.1" /></svg><input id="catalog-search" type="search" placeholder="Find an artist, album, or slot…" aria-label="Search by artist, album, or changer slot" autocomplete="off" spellcheck="false" /><kbd aria-hidden="true">/</kbd></label>
+    </section>
+    <DiscChanger albums={albums} />
+    <section class="album-grid" id="album-grid" aria-label="Albums in the collection">{albums.map((album) => <div><AlbumCard album={album} /></div>)}</section>
+    <div class="catalog-empty" id="empty-state" hidden><span class="empty-disc" aria-hidden="true">◎</span><h2>No discs found.</h2><p>Try another artist, album, or changer slot.</p><button class="hardware-button" id="clear-search" type="button">Clear search</button></div>
+    <div class="collection-footnote"><p id="result-count" aria-live="polite">{albums.length} albums in the collection</p><p>Collected over time. Played in full.</p></div>
+  </div>
 </SiteLayout>
-
 <script>
-	const searchInput = document.querySelector<HTMLInputElement>('#catalog-search');
-	const albumCards = Array.from(document.querySelectorAll<HTMLElement>('.album-card'));
-	const resultCount = document.querySelector<HTMLElement>('#result-count');
-	const emptyState = document.querySelector<HTMLElement>('#empty-state');
-
-	const updateCatalog = () => {
-		const query = searchInput?.value.trim().toLocaleLowerCase() ?? '';
-		let visibleCount = 0;
-		for (const card of albumCards) {
-			const matches = !query || (card.dataset.search ?? '').includes(query);
-			card.parentElement!.hidden = !matches;
-			if (matches) visibleCount += 1;
-		}
-		if (resultCount) resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'album' : 'albums'}${query ? ' found' : ''}`;
-		if (emptyState) emptyState.hidden = visibleCount > 0;
-	};
-
-	searchInput?.addEventListener('input', updateCatalog);
+  import '../scripts/changer';
 </script>

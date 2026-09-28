@@ -1,5 +1,6 @@
 ---
 import '../styles/site.css';
+import '../styles/changer.css';
 
 interface Props {
 	title: string;
@@ -19,7 +20,7 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#f4f0e6" />
+		<meta name="theme-color" content="#151715" />
 		<meta name="description" content={description} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
@@ -27,23 +28,25 @@ const {
 		<title>{title}</title>
 	</head>
 	<body>
+		<a class="skip-link" href="#main-content">Skip to collection</a>
 		<header class="site-header">
 			<a class="brand" href="/" aria-label="CD Collection home">
 				<span class="brand__mark" aria-hidden="true">
 					<span></span><span></span><span></span>
 				</span>
-				<span class="brand__name">CD <em>collection</em></span>
+				<span class="brand__name">CD<span class="brand__slash">/</span><em>collection</em></span>
 			</a>
+			<span class="header-caption">THE PHYSICAL FORMAT. THE PERSONAL CONNECTION.</span>
 			<nav class="primary-nav" aria-label="Main navigation">
-				<a href="/" aria-current={active === 'catalog' ? 'page' : undefined}>Albums</a>
+				<a href="/" aria-current={active === 'catalog' ? 'page' : undefined}>Collection</a>
 				<a href="/artists/" aria-current={active === 'artists' ? 'page' : undefined}>Artists</a>
 			</nav>
 		</header>
-		<main>
+		<main id="main-content">
 			<slot />
 		</main>
 		<footer class="site-footer">
-			<p>Filed for the next time you reach for a disc.</p>
+			<p><span class="footer-disc" aria-hidden="true">◎</span> Less scrolling. More listening.</p>
 			<p>
 				Cover images via
 				<a href="https://musicbrainz.org/doc/Cover_Art_Archive" target="_blank" rel="noreferrer">MusicBrainz Cover Art Archive</a>
