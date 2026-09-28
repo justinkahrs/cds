@@ -20,6 +20,7 @@
 - [x] 4.2 Replace independent case motion with a shared circular path and sufficient clearance; verify geometry checks and inspect moving cases in the browser.
 - [x] 4.3 Add an easing surprise spin with a predetermined destination, cancellation, and reduced-motion behavior; verify the spin passes intermediate albums, lands accurately, and cannot overwrite a later search or manual selection.
 - [x] 4.4 Update browsing documentation and run the production build, tests, and browser regression checks; refresh the existing local preview.
+- [x] 4.5 Remove the homepage introduction and navbar caption; reorder mobile browsing to show album information, carousel, then a prominent jog dial while preserving the desktop layout and fixed geometry.
 
 ## Refinement verification
 
@@ -27,6 +28,7 @@
 - Across all 170 titles, measured player height and control offsets remain constant at each tested layout. After breakpoint updates, short and LOTR selections have identical geometry at 320, 390, 768, 1440, and 1700 pixels. Long metadata remains scrollable and none of these widths has horizontal page overflow.
 - A sampled surprise spin passed through 67 distinct albums and landed on the preselected destination. Measured minimum case clearance throughout motion was 34.46 pixels in scene coordinates; the player height remained constant.
 - Search and manual navigation cancel spins without stale updates five seconds later. Reduced motion selects immediately. A two-album filtered spin lands correctly. No browser JavaScript errors occurred.
+- The homepage introduction and navbar caption are absent at desktop and mobile widths. At 390×844, the mobile album panel is 198px tall, the carousel is 216px tall, and the 144px jog dial follows it fully within the initial viewport; at 320×800, the 132px dial remains prominent with no horizontal overflow. Album details precede the carousel in document order. At 1440px, the carousel remains left of the detail panel and the dial stays in the control deck.
 - Refreshed the existing in-app preview at port 4322. Updated screenshots are under ignored `output/playwright/`.
 
 ## Initial verification

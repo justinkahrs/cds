@@ -14,6 +14,13 @@ const initial = albums[initialIndex];
     <div class="machine-model"><span class="status-light"></span> SYSTEM READY <span>CDP-CX355</span></div>
   </div>
   <div class="machine-window">
+    <aside class="selected-album" aria-label="Selected album">
+      <div class="display-heading"><span class="status-light"></span> IN THE SPOTLIGHT <span>01 DISC</span></div>
+      <div class="vfd-display"><div class="vfd-label"><span>DISC / SLOT</span><span>ALL DISCS</span></div><strong id="selected-slot">{initial.changerSlot}</strong><div class="vfd-bottom"><span id="display-artist">{initial.artist}</span><span class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <div class="selection-copy" tabindex="0" role="group" aria-label="Selected album information" aria-live="polite" aria-atomic="true"><p id="selected-artist">{initial.artist}</p><h2 id="selected-title">{initial.title}</h2><p class="selected-meta"><span id="selected-year">{initial.releaseYear}</span><span>·</span><span>COMPACT DISC</span></p><p class="selected-label" id="selected-label">{initial.label}</p></div>
+      <a class="album-open" id="selected-link" href={initial.path}>Explore album <span aria-hidden="true">↗</span></a>
+      <a class="selected-artist-link" id="selected-artist-link" href={initial.artistPath || '/artists/'}>More from this artist <span aria-hidden="true">→</span></a>
+    </aside>
     <div class="carousel-bay">
       <div class="bay-topline"><span><i></i> DISC EXPLORER</span><span>300-DISC CAROUSEL</span></div>
       <div class="carousel-stage" id="carousel-stage" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Album carousel. Use left and right arrow keys to browse." aria-describedby="carousel-help">
@@ -34,13 +41,6 @@ const initial = albums[initialIndex];
       </div>
       <div class="bay-bottomline"><span id="carousel-position">{String(initialIndex + 1).padStart(3, '0')} / {albums.length}</span><p id="carousel-help">Drag to explore <span>·</span> <kbd>←</kbd> <kbd>→</kbd> to browse</p><span class="bay-disc-icon" aria-hidden="true">◎</span></div>
     </div>
-    <aside class="selected-album" aria-label="Selected album">
-      <div class="display-heading"><span class="status-light"></span> IN THE SPOTLIGHT <span>01 DISC</span></div>
-      <div class="vfd-display"><div class="vfd-label"><span>DISC / SLOT</span><span>ALL DISCS</span></div><strong id="selected-slot">{initial.changerSlot}</strong><div class="vfd-bottom"><span id="display-artist">{initial.artist}</span><span class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
-      <div class="selection-copy" tabindex="0" role="group" aria-label="Selected album information" aria-live="polite" aria-atomic="true"><p id="selected-artist">{initial.artist}</p><h2 id="selected-title">{initial.title}</h2><p class="selected-meta"><span id="selected-year">{initial.releaseYear}</span><span>·</span><span>COMPACT DISC</span></p><p class="selected-label" id="selected-label">{initial.label}</p></div>
-      <a class="album-open" id="selected-link" href={initial.path}>Explore album <span aria-hidden="true">↗</span></a>
-      <a class="selected-artist-link" id="selected-artist-link" href={initial.artistPath || '/artists/'}>More from this artist <span aria-hidden="true">→</span></a>
-    </aside>
   </div>
   <div class="control-deck">
     <div class="storage-brand"><span>MegaStorage</span><strong>300<span>CD</span></strong><small>A COLLECTION WORTH COMING BACK TO.</small></div>

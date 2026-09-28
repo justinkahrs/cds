@@ -9,10 +9,6 @@ const albums = collection.albums;
 ---
 <SiteLayout title="In rotation — CD Collection" description="Turn the carousel, find a favorite, and rediscover a good record in this personal CD collection." active="catalog">
   <div class="page-wrap collection-page" data-collection>
-    <section class="rotation-intro" aria-labelledby="page-title">
-      <div><p class="eyebrow"><span class="status-light"></span> A personal listening archive</p><h1 id="page-title">Good things <em>come around.</em></h1><p>A shelf full of memories. A whole lot left to rediscover.</p></div>
-      <div class="archive-count"><strong>{albums.length}<span> albums</span></strong><p>{collection.artists.length} artists. A lifetime of discoveries.</p></div>
-    </section>
     <section class="browse-bar" aria-label="Collection controls">
       <div class="view-switch" hidden data-enhanced>
         <button type="button" data-view="changer" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="10" rx="7" ry="5"/><ellipse cx="10" cy="10" rx="2" ry="1.5"/></svg> The changer</button>

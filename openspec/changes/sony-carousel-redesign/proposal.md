@@ -11,6 +11,7 @@ The flat editorial catalog does not evoke browsing the user's Sony 300-disc chan
 - Integrate search and a switchable full album index while preserving artist and album routes, source slot strings, local cover art, and fallbacks.
 - Carry the dark hardware identity through the existing static Astro site with responsive and reduced-motion behavior.
 - Keep the player height stable across selections, prevent case intersections, and animate surprise selection through a spin that slows to a stop.
+- Remove the homepage promo introduction and navbar caption so the collection controls lead; on mobile, show album details before the carousel and put a prominent jog dial directly after it.
 
 ## Capabilities
 

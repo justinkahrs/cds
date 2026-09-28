@@ -34,6 +34,23 @@ The homepage SHALL present a rotating, slotted carousel with album artwork, a se
 - **AND** the final displayed album and links match that destination
 - **AND** manual navigation or a search cancels the spin without a later stale selection
 
+### Requirement: Focused collection entry
+The homepage SHALL begin with the collection controls without a separate promotional introduction, and the shared navbar SHALL omit its descriptive caption.
+
+#### Scenario: Opening the collection
+- **WHEN** a visitor opens the site at desktop or mobile width
+- **THEN** collection controls appear directly below the navbar
+- **AND** the navbar contains the brand and navigation without a tagline
+
+### Requirement: Mobile changer hierarchy
+At mobile widths, the selected-album information SHALL appear before the carousel, and the jog dial SHALL appear immediately after the carousel as the most prominent browsing control. Desktop SHALL retain the side-by-side carousel and information panel with the dial in the hardware control deck.
+
+#### Scenario: Browsing on a phone
+- **WHEN** a visitor browses at a viewport no wider than 680 pixels
+- **THEN** album information appears before the carousel artwork
+- **AND** a prominent, touch-sized jog dial follows the carousel before the other hardware controls
+- **AND** changing albums does not shift the player dimensions or dial position
+
 ### Requirement: Search and alternate browsing
 The site SHALL provide search by album, artist, or slot and a full album grid with working album and artist links. Filtering SHALL update the carousel and result count, and a zero-result search SHALL show a recoverable empty state without stale selected-album controls.
 
