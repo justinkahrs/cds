@@ -1,4 +1,5 @@
 import { circularOffset, searchMatches, wrapIndex, casePose, surpriseDistance, spinProgress } from '../lib/carousel.mjs';
+import { createCarouselAudio } from '../lib/carousel-audio';
 
 const root = document.querySelector<HTMLElement>('[data-collection]');
 if (root) {
@@ -9,6 +10,13 @@ if (root) {
   const empty = get('empty-state');
   const search = get<HTMLInputElement>('catalog-search');
   const dial = get<HTMLButtonElement>('jog-dial');
+  const audio = createCarouselAudio();
+  // Capture activation before the browsing handlers; touch unlocks on release.
+  for (const type of ['pointerdown', 'pointerup', 'click', 'keydown']) {
+    changer.addEventListener(type, (event) => {
+      if (event.isTrusted && navigator.userActivation?.hasBeenActive !== false) audio.unlock();
+    }, { capture: true });
+  }
   const cases = Array.from(root.querySelectorAll<HTMLButtonElement>('.jewel-case'));
   const cards = Array.from(grid.querySelectorAll<HTMLElement>('.album-card'));
   let filtered = [...cases];
@@ -66,10 +74,11 @@ if (root) {
     stage.dataset.position = String(position);
   };
 
-  const renderSelection = () => {
+  const renderSelection = (audible = false) => {
     selected = wrapIndex(selected, filtered.length);
     const active = filtered[selected];
     if (active !== activeCase) {
+      if (audible && active && activeCase && filtered.length > 1) audio.tick();
       if (activeCase) { activeCase.tabIndex = -1; activeCase.setAttribute('aria-pressed', 'false'); }
       activeCase = active;
       if (active) { active.tabIndex = 0; active.setAttribute('aria-pressed', 'true'); }
@@ -109,9 +118,9 @@ if (root) {
     get('random-label').textContent = value ? 'Spinning…' : 'Surprise me';
   };
 
-  const render = () => {
+  const render = (audible = false) => {
     renderScene();
-    renderSelection();
+    renderSelection(audible);
     showView();
   };
 
@@ -121,30 +130,30 @@ if (root) {
     setSpinning(false);
   };
 
-  const settle = () => {
+  const settle = (audible = false) => {
     stopMotion();
     position = destination;
     selected = wrapIndex(Math.round(destination), filtered.length);
-    render();
+    render(audible);
   };
 
   const animateTo = (target: number, surprise = false) => {
     stopMotion();
     destination = target;
-    if (reducedMotion.matches || document.hidden) { settle(); return; }
+    if (reducedMotion.matches || document.hidden) { settle(true); return; }
     const from = position;
     const distance = target - from;
     const duration = surprise ? Math.min(4800, 2800 + Math.abs(distance) * 10) : Math.min(700, 320 + Math.sqrt(Math.abs(distance)) * 55);
     const started = performance.now();
     setSpinning(surprise);
-    renderSelection();
+    renderSelection(true);
     const tick = (now: number) => {
       const progress = Math.min(1, (now - started) / duration);
       const eased = surprise ? spinProgress(progress) : 1 - Math.pow(1 - progress, 3);
       position = from + distance * eased;
       if (surprise) {
         const nearest = wrapIndex(Math.round(position), filtered.length);
-        if (nearest !== selected) { selected = nearest; renderSelection(); }
+        if (nearest !== selected) { selected = nearest; renderSelection(true); }
       }
       renderScene();
       if (progress < 1) frame = requestAnimationFrame(tick);

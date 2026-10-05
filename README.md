@@ -8,7 +8,9 @@ The changer opens with a dimensional album carousel in physical slot order, a fl
 
 The player keeps a fixed height at each responsive breakpoint. Long album titles and metadata scroll inside the details panel, keeping the album links and hardware controls in place. Jewel cases share one circular motion path with clearance between them throughout movement.
 
-Search by artist, title, or changer slot (press `/` to focus search), or switch to **All albums** for the full grid. **Explore album** opens the existing release page, and **Artists** opens the artist directory. Multi-disc locations retain their exact source strings. The current album is remembered within the browser session when returning from a detail page. These controls browse the catalog; they do not play audio or operate the physical changer.
+Search by artist, title, or changer slot (press `/` to focus search), or switch to **All albums** for the full grid. **Explore album** opens the existing release page, and **Artists** opens the artist directory. Multi-disc locations retain their exact source strings. The current album is remembered within the browser session when returning from a detail page. These controls browse the catalog; they do not play music or operate the physical changer.
+
+Changing albums makes a tiny, quiet mechanical tick, including while turning the jog dial or spinning with **Surprise me**. The sound is generated locally, lasts about 15 milliseconds, and stays restrained during fast browsing. Browsers may require a click, tap, or keypress inside the changer before wheel or swipe navigation can make sound. Browsing works normally if audio is unavailable or blocked. Initial loading, search, view changes, unchanged selections, and background tabs stay silent; reduced motion still allows a tick when selecting a new album.
 
 The interface supports narrow screens, keyboard focus, reduced-motion preferences, and artwork fallbacks. Without JavaScript, the static album grid and all album/artist links remain accessible.
 
