@@ -118,6 +118,12 @@ button svg, .view-switch svg { width: 18px; height: 18px; fill: none; stroke: cu
 .album-card__details { color: #a7ae9c; }
 .slot-chip strong { color: #c6ddb1; }
 .catalog-empty { min-height: 450px; display: flex; align-items: center; justify-content: center; flex-direction: column; border: 1px solid var(--line); border-radius: 8px; background: #151b11; }
+.safari-welcome { width: min(420px, calc(100vw - 32px)); max-width: none; padding: 0; border: 1px solid #5d674d; border-radius: 8px; color: #e2e7da; background: repeating-linear-gradient(0deg, #ffffff02 0 1px, transparent 1px 3px), linear-gradient(130deg, #2d3328, #1a1f17 72%); box-shadow: 0 20px 70px #000a, 0 1px 0 #a8b68c33 inset; }
+.safari-welcome::backdrop { background: #080b08cf; -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
+.safari-welcome__panel { padding: 30px; }
+.safari-welcome h1 { margin: 0 0 24px; color: #e1e6d8; font: 500 25px/1.2 Georgia, serif; letter-spacing: -.4px; }
+.safari-welcome form { margin: 0; }
+.safari-welcome button { width: 100%; min-height: 46px; }
 .empty-disc { font-size: 60px; color: #718d5d; }
 .catalog-empty h2 { font: 32px Georgia, serif; margin: 12px 0 5px; }
 .catalog-empty p { color: var(--ink-soft); font-size: 13px; margin-bottom: 25px; }

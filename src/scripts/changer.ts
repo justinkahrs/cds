@@ -17,11 +17,23 @@ if (root) {
   const search = get<HTMLInputElement>('catalog-search');
   const dial = get<HTMLButtonElement>('jog-dial');
   const audio = createCarouselAudio();
+  const safariWelcome = get<HTMLDialogElement>('safari-welcome');
+  const userAgent = navigator.userAgent;
+  const safari = navigator.vendor === 'Apple Computer, Inc.'
+    && /Safari\//.test(userAgent)
+    && !/(CriOS|FxiOS|EdgiOS|OPiOS|DuckDuckGo|Brave|Chrome|Chromium|OPR|Opera)/i.test(userAgent);
+  const ios = /iPhone|iPad|iPod/i.test(userAgent)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (safari && ios && typeof safariWelcome.showModal === 'function') safariWelcome.showModal();
   // Try unlocking at drag start so the first movement can tick. Safari may
   // reject or defer that attempt, so release and click events retry it.
   for (const type of ['pointerdown', 'touchstart', 'pointerup', 'touchend', 'click', 'keydown']) {
     document.addEventListener(type, (event) => {
-      if (event.isTrusted) audio.unlock();
+      if (!event.isTrusted) return;
+      // While the Safari welcome prompt is open, don't spend audio attempts
+      // on its touch sequence; unlock on the button's trusted click itself.
+      if (safariWelcome.open && event.type !== 'click' && event.type !== 'keydown') return;
+      audio.unlock();
     }, { capture: true });
   }
   const cases = Array.from(root.querySelectorAll<HTMLButtonElement>('.jewel-case'));

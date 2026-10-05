@@ -10,6 +10,12 @@ const albums = collection.albums;
 <SiteLayout title="In rotation — CD Collection" description="Turn the carousel, find a favorite, and rediscover a good record in this personal CD collection." active="catalog">
   <div class="page-wrap collection-page" data-collection>
     <DiscChanger albums={albums} />
+    <dialog class="safari-welcome" id="safari-welcome" aria-labelledby="safari-welcome-title">
+      <div class="safari-welcome__panel">
+        <h1 id="safari-welcome-title">Welcome to my CD collection</h1>
+        <form method="dialog"><button class="hardware-button" type="submit" autofocus>Enter collection</button></form>
+      </div>
+    </dialog>
     <section class="browse-bar" aria-label="Collection controls" hidden data-enhanced>
       <div class="view-switch" hidden data-enhanced>
         <button type="button" data-view="changer" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="10" rx="7" ry="5"/><ellipse cx="10" cy="10" rx="2" ry="1.5"/></svg> The changer</button>
