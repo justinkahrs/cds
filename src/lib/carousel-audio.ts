@@ -16,8 +16,8 @@ export function createCarouselAudio() {
         buffer = undefined;
         lastTick = -Infinity;
       }
-      // Safari can leave an earlier resume promise pending when it was called
-      // outside a qualifying touch gesture. Retry on each trusted release.
+      // Safari can leave a resume promise pending after a non-qualifying start
+      // event. Keep later activation events free to retry it.
       if (context.state !== 'running') void context.resume().catch(() => {});
     } catch { /* Browsing works even when audio is unavailable. */ }
   };

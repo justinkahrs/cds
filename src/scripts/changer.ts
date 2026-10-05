@@ -17,9 +17,9 @@ if (root) {
   const search = get<HTMLInputElement>('catalog-search');
   const dial = get<HTMLButtonElement>('jog-dial');
   const audio = createCarouselAudio();
-  // Unlock on release or click. Avoid touch pointerdown, which Safari may not
-  // treat as activation for Web Audio, and retry on touchend after pointerup.
-  for (const type of ['pointerup', 'touchend', 'click', 'keydown']) {
+  // Try unlocking at drag start so the first movement can tick. Safari may
+  // reject or defer that attempt, so release and click events retry it.
+  for (const type of ['pointerdown', 'touchstart', 'pointerup', 'touchend', 'click', 'keydown']) {
     document.addEventListener(type, (event) => {
       if (event.isTrusted) audio.unlock();
     }, { capture: true });
