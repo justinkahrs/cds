@@ -1,5 +1,5 @@
 const TICK_DURATION = 0.015;
-const TICK_LEVEL = 0.028;
+const TICK_LEVEL = 0.06;
 const TICK_INTERVAL = 0.05;
 
 /** Quiet mechanical feedback, with no queued sounds or dependency on audio access. */

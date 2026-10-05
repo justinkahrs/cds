@@ -150,10 +150,10 @@ button svg, .view-switch svg { width: 18px; height: 18px; fill: none; stroke: cu
 @media (max-width: 680px) {
   .site-header, .page-wrap { width: calc(100% - 32px); }.site-header { min-height: 73px; }.brand__name { font-size: 17px; }.primary-nav { gap: 20px; }
   .browse-bar { flex-direction: column-reverse; gap: 14px; align-items: stretch; margin-top: 16px; }.browse-bar .search-field { width: 100%; min-height: 43px; }.view-switch { align-self: start; }.view-switch button { padding: 8px 13px; }
-  .changer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 50px 150px var(--stage-height) 204px 96px 31px; gap: 0; padding: 0 10px; border-radius: 8px; --stage-height: 216px; }
+  .changer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 50px 110px var(--stage-height) 204px 72px 16px; gap: 0; padding: 0 10px; border-radius: 8px; --stage-height: 216px; }
   .changer-topline { grid-column: 1 / -1; grid-row: 1; height: 50px; }.machine-brand { font-size: 21px; gap: 12px; }.machine-brand span { font-size: 5px; }.machine-model { font-size: 5px; }
   .machine-window, .control-deck { display: contents; }
-  .selected-album { grid-column: 1 / -1; grid-row: 2; height: 150px; grid-template-columns: 74px minmax(0, 1fr); gap: 12px; padding: 12px; border-radius: 5px 5px 0 0; }
+  .selected-album { grid-column: 1 / -1; grid-row: 2; height: 110px; grid-template-columns: 74px minmax(0, 1fr); gap: 12px; padding: 8px 12px; border-radius: 5px 5px 0 0; }
   .carousel-bay { grid-column: 1 / -1; grid-row: 3; height: var(--stage-height); border: 1px solid #080a07; border-top: 0; border-bottom: 0; }
   .carousel-cases { transform: scale(.74); transform-origin: 50% 37%; }.jewel-case { top: 35px; }.drum { top: 26px; transform: scale(.59); transform-origin: 50% 30%; }
   .vfd-label { font-size: 6px; letter-spacing: 0; }.slot-window .marquee-track > * { font-size: 36px; letter-spacing: 1px; }
@@ -170,7 +170,7 @@ button svg, .view-switch svg { width: 18px; height: 18px; fill: none; stroke: cu
 .is-spinning #random-disc { opacity: .8; }
 .jewel-case { will-change: transform; }
 @media (max-width: 380px) {
-  .changer { grid-template-rows: 50px 150px var(--stage-height) 192px 96px 31px; }
+  .changer { grid-template-rows: 50px 110px var(--stage-height) 192px 72px 16px; }
   .jog-control { height: 192px; }
   .jog-dial { width: 132px; height: 132px; }
   .shuffle-control .hardware-button { padding: 0; }

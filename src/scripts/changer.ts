@@ -19,7 +19,7 @@ if (root) {
   const audio = createCarouselAudio();
   // Capture activation before the browsing handlers; touch unlocks on release.
   for (const type of ['pointerdown', 'pointerup', 'click', 'keydown']) {
-    changer.addEventListener(type, (event) => {
+    document.addEventListener(type, (event) => {
       if (event.isTrusted && navigator.userActivation?.hasBeenActive !== false) audio.unlock();
     }, { capture: true });
   }
@@ -105,9 +105,17 @@ if (root) {
     const selectionChanged = active !== activeCase;
     if (selectionChanged) {
       if (audible && active && activeCase && filtered.length > 1) audio.tick();
-      if (activeCase) { activeCase.tabIndex = -1; activeCase.setAttribute('aria-pressed', 'false'); }
+      if (activeCase) {
+        activeCase.tabIndex = -1;
+        activeCase.setAttribute('aria-pressed', 'false');
+        activeCase.setAttribute('aria-label', `Select ${activeCase.dataset.title} by ${activeCase.dataset.artist}`);
+      }
       activeCase = active;
-      if (active) { active.tabIndex = 0; active.setAttribute('aria-pressed', 'true'); }
+      if (active) {
+        active.tabIndex = 0;
+        active.setAttribute('aria-pressed', 'true');
+        active.setAttribute('aria-label', `Open album details for ${active.dataset.title} by ${active.dataset.artist}`);
+      }
       selectionCopy.scrollTop = 0;
     }
     if (active) {
@@ -202,6 +210,10 @@ if (root) {
       if (performance.now() < suppressClickUntil) { event.preventDefault(); return; }
       const index = filtered.indexOf(item);
       if (index < 0) return;
+      if (item === activeCase) {
+        window.location.assign(item.dataset.path!);
+        return;
+      }
       move(circularOffset(index, selected, filtered.length));
     });
     const img = item.querySelector('img');

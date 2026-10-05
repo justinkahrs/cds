@@ -23,7 +23,7 @@ const musicBrainzUrl = getMusicBrainzReleaseGroupUrl(album);
 				{album.artistPath && <><a href={album.artistPath}>{album.artist}</a><span aria-hidden="true">/</span></>}
 				<span>{album.title || 'Untitled album'}</span>
 			</nav>
-			<a class="back-link" href={album.artistPath || '/'}>← {album.artistPath ? 'Artist albums' : 'Album index'}</a>
+			<a class="back-link" href="/">← Back to CD changer</a>
 		</div>
 
 		<article class="album-detail">
