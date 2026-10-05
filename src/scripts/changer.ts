@@ -17,10 +17,11 @@ if (root) {
   const search = get<HTMLInputElement>('catalog-search');
   const dial = get<HTMLButtonElement>('jog-dial');
   const audio = createCarouselAudio();
-  // Capture activation before the browsing handlers; touch unlocks on release.
-  for (const type of ['pointerdown', 'pointerup', 'click', 'keydown']) {
+  // Capture trusted activation before browsing handlers. Keep touchend explicit
+  // for Safari versions that don't treat pointerup as an audio-unlock gesture.
+  for (const type of ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown']) {
     document.addEventListener(type, (event) => {
-      if (event.isTrusted && navigator.userActivation?.hasBeenActive !== false) audio.unlock();
+      if (event.isTrusted) audio.unlock();
     }, { capture: true });
   }
   const cases = Array.from(root.querySelectorAll<HTMLButtonElement>('.jewel-case'));
