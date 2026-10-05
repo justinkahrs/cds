@@ -34,7 +34,6 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 	width: min(100% - 64px, 1320px);
 	min-height: 86px;
 	margin: 0 auto;
-	border-bottom: 1px solid var(--line);
 }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
@@ -142,11 +141,6 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 .external-links a::after { content: '↗'; color: var(--accent); font-size: 0.9rem; }
 .detail-note { margin: 18px 0 0; color: var(--ink-soft); font-size: 0.67rem; line-height: 1.5; }
 
-.site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 20px max(32px, calc((100vw - 1320px) / 2)); border-top: 1px solid var(--line); color: var(--ink-soft); }
-.site-footer p { margin: 0; font-family: Georgia, serif; font-size: 0.88rem; }
-.site-footer p + p { font-family: inherit; font-size: 0.68rem; }
-.site-footer a { color: inherit; }
-
 @keyframes rise-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 1020px) {
@@ -172,7 +166,6 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 	.album-detail { grid-template-columns: 1fr; gap: 37px; padding-top: 27px; }
 	.detail-artwork { width: min(100%, 420px); }
 	.detail-copy h1 { font-size: clamp(2.8rem, 13vw, 4.7rem); }
-	.site-footer { flex-direction: column; padding: 18px 20px; }
 }
 
 @media (max-width: 420px) {

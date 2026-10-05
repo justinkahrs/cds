@@ -9,18 +9,16 @@ const albums = collection.albums;
 ---
 <SiteLayout title="In rotation — CD Collection" description="Turn the carousel, find a favorite, and rediscover a good record in this personal CD collection." active="catalog">
   <div class="page-wrap collection-page" data-collection>
-    <section class="browse-bar" aria-label="Collection controls">
+    <DiscChanger albums={albums} />
+    <section class="browse-bar" aria-label="Collection controls" hidden data-enhanced>
       <div class="view-switch" hidden data-enhanced>
         <button type="button" data-view="changer" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="10" rx="7" ry="5"/><ellipse cx="10" cy="10" rx="2" ry="1.5"/></svg> The changer</button>
         <button type="button" data-view="grid" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3h5v5H3zM12 3h5v5h-5zM3 12h5v5H3zM12 12h5v5h-5z"/></svg> All albums</button>
       </div>
-      <p class="section-kicker static-index-label">The album collection</p>
       <label class="search-field" for="catalog-search" hidden data-enhanced><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.4 15.4 4.1 4.1" /></svg><input id="catalog-search" type="search" placeholder="Find an artist, album, or slot…" aria-label="Search by artist, album, or changer slot" autocomplete="off" spellcheck="false" /><kbd aria-hidden="true">/</kbd></label>
     </section>
-    <DiscChanger albums={albums} />
     <section class="album-grid" id="album-grid" aria-label="Albums in the collection">{albums.map((album) => <div><AlbumCard album={album} /></div>)}</section>
     <div class="catalog-empty" id="empty-state" hidden><span class="empty-disc" aria-hidden="true">◎</span><h2>No discs found.</h2><p>Try another artist, album, or changer slot.</p><button class="hardware-button" id="clear-search" type="button">Clear search</button></div>
-    <div class="collection-footnote"><p id="result-count" aria-live="polite">{albums.length} albums in the collection</p><p>Collected over time. Played in full.</p></div>
   </div>
 </SiteLayout>
 <script>

@@ -4,6 +4,12 @@ import { createCarouselAudio } from '../lib/carousel-audio';
 const root = document.querySelector<HTMLElement>('[data-collection]');
 if (root) {
   const get = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+  const setText = (id: string, value: string) => {
+    const element = get(id);
+    const textNode = element.firstChild;
+    if (textNode?.nodeType === Node.TEXT_NODE) textNode.nodeValue = value;
+    else element.textContent = value;
+  };
   const changer = get('disc-changer');
   const stage = get('carousel-stage');
   const grid = get('album-grid');
@@ -24,6 +30,24 @@ if (root) {
   let view = location.hash === '#albums' ? 'grid' : 'changer';
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const selectionCopy = root.querySelector<HTMLElement>('.selection-copy')!;
+  const marquees = Array.from(changer.querySelectorAll<HTMLElement>('[data-marquee]'));
+  const refreshMarquees = (restart = false) => {
+    for (const viewport of marquees) {
+      const track = viewport.querySelector<HTMLElement>('.marquee-track')!;
+      const text = track.firstElementChild as HTMLElement;
+      const overflowing = text.getBoundingClientRect().width > viewport.clientWidth + 1;
+      const style = getComputedStyle(track);
+      const distance = text.getBoundingClientRect().width + Number.parseFloat(style.gap) + Number.parseFloat(style.paddingRight);
+      const duration = Math.max(7, Math.min(20, distance / 20));
+      viewport.style.setProperty('--marquee-duration', `${duration}s`);
+      if (restart) {
+        viewport.classList.remove('is-overflowing');
+        void track.offsetWidth;
+      }
+      viewport.classList.toggle('is-overflowing', overflowing);
+    }
+  };
+  window.addEventListener('resize', () => refreshMarquees());
   let spinning = false;
   let frame = 0;
   let activeCase: HTMLButtonElement | undefined;
@@ -51,6 +75,7 @@ if (root) {
     for (const button of root.querySelectorAll<HTMLButtonElement>('[data-view]')) {
       button.setAttribute('aria-pressed', String(button.dataset.view === view));
     }
+    refreshMarquees();
   };
 
   const renderScene = () => {
@@ -77,7 +102,8 @@ if (root) {
   const renderSelection = (audible = false) => {
     selected = wrapIndex(selected, filtered.length);
     const active = filtered[selected];
-    if (active !== activeCase) {
+    const selectionChanged = active !== activeCase;
+    if (selectionChanged) {
       if (audible && active && activeCase && filtered.length > 1) audio.tick();
       if (activeCase) { activeCase.tabIndex = -1; activeCase.setAttribute('aria-pressed', 'false'); }
       activeCase = active;
@@ -88,22 +114,24 @@ if (root) {
       const data = active.dataset;
       const values: Record<string, string | undefined> = {
         'selected-slot': data.slot,
-        'display-artist': data.artist,
         'selected-title': data.title,
         'selected-artist': data.artist,
         'selected-year': data.year,
         'selected-label': data.label,
-        'carousel-position': `${String(selected + 1).padStart(3, '0')} / ${filtered.length}`,
       };
-      for (const [id, text] of Object.entries(values)) get(id).textContent = text || '—';
-      get('selected-slot').classList.toggle('multi-slot', (data.slot?.length || 0) > 5);
-      get<HTMLAnchorElement>('selected-link').href = data.path!;
-      get<HTMLAnchorElement>('selected-artist-link').href = data.artistPath || '/artists/';
+      for (const [id, text] of Object.entries(values)) setText(id, text || '—');
+      setText('selected-slot-copy', data.slot || '—');
+      setText('selected-title-copy', data.title || '—');
+      get<HTMLAnchorElement>('selected-title').href = data.path!;
+      const artistLink = get<HTMLAnchorElement>('selected-artist');
+      if (data.artistPath) artistLink.href = data.artistPath;
+      else artistLink.removeAttribute('href');
       dial.setAttribute('aria-description', `${data.title} by ${data.artist}. Slot ${data.slot}.`);
       if (!spinning) {
         try { sessionStorage.setItem('cd-selected-album', data.path!); } catch { /* Optional persistence. */ }
       }
     }
+    if (selectionChanged) refreshMarquees(true);
     for (const id of ['previous-disc', 'next-disc', 'random-disc', 'jog-dial']) {
       get<HTMLButtonElement>(id).disabled = filtered.length < 2;
     }
@@ -115,7 +143,7 @@ if (root) {
     changer.classList.toggle('is-spinning', value);
     changer.setAttribute('aria-busy', String(value));
     selectionCopy.setAttribute('aria-live', value ? 'off' : 'polite');
-    get('random-label').textContent = value ? 'Spinning…' : 'Surprise me';
+    get<HTMLButtonElement>('random-disc').setAttribute('aria-label', value ? 'Spinning' : 'Surprise me');
   };
 
   const render = (audible = false) => {
@@ -281,7 +309,6 @@ if (root) {
     for (const card of cards) card.parentElement!.hidden = !searchMatches(card.dataset.search || '', query);
     selected = Math.max(0, filtered.indexOf(current));
     position = destination = selected;
-    get('result-count').textContent = `${filtered.length} ${filtered.length === 1 ? 'album' : 'albums'}${query.trim() ? ' found' : ' in the collection'}`;
     render();
   };
   search.addEventListener('input', updateSearch);
