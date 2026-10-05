@@ -17,9 +17,9 @@ if (root) {
   const search = get<HTMLInputElement>('catalog-search');
   const dial = get<HTMLButtonElement>('jog-dial');
   const audio = createCarouselAudio();
-  // Capture trusted activation before browsing handlers. Keep touchend explicit
-  // for Safari versions that don't treat pointerup as an audio-unlock gesture.
-  for (const type of ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown']) {
+  // Unlock on release or click. Avoid touch pointerdown, which Safari may not
+  // treat as activation for Web Audio, and retry on touchend after pointerup.
+  for (const type of ['pointerup', 'touchend', 'click', 'keydown']) {
     document.addEventListener(type, (event) => {
       if (event.isTrusted) audio.unlock();
     }, { capture: true });

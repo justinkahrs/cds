@@ -6,7 +6,6 @@ const TICK_INTERVAL = 0.05;
 export function createCarouselAudio() {
   let context: AudioContext | undefined;
   let buffer: AudioBuffer | undefined;
-  let resuming = false;
   let lastTick = -Infinity;
 
   const unlock = () => {
@@ -17,11 +16,10 @@ export function createCarouselAudio() {
         buffer = undefined;
         lastTick = -Infinity;
       }
-      if (context.state !== 'running' && !resuming) {
-        resuming = true;
-        void context.resume().catch(() => {}).finally(() => { resuming = false; });
-      }
-    } catch { resuming = false; /* Browsing works even when audio is unavailable. */ }
+      // Safari can leave an earlier resume promise pending when it was called
+      // outside a qualifying touch gesture. Retry on each trusted release.
+      if (context.state !== 'running') void context.resume().catch(() => {});
+    } catch { /* Browsing works even when audio is unavailable. */ }
   };
 
   const tick = () => {
