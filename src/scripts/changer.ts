@@ -24,7 +24,14 @@ if (root) {
     && !/(CriOS|FxiOS|EdgiOS|OPiOS|DuckDuckGo|Brave|Chrome|Chromium|OPR|Opera)/i.test(userAgent);
   const ios = /iPhone|iPad|iPod/i.test(userAgent)
     || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  if (safari && ios && typeof safariWelcome.showModal === 'function') safariWelcome.showModal();
+  let welcomeAlreadyShown = false;
+  try { welcomeAlreadyShown = sessionStorage.getItem('cd-safari-welcome-seen') === 'true'; }
+  catch { /* Storage is optional in private browser contexts. */ }
+  if (safari && ios && !welcomeAlreadyShown && typeof safariWelcome.showModal === 'function') {
+    try { sessionStorage.setItem('cd-safari-welcome-seen', 'true'); }
+    catch { /* Storage is optional in private browser contexts. */ }
+    safariWelcome.showModal();
+  }
   // Try unlocking at drag start so the first movement can tick. Safari may
   // reject or defer that attempt, so release and click events retry it.
   for (const type of ['pointerdown', 'touchstart', 'pointerup', 'touchend', 'click', 'keydown']) {
